@@ -261,18 +261,14 @@ Regardless of tier, every Citadel Citizen has access to the full platform experi
 | **Zero Tracking** | ✅ | ✅ |
 | ── | ── | ── |
 | **Profile Media Storage** | `500 MB` | `50 GB` |
-| **Message History Retention** | `90 days` | `Unlimited` |
 | **Post Scheduling** | ❌ | ✅ |
 | **Advanced Analytics Dashboard** | ❌ | ✅ |
-| **Custom Profile Themes** | `3 themes` | `Unlimited + Custom` |
-| **Group Chats** | `Up to 10 members` | `Up to 500 members` |
+| **Group Chats** | `INVITE ONLY` | `Up to 500 members` |
 | **File Sharing in Messages** | `Up to 25 MB` | `Up to 2 GB` |
 | **Post Visibility Boost** | ❌ | ✅ |
 | **Priority Support** | Community | `Direct 24/7` |
 | **Early Access to Features** | ❌ | ✅ |
 | **Premium Citadel Badge** | ❌ | ✅ |
-| **Custom URL / Vanity Handle** | ❌ | ✅ |
-| **API Access** | ❌ | `Coming Soon` |
 
 </div>
 
