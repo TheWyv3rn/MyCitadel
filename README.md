@@ -522,9 +522,9 @@ Use of MyCitadel is subject to our Terms of Service, available in-app and on our
 
 | Channel | Link |
 |---|---|
-| 🌐 **Website** | `https://mycitadel.io` *(coming soon)* |
-| 📧 **Security Reports** | `security@mycitadel.io` |
-| 💬 **General Inquiries** | `hello@mycitadel.io` |
+| 🌐 **Website** | `https://mycitadel.lol`  |
+| 📧 **Security Reports** | `security@mycitadel.lol` |
+| 💬 **General Inquiries** | `hello@mycitadel.lol` |
 | 🐛 **Bug Reports** | [Open an Issue](../../issues) |
 | 💡 **Feature Requests** | [Start a Discussion](../../discussions) |
 
