@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- LOGO / BANNER -->
-<img src="https://via.placeholder.com/900x200/0a0f1e/00d4ff?text=⬡+MyCitadel" alt="MyCitadel Banner" width="100%"/>
+<img src="https://mycitadel.lol/default_banner.jpg" alt="MyCitadel Banner" width="100%"/>
 
 <br/>
 <br/>
