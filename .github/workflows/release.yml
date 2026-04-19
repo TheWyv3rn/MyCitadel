@@ -1,0 +1,93 @@
+name: ⬡ MyCitadel — Auto Release
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  auto-release:
+    name: Generate New Release
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # ── Step 1: Checkout the full repo history ──────────────────────────────
+      - name: ⬇️ Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # Full history needed to read all tags
+
+      # ── Step 2: Determine the next version number ────────────────────────────
+      - name: 🔢 Calculate Next Version
+        id: version
+        run: |
+          # Grab the latest tag that matches vX.Y.Z — default to v1.0.0 if none exist
+          LATEST=$(git tag --list 'v*.*.*' --sort=-version:refname | head -n 1)
+
+          if [ -z "$LATEST" ]; then
+            NEXT="v1.0.0"
+          else
+            # Strip the leading 'v' and split into parts
+            VERSION="${LATEST#v}"
+            MAJOR=$(echo "$VERSION" | cut -d. -f1)
+            MINOR=$(echo "$VERSION" | cut -d. -f2)
+            PATCH=$(echo "$VERSION" | cut -d. -f3)
+
+            # Auto-increment the patch number
+            PATCH=$((PATCH + 1))
+            NEXT="v${MAJOR}.${MINOR}.${PATCH}"
+          fi
+
+          echo "Previous version : ${LATEST:-none}"
+          echo "Next version     : $NEXT"
+          echo "next_version=$NEXT" >> $GITHUB_OUTPUT
+          echo "previous_version=$LATEST" >> $GITHUB_OUTPUT
+
+      # ── Step 3: Build the changelog from commits since last tag ─────────────
+      - name: 📋 Build Changelog
+        id: changelog
+        run: |
+          PREVIOUS="${{ steps.version.outputs.previous_version }}"
+          NEXT="${{ steps.version.outputs.next_version }}"
+
+          if [ -z "$PREVIOUS" ]; then
+            # First ever release — list all commits
+            LOG=$(git log --pretty=format:"- %s (%h)" HEAD)
+          else
+            # Only commits since the last release
+            LOG=$(git log --pretty=format:"- %s (%h)" "${PREVIOUS}..HEAD")
+          fi
+
+          # If no commits found, provide a fallback message
+          if [ -z "$LOG" ]; then
+            LOG="- Maintenance release"
+          fi
+
+          # Write to a temp file to safely handle multi-line output
+          echo "$LOG" > /tmp/changelog.txt
+          echo "Changelog written for $NEXT"
+
+      # ── Step 4: Create and push the new git tag ──────────────────────────────
+      - name: 🏷️ Create Git Tag
+        run: |
+          NEXT="${{ steps.version.outputs.next_version }}"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag "$NEXT" -m "MyCitadel Release $NEXT"
+          git push origin "$NEXT"
+
+      # ── Step 5: Publish the GitHub Release ───────────────────────────────────
+      - name: 🚀 Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.next_version }}
+          name: "⬡ MyCitadel ${{ steps.version.outputs.next_version }}"
+          body_path: /tmp/changelog.txt
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
