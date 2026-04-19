@@ -1,0 +1,24 @@
+# ============================================================
+#  ⬡ MyCitadel — Vendor Directory Lockdown
+#  /home/valhhfkf/mycitadel.lol/4ss37z/v3nd0r/.htaccess
+#  
+#  This directory contains ALL self-hosted vendor libraries.
+#  NO direct browser access permitted under any circumstance.
+# ============================================================
+
+# Deny ALL access — no exceptions
+Require all denied
+
+# Belt AND suspenders — old Apache 2.2 syntax too
+Order deny,allow
+Deny from all
+
+# No directory listings ever
+Options -Indexes
+Options -ExecCGI
+Options -Includes
+
+# Block all file types from being served directly
+<FilesMatch ".*">
+    Require all denied
+</FilesMatch>
