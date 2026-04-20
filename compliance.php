@@ -42,7 +42,7 @@ require_once __DIR__ . '/1nclud3z/h34d3r.php';
 <!-- HUD Background -->
 <div id="particles-js" class="position-fixed w-100 h-100" style="z-index: 1; pointer-events: none;"></div>
 
-<div class="container position-relative py-5" style="z-index: 2;">
+<div class="container position-relative py-5" style="z-index: 2; background-color: rgba(0,0,0,0.7);">
     
     <!-- HEADER: DYNAMIC STATUS -->
     <header class="text-center mb-5 animate__animated animate__fadeIn">
