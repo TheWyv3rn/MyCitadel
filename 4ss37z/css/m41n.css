@@ -1,0 +1,110 @@
+/* * MyCitadel Core HUD System v4.0
+ * Sci-Fi UI/UX Framework 
+ */
+
+/* 1. LAYER ONE: THE COLOR ENGINE & FONTS */
+:root {
+    --hud-neon-blue: #00d4ff;
+    --hud-neon-green: #39ff14;
+    --hud-neon-red: #ff3131;
+    --hud-bg-dark: #050505;
+    --hud-panel-bg: rgba(10, 10, 10, 0.85);
+    --hud-border-glow: rgba(0, 212, 255, 0.3);
+    --hud-glass: rgba(255, 255, 255, 0.05);
+    
+    /* Font Handshake */
+    --font-header: 'Orbitron', sans-serif;
+    --font-data: 'Roboto Mono', 'Share Tech Mono', monospace;
+    --font-syllabic: 'BJCree', sans-serif; /* For your Cree operations */
+}
+
+/* 2. BASE RESET & FUTURISTIC SCROLLING */
+body {
+    background-color: var(--hud-bg-dark);
+    color: #e0e0e0;
+    font-family: var(--font-data);
+    letter-spacing: 0.5px;
+    overflow-x: hidden;
+    background-image: 
+        radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.05) 0%, transparent 80%),
+        linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 100%, 100% 4px, 100% 100%; /* CRT Scanline Effect */
+}
+
+/* 3. THE HUD PANEL (Bootstrap Card Override) */
+.card, .hud-panel {
+    background: var(--hud-panel-bg) !important;
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--hud-border-glow) !important;
+    border-radius: 0; /* Sci-fi is sharp, not round */
+    position: relative;
+    clip-path: polygon(0 0, 95% 0, 100% 5%, 100% 100%, 5% 100%, 0 95%); /* Beveled corners */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover, .hud-panel:hover {
+    box-shadow: 0 0 20px var(--hud-border-glow);
+    border-color: var(--hud-neon-blue) !important;
+    transform: translateY(-2px);
+}
+
+/* 4. GLITCH TEXT & NEON HEADERS */
+.citadel-brand, h1, h2, h3 {
+    font-family: var(--font-header);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--hud-neon-blue);
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* 5. DATA TELEMETRY (For ChartJS/ApexCharts containers) */
+.telemetry-box {
+    border-left: 3px solid var(--hud-neon-blue);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0.1), transparent);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 0.85rem;
+}
+
+/* 6. BOOTSTRAP BUTTON RE-ENGINEERING */
+.btn-primary {
+    background: transparent !important;
+    border: 1px solid var(--hud-neon-blue) !important;
+    color: var(--hud-neon-blue) !important;
+    font-family: var(--font-header);
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.btn-primary:hover {
+    background: var(--hud-neon-blue) !important;
+    color: var(--hud-bg-dark) !important;
+    box-shadow: 0 0 30px var(--hud-neon-blue);
+}
+
+/* 7. FORM ELEMENTS (Choices.js integration) */
+.choices__inner {
+    background: var(--hud-glass) !important;
+    border: 1px solid var(--hud-border-glow) !important;
+    color: var(--hud-neon-blue) !important;
+    border-radius: 0 !important;
+}
+
+/* 8. MOBILE OPTIMIZATION: FLUID HUD */
+@media (max-width: 768px) {
+    .display-3 { font-size: 2.2rem; }
+    .hud-panel { clip-path: none; border-radius: 4px; } /* Simplify for performance on mobile */
+    .navbar-brand { font-size: 1.2rem; }
+}
+
+/* 9. ANIMATION HOOKS (Animate.css & Tippy.js) */
+.tippy-box[data-theme~='citadel'] {
+    background-color: var(--hud-bg-dark);
+    border: 1px solid var(--hud-neon-blue);
+    color: var(--hud-neon-blue);
+    font-family: var(--font-data);
+    box-shadow: 0 0 10px var(--hud-border-glow);
+}

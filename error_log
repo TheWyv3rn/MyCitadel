@@ -1,0 +1,215 @@
+[19-Apr-2026 17:35:47 UTC] PHP Warning:  require_once(1nclud3z/h34d4r.php): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/index.php on line 26
+[19-Apr-2026 17:35:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '1nclud3z/h34d4r.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/index.php on line 26
+[19-Apr-2026 17:37:15 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "MC_VENDOR" in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php:200
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1963): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:43:28 UTC] PHP Warning:  require_once(/home/valhhfkf/mycitadel.lol/1nclud3z/4ss37z/v3nd0r/b007str4p/js/bootstrap.bundle.min.js): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:43:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/mycitadel.lol/1nclud3z/4ss37z/v3nd0r/b007str4p/js/bootstrap.bundle.min.js' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php:200
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1963): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:44:13 UTC] PHP Warning:  require_once(/home/valhhfkf/mycitadel.lol/1nclud3z4ss37z/v3nd0r/b007str4p/js/bootstrap.bundle.min.js): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:44:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/mycitadel.lol/1nclud3z4ss37z/v3nd0r/b007str4p/js/bootstrap.bundle.min.js' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php:200
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1963): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:44:33 UTC] PHP Warning:  require_once(/home/valhhfkf/mycitadel.lol/1nclud3z4ss37z/v3nd0r/b007str4p/js/bootstrap.bundle.min.js): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:44:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/mycitadel.lol/1nclud3z4ss37z/v3nd0r/b007str4p/js/bootstrap.bundle.min.js' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php:200
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1963): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:44:49 UTC] PHP Warning:  require_once(/home/valhhfkf/mycitadel.lol/1nclud3z/4ss37z/v3nd0r/b007str4p/js/bootstrap.bundle.min.js): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:44:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/mycitadel.lol/1nclud3z/4ss37z/v3nd0r/b007str4p/js/bootstrap.bundle.min.js' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php:200
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1963): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:45:25 UTC] PHP Warning:  require_once(/home/valhhfkf/mycitadel.lol/1nclud3z../4ss37z/v3nd0r/b007str4p/js/bootstrap.bundle.min.js): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:45:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/mycitadel.lol/1nclud3z../4ss37z/v3nd0r/b007str4p/js/bootstrap.bundle.min.js' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php:200
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1963): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:45:33 UTC] PHP Warning:  require_once(/home/valhhfkf/mycitadel.lol/1nclud3z/4ss37z/v3nd0r/DOMPurify/dist/purify.min.js): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 201
+[19-Apr-2026 17:45:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/mycitadel.lol/1nclud3z/4ss37z/v3nd0r/DOMPurify/dist/purify.min.js' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php:201
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1963): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 201
+[19-Apr-2026 17:46:14 UTC] PHP Warning:  include(/../4ss37z/v3nd0r/b007str4p/js/bootstrap.bundle.min.js): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:46:14 UTC] PHP Warning:  include(/../4ss37z/v3nd0r/b007str4p/js/bootstrap.bundle.min.js): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:46:14 UTC] PHP Warning:  include(): Failed opening '/../4ss37z/v3nd0r/b007str4p/js/bootstrap.bundle.min.js' for inclusion (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:53:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function deifne() in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php:201
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1963): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 201
+[19-Apr-2026 17:55:11 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "MC_VENDOR" in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php:200
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1963): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 17:59:40 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "MC_VENDOR" in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php:200
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1963): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 200
+[19-Apr-2026 18:01:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function __t() in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php:12
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1963): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 12
+[19-Apr-2026 18:04:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function __t() in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php:39
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1467): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php on line 39
+[19-Apr-2026 18:04:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function __t() in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php:39
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1467): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php on line 39
+[19-Apr-2026 18:11:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function __t() in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php:39
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(1467): require_once()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php on line 39
+[19-Apr-2026 18:13:22 UTC] PHP Warning:  require_once(/home/valhhfkf/mycitadel.lol/1nclud3z/header.php): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/index.php on line 14
+[19-Apr-2026 18:13:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/mycitadel.lol/1nclud3z/header.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/index.php on line 14
+[19-Apr-2026 18:14:38 UTC] PHP Warning:  require_once(/home/valhhfkf/private/citadel_config.php): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php on line 7
+[19-Apr-2026 18:14:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/private/citadel_config.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php:7
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/h34d3r.php(9): require_once()
+#1 /home/valhhfkf/mycitadel.lol/index.php(14): require_once('/home/valhhfkf/...')
+#2 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php on line 7
+[19-Apr-2026 18:20:18 UTC] PHP Warning:  require_once(/home/valhhfkf/private/../1nclud3z/c00k13z.php): Failed to open stream: No such file or directory in /home/valhhfkf/private/citadel_config.php on line 43
+[19-Apr-2026 18:20:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/private/../1nclud3z/c00k13z.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/private/citadel_config.php:43
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php(7): require_once()
+#1 /home/valhhfkf/mycitadel.lol/1nclud3z/h34d3r.php(9): require_once('/home/valhhfkf/...')
+#2 /home/valhhfkf/mycitadel.lol/index.php(14): require_once('/home/valhhfkf/...')
+#3 {main}
+  thrown in /home/valhhfkf/private/citadel_config.php on line 43
+[19-Apr-2026 18:20:35 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INC_PATH" in /home/valhhfkf/private/citadel_config.php:40
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php(7): require_once()
+#1 /home/valhhfkf/mycitadel.lol/1nclud3z/h34d3r.php(9): require_once('/home/valhhfkf/...')
+#2 /home/valhhfkf/mycitadel.lol/index.php(14): require_once('/home/valhhfkf/...')
+#3 {main}
+  thrown in /home/valhhfkf/private/citadel_config.php on line 40
+[19-Apr-2026 18:20:58 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INC_PATH" in /home/valhhfkf/private/citadel_config.php:39
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php(7): require_once()
+#1 /home/valhhfkf/mycitadel.lol/1nclud3z/h34d3r.php(9): require_once('/home/valhhfkf/...')
+#2 /home/valhhfkf/mycitadel.lol/index.php(14): require_once('/home/valhhfkf/...')
+#3 {main}
+  thrown in /home/valhhfkf/private/citadel_config.php on line 39
+[19-Apr-2026 18:21:31 UTC] PHP Warning:  require_once(/home/valhhfkf/private7r4n5l473.php): Failed to open stream: No such file or directory in /home/valhhfkf/private/citadel_config.php on line 39
+[19-Apr-2026 18:21:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/private7r4n5l473.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/private/citadel_config.php:39
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php(7): require_once()
+#1 /home/valhhfkf/mycitadel.lol/1nclud3z/h34d3r.php(9): require_once('/home/valhhfkf/...')
+#2 /home/valhhfkf/mycitadel.lol/index.php(14): require_once('/home/valhhfkf/...')
+#3 {main}
+  thrown in /home/valhhfkf/private/citadel_config.php on line 39
+[19-Apr-2026 18:23:32 UTC] PHP Warning:  require_once(/home/valhhfkf/private7r4n5l473.php): Failed to open stream: No such file or directory in /home/valhhfkf/private/citadel_config.php on line 39
+[19-Apr-2026 18:23:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/private7r4n5l473.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/private/citadel_config.php:39
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php(7): require_once()
+#1 /home/valhhfkf/mycitadel.lol/1nclud3z/h34d3r.php(9): require_once('/home/valhhfkf/...')
+#2 /home/valhhfkf/mycitadel.lol/index.php(14): require_once('/home/valhhfkf/...')
+#3 {main}
+  thrown in /home/valhhfkf/private/citadel_config.php on line 39
+[19-Apr-2026 18:23:50 UTC] PHP Fatal error:  Uncaught Error: Undefined constant PDO::ATTR_ERR_SELF in /home/valhhfkf/private/citadel_config.php:45
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php(7): require_once()
+#1 /home/valhhfkf/mycitadel.lol/1nclud3z/h34d3r.php(9): require_once('/home/valhhfkf/...')
+#2 /home/valhhfkf/mycitadel.lol/index.php(14): require_once('/home/valhhfkf/...')
+#3 {main}
+  thrown in /home/valhhfkf/private/citadel_config.php on line 45
+[19-Apr-2026 18:25:05 UTC] PHP Warning:  require_once(/home/valhhfkf/private/CitadelCrypto.php): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php on line 8
+[19-Apr-2026 18:25:05 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/private/CitadelCrypto.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php:8
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/h34d3r.php(9): require_once()
+#1 /home/valhhfkf/mycitadel.lol/index.php(14): require_once('/home/valhhfkf/...')
+#2 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php on line 8
+[19-Apr-2026 18:26:37 UTC] PHP Warning:  require_once(/home/valhhfkf/private/CitadelCrypto.php): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php on line 8
+[19-Apr-2026 18:26:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/private/CitadelCrypto.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php:8
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/h34d3r.php(9): require_once()
+#1 /home/valhhfkf/mycitadel.lol/index.php(14): require_once('/home/valhhfkf/...')
+#2 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php on line 8
+[19-Apr-2026 18:27:13 UTC] PHP Warning:  require_once(/home/valhhfkf/private/CitadelCrypto.php): Failed to open stream: No such file or directory in /home/valhhfkf/private/citadel_config.php on line 24
+[19-Apr-2026 18:27:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/private/CitadelCrypto.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/private/citadel_config.php:24
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/c00k13z.php(7): require_once()
+#1 /home/valhhfkf/mycitadel.lol/1nclud3z/h34d3r.php(9): require_once('/home/valhhfkf/...')
+#2 /home/valhhfkf/mycitadel.lol/index.php(14): require_once('/home/valhhfkf/...')
+#3 {main}
+  thrown in /home/valhhfkf/private/citadel_config.php on line 24
+[19-Apr-2026 18:27:45 UTC] PHP Fatal error:  Cannot redeclare function __t() (previously declared in /home/valhhfkf/private/7r4n5l473.php:25) in /home/valhhfkf/mycitadel.lol/1nclud3z/h34d3r.php on line 17
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(14): require_once()
+#1 {main}
+[19-Apr-2026 18:28:23 UTC] PHP Warning:  require_once(/home/valhhfkf/mycitadel.lol/1nclud3z/footer.php): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/index.php on line 96
+[19-Apr-2026 18:28:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/mycitadel.lol/1nclud3z/footer.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/index.php:96
+Stack trace:
+#0 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/index.php on line 96
+[19-Apr-2026 18:31:57 UTC] PHP Warning:  require_once(/home/valhhfkf/mycitadel.lol/private/citadel_config.php): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/index.php on line 9
+[19-Apr-2026 18:31:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/mycitadel.lol/private/citadel_config.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/index.php on line 9
+[19-Apr-2026 18:34:01 UTC] PHP Fatal error:  Cannot redeclare function __t() (previously declared in /home/valhhfkf/private/7r4n5l473.php:22) in /home/valhhfkf/mycitadel.lol/1nclud3z/h34d3r.php on line 17
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/index.php(16): require_once()
+#1 {main}
+[19-Apr-2026 18:37:08 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function __t(), 1 passed in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php on line 39 and exactly 2 expected in /home/valhhfkf/private/7r4n5l473.php:20
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php(39): __t()
+#1 /home/valhhfkf/mycitadel.lol/1nclud3z/h34d3r.php(66): include_once('/home/valhhfkf/...')
+#2 /home/valhhfkf/mycitadel.lol/index.php(4): require_once('/home/valhhfkf/...')
+#3 {main}
+  thrown in /home/valhhfkf/private/7r4n5l473.php on line 20
+[19-Apr-2026 18:37:57 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function __t(), 1 passed in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 12 and exactly 2 expected in /home/valhhfkf/private/7r4n5l473.php:20
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php(12): __t()
+#1 /home/valhhfkf/mycitadel.lol/index.php(47): require_once('/home/valhhfkf/...')
+#2 {main}
+  thrown in /home/valhhfkf/private/7r4n5l473.php on line 20
+[19-Apr-2026 18:38:34 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function __t(), 1 passed in /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php on line 12 and exactly 2 expected in /home/valhhfkf/private/7r4n5l473.php:20
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/f0073r.php(12): __t()
+#1 /home/valhhfkf/mycitadel.lol/index.php(47): require_once('/home/valhhfkf/...')
+#2 {main}
+  thrown in /home/valhhfkf/private/7r4n5l473.php on line 20
+[19-Apr-2026 19:09:11 UTC] PHP Warning:  Undefined array key "en" in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php on line 81
+[19-Apr-2026 19:09:11 UTC] PHP Warning:  Trying to access array offset on null in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php on line 81
+[19-Apr-2026 19:09:11 UTC] PHP Warning:  Undefined array key "en" in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php on line 82
+[19-Apr-2026 19:09:11 UTC] PHP Warning:  Trying to access array offset on null in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php on line 82
+[19-Apr-2026 19:10:20 UTC] PHP Warning:  Undefined array key "en" in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php on line 81
+[19-Apr-2026 19:10:20 UTC] PHP Warning:  Trying to access array offset on null in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php on line 81
+[19-Apr-2026 19:10:20 UTC] PHP Warning:  Undefined array key "en" in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php on line 82
+[19-Apr-2026 19:10:20 UTC] PHP Warning:  Trying to access array offset on null in /home/valhhfkf/mycitadel.lol/1nclud3z/n4v.php on line 82
+[20-Apr-2026 06:01:00 UTC] PHP Warning:  require_once(/home/valhhfkf/private/libraries/tcpdf/tcpdf.php): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/1nclud3z/cr0n_w33kly_4ud17.php on line 13
+[20-Apr-2026 06:01:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/private/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/1nclud3z/cr0n_w33kly_4ud17.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/cr0n_w33kly_4ud17.php on line 13
+[20-Apr-2026 06:05:41 UTC] PHP Warning:  Undefined array key "HTTP_HOST" in /home/valhhfkf/private/citadel_config.php on line 23
+[20-Apr-2026 06:05:41 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent (sent from /home/valhhfkf/private/citadel_config.php on line 23) in /home/valhhfkf/private/7r4n5l473.php on line 5
