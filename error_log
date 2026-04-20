@@ -213,3 +213,10 @@ Stack trace:
   thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/cr0n_w33kly_4ud17.php on line 13
 [20-Apr-2026 06:05:41 UTC] PHP Warning:  Undefined array key "HTTP_HOST" in /home/valhhfkf/private/citadel_config.php on line 23
 [20-Apr-2026 06:05:41 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent (sent from /home/valhhfkf/private/citadel_config.php on line 23) in /home/valhhfkf/private/7r4n5l473.php on line 5
+[20-Apr-2026 01:05:43 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'valhhfkf_mycitadel.citadel_self_audit_report' doesn't exist in /home/valhhfkf/mycitadel.lol/1nclud3z/cr0n_w33kly_4ud17.php:182
+Stack trace:
+#0 /home/valhhfkf/mycitadel.lol/1nclud3z/cr0n_w33kly_4ud17.php(182): PDO->prepare()
+#1 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/1nclud3z/cr0n_w33kly_4ud17.php on line 182
+[20-Apr-2026 06:09:35 UTC] PHP Warning:  Undefined array key "HTTP_HOST" in /home/valhhfkf/private/citadel_config.php on line 23
+[20-Apr-2026 06:09:35 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent (sent from /home/valhhfkf/private/citadel_config.php on line 23) in /home/valhhfkf/private/7r4n5l473.php on line 5
