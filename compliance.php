@@ -20,7 +20,7 @@ try {
     $tables = $pdo->query("SHOW TABLES")->fetchAll(PDO::FETCH_COLUMN);
     $table_count = count($tables);
     // If we have our core tables, we are nominal
-    if ($table_count < 5) $db_status = 'WARNING_INCOMPLETE';
+    if ($table_count < 2) $db_status = 'WARNING_INCOMPLETE';
 } catch (Exception $e) { $db_status = 'OFFLINE'; }
 
 // C. PII LEAK PROTECTION (Mocking the check for the HUD)
@@ -77,7 +77,7 @@ require_once __DIR__ . '/1nclud3z/h34d3r.php';
                 <div class="badge bg-success-subtle text-success border border-success x-small px-3">
                     <?php echo $db_status; ?>
                 </div>
-                <div class="mt-2 x-small text-muted"><?php echo $table_count; ?> TABLES_VERIFIED</div>
+                <div class="mt-2 x-small text-muted"><?php echo $table_count; ?> <?php echo __t('compliance', 'tables_verified'); ?></div>
             </div>
         </div>
         <!-- PII Shield -->
@@ -88,7 +88,7 @@ require_once __DIR__ . '/1nclud3z/h34d3r.php';
                 <div class="badge bg-success-subtle text-success border border-success x-small px-3">
                     <?php echo $pii_shield; ?>
                 </div>
-                <div class="mt-2 x-small text-muted">ZERO_KNOWLEDGE_ENFORCED</div>
+                <div class="mt-2 x-small text-muted"><?php echo __t('compliance', 'zero_knowledge_enforced'); ?></div>
             </div>
         </div>
     </div>
@@ -113,9 +113,9 @@ require_once __DIR__ . '/1nclud3z/h34d3r.php';
                     <table class="table table-dark table-hover small align-middle">
                         <thead class="text-primary x-small uppercase">
                             <tr>
-                                <th>#_ID</th>
-                                <th>Interval</th>
-                                <th class="text-end">Action</th>
+                                <th><?php echo __t('compliance', 'table_id'); ?></th>
+                                <th><?php echo __t('compliance', 'table_interval'); ?></th>
+                                <th class="text-end"><?php echo __t('compliance', 'table_action'); ?></th>
                             </tr>
                         </thead>
                         <tbody class="font-mono">
@@ -173,32 +173,108 @@ require_once __DIR__ . '/1nclud3z/f0073r.php';
 ?>
 
 <script>
+/**
+ * MyCitadel - Compliance Radar HUD
+ * Logic: Real-time Telemetry Mapping
+ */
 document.addEventListener('DOMContentLoaded', () => {
-    // Sync UI data to Radar
+    const chartContainer = document.querySelector("#complianceRadarChart");
+    
+    // 1. HARD-CHECK: Is the library loaded?
+    if (typeof ApexCharts === 'undefined') {
+        console.error("CITADEL_ERROR: ApexCharts library not detected.");
+        if (chartContainer) {
+            chartContainer.innerHTML = `
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <div class="text-danger small p-3 border border-danger font-mono animate__animated animate__flash">
+                        <i class="fas fa-exclamation-triangle me-2"></i>ERROR: APEX_LIB_LOAD_FAILED
+                    </div>
+                </div>`;
+        }
+        return;
+    }
+
+    // 2. DATA INGESTION: Pulling PHP state into JS
+    // These variables must be defined in compliance.php before this script runs
+    const gitVal = typeof gitStatusValue !== 'undefined' ? gitStatusValue : 50; 
+    const dbVal = typeof dbStatusValue !== 'undefined' ? dbStatusValue : 50;
+
     const radarOptions = {
         series: [{
-            name: 'Audit Pulse',
-            data: [<?php echo ($git_status == 'SYNCHRONIZED' ? 100 : 40); ?>, 95, 100, 98, 100]
+            name: 'Audit_Pulse',
+            data: [gitVal, 95, dbVal, 98, 100] // Mapping: Sync, Availability, Integrity, Confidentiality, Privacy
         }],
         chart: {
-            height: 350,
+            height: 380,
             type: 'radar',
             background: 'transparent',
+            parentHeightOffset: 0,
             toolbar: { show: false },
-            dropShadow: { enabled: true, blur: 10, color: '#00d4ff', opacity: 0.2 }
+            animations: {
+                enabled: true,
+                easing: 'easeinout',
+                speed: 1200,
+                animateGradually: { enabled: true, delay: 150 },
+                dynamicAnimation: { enabled: true, speed: 350 }
+            },
+            dropShadow: {
+                enabled: true,
+                blur: 10,
+                color: '#00d4ff',
+                opacity: 0.3
+            }
         },
         colors: ['#00d4ff'],
         xaxis: {
             categories: ['Sync', 'Availability', 'Integrity', 'Confidentiality', 'Privacy'],
-            labels: { style: { colors: ["#00d4ff", "#00d4ff", "#00d4ff", "#00d4ff", "#00d4ff"], fontSize: '10px' } }
+            labels: {
+                show: true,
+                style: {
+                    colors: ["#00d4ff", "#00d4ff", "#00d4ff", "#00d4ff", "#00d4ff"],
+                    fontSize: '11px',
+                    fontFamily: 'Orbitron, sans-serif',
+                }
+            }
         },
-        yaxis: { show: false },
-        fill: { opacity: 0.1, colors: ['#00d4ff'] },
-        stroke: { show: true, width: 2, colors: ['#00d4ff'] },
-        markers: { size: 4, colors: ['#00d4ff'] },
-        grid: { show: true, borderColor: '#222' }
+        yaxis: {
+            show: false,
+            min: 0,
+            max: 100,
+            tickAmount: 5
+        },
+        fill: {
+            opacity: 0.2,
+            colors: ['#00d4ff']
+        },
+        stroke: {
+            show: true,
+            width: 2,
+            colors: ['#00d4ff'],
+            dashArray: 0
+        },
+        markers: {
+            size: 4,
+            colors: ['#00d4ff'],
+            strokeColor: '#050505',
+            strokeWidth: 2,
+            hover: { size: 7 }
+        },
+        grid: {
+            show: true,
+            borderColor: '#333',
+            strokeDashArray: 4,
+            position: 'back'
+        },
+        tooltip: {
+            theme: 'dark',
+            y: {
+                formatter: function(val) { return val + "%" }
+            }
+        }
     };
 
-    new ApexCharts(document.querySelector("#complianceRadarChart"), radarOptions).render();
+    // 3. INITIALIZE HUD COMPONENT
+    const chart = new ApexCharts(chartContainer, radarOptions);
+    chart.render();
 });
 </script>

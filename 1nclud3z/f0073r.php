@@ -47,9 +47,9 @@
 
     <?php if (isset($load_assets) && is_array($load_assets)): ?>
         
-        <?php if (in_array('charts', $load_assets)): ?>
-            <script src="<?php echo ASSET_PATH; ?>ch4r7js/chart.umd.min.js"></script>
-            <script src="<?php echo ASSET_PATH; ?>apexcharts-main/dist/apexcharts.min.js"></script>
+        <?php if (isset($load_assets) && in_array('charts', $load_assets)): ?>
+            <script src="/4ss37z/v3nd0r/ch4r7js/chart.umd.min.js"></script>
+            <script src="/4ss37z/v3nd0r/apexcharts-main/dist/apexcharts.js"></script>
         <?php endif; ?>
 
         <?php if (in_array('particles', $load_assets)): ?>
