@@ -1,24 +1,11 @@
-# ============================================================
-#  ⬡ MyCitadel — Vendor Directory Lockdown
-#  /home/valhhfkf/mycitadel.lol/4ss37z/v3nd0r/.htaccess
-#  
-#  This directory contains ALL self-hosted vendor libraries.
-#  NO direct browser access permitted under any circumstance.
-# ============================================================
+RewriteEngine On
 
-# Deny ALL access — no exceptions
-Require all denied
+# 1. Force HTTPS (Security Protocol)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Belt AND suspenders — old Apache 2.2 syntax too
-Order deny,allow
-Deny from all
-
-# No directory listings ever
-Options -Indexes
-Options -ExecCGI
-Options -Includes
-
-# Block all file types from being served directly
-<FilesMatch ".*">
-    Require all denied
-</FilesMatch>
+# 2. Map Clean URLs to PHP Files
+# Redirects /about to about.php, /compliance to compliance.php, etc.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
