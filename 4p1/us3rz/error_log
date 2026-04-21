@@ -1,0 +1,6 @@
+[20-Apr-2026 21:45:29 UTC] PHP Warning:  require_once(/home/valhhfkf/mycitadel.lol/4p1/us3rz/../../private/citadel_config.php): Failed to open stream: No such file or directory in /home/valhhfkf/mycitadel.lol/4p1/us3rz/register_uplink.php on line 3
+[20-Apr-2026 21:45:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/valhhfkf/mycitadel.lol/4p1/us3rz/../../private/citadel_config.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/valhhfkf/mycitadel.lol/4p1/us3rz/register_uplink.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/valhhfkf/mycitadel.lol/4p1/us3rz/register_uplink.php on line 3
+[20-Apr-2026 21:47:13 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active (started from /home/valhhfkf/private/7r4n5l473.php on line 6) in /home/valhhfkf/mycitadel.lol/4p1/us3rz/register_uplink.php on line 42

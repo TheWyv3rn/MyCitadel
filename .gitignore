@@ -1,0 +1,15 @@
+# MYCITADEL // SOURCE CONTROL SHIELD
+# Prevents User-Generated Content (UGC) from leaking to GitHub
+
+# Ignore all citizen-specific uploads (ID-based filenames)
+us3rz/m3d14/4v474rz/*
+us3rz/m3d14/b4nn3rz/*
+
+# EXCEPTION: Allow the default system images to stay in the repo
+# This ensures the Citadel looks right when cloned to a new node
+!us3rz/m3d14/4v474rz/default_avatar.png
+!us3rz/m3d14/b4nn3rz/default_banner.png
+
+# Ignore any hidden system files created by OS (like thumbs.db or .DS_Store)
+us3rz/m3d14/**/.DS_Store
+us3rz/m3d14/**/Thumbs.db

@@ -34,6 +34,7 @@ define('ASSET_PATH', '/4ss37z/v3nd0r/');
     <link rel="stylesheet" href="<?php echo ASSET_PATH; ?>animate.css-main/animate.min.css">
     <link rel="stylesheet" href="<?php echo ASSET_PATH; ?>f0n7_4w3s0m3/css/all.min.css">
     <link rel="stylesheet" href="<?php echo ASSET_PATH; ?>toastify-js-master/src/toastify.css">
+    <link rel="stylesheet" href="<?php echo ASSET_PATH; ?>css/m41n.css">
     <link rel="stylesheet" href="/4ss37z/css/m41n.css">
 
     <style>

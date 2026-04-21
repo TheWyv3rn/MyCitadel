@@ -1,0 +1,28 @@
+# MYCITADEL // MEDIA SECTOR SHIELD v1.0
+
+# 1. DISABLE DIRECTORY BROWSING
+# Prevents anyone from seeing a list of all files in the folder
+Options -Indexes
+
+# 2. KILL ALL SCRIPT EXECUTION (CRITICAL)
+# Even if someone uploads 'backdoor.php', the server will refuse to run it
+php_flag engine off
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7
+RemoveType .php .phtml .php3 .php4 .php5 .php7
+AddType text/plain .php .phtml .php3 .php4 .php5 .php7
+
+# 3. BLOCK COMMON HACKING TOOLS (User-Agent Filtering)
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} ^.*(Baiduspider|HTTrack|YandexBot|curl|wget|libwww-perl|BurpSuite|Python-urllib|Go-http-client).* [NC]
+RewriteRule .* - [F,L]
+
+# 4. PREVENT EXTERNAL HOTLINKING
+# Only allow mycitadel.lol to request these images
+RewriteCond %{HTTP_REFERER} !^https://(www\.)?mycitadel\.lol [NC]
+RewriteRule \.(jpg|jpeg|png|gif|webp)$ - [F,NC,L]
+
+# 5. FORCE DOWNLOAD PREVENTION
+# Prevents browsers from trying to "sniff" the file type and execute code
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
