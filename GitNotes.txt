@@ -1,0 +1,17 @@
+COMMIT CHANGES:
+git add .
+git commit -m "FEATURE{version}: {Message}"
+
+TAG THE VERSION:
+git tag v1.0.0
+
+PUSH EVERYTHING:
+git push -u origin master --tags
+
+
+Full Push Example:
+git add .
+git commit -m "INITIAL_FRAMEWORKv1.0: RoR Installed & Fresh"
+git tag v1.0
+git push -u origin master --tags
+

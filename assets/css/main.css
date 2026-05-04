@@ -1,0 +1,229 @@
+/* ====================================================================
+  MYCITADEL: CYBER-VIKING THEME v3.0 (Enhanced Responsive & Contrast)
+  Architecture: Zero-Knowledge / UI: Ancient Tech
+==================================================================== 
+*/
+
+/* --- 1. LOCAL FONT REGISTRATION --- */
+@font-face { font-family: 'Cinzel'; src: url('../fonts/Cinzel-Regular.ttf') format('truetype'); font-weight: normal; }
+@font-face { font-family: 'Cinzel Bold'; src: url('../fonts/Cinzel-Bold.ttf') format('truetype'); font-weight: bold; }
+@font-face { font-family: 'BJCree'; src: url('../fonts/BJCree-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Orbitron'; src: url('../fonts/Orbitron-Regular.ttf') format('truetype'); font-weight: normal; }
+@font-face { font-family: 'Share Tech Mono'; src: url('../fonts/ShareTechMono-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Source Code Pro'; src: url('../fonts/SourceCodePro-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Saira Stencil'; src: url('../fonts/SairaStencil-Regular.ttf') format('truetype'); }
+
+/* --- 2. CORE VARIABLES --- */
+:root {
+  /* Sci-Fi Base Colors */
+  --void-black: #05070a;
+  --hud-cyan: #00f0ff;
+  --hud-cyan-glow: rgba(0, 240, 255, 0.4);
+  --steel-gray: #2a2e35;
+
+  /* Nordic / Ancient Colors */
+  --rune-orange: #ff6600;
+  --rune-orange-glow: rgba(255, 102, 0, 0.7);
+  --parchment-base: #e3cfa8; /* Lightened slightly for better contrast */
+  --parchment-dark: #b89361;
+  --ancient-ink: #2b1810; /* Deep burnt umber for reading on parchment */
+  --blood-red: #8a0303;
+
+  /* Typography */
+  --font-runic: 'Cinzel Bold', serif;
+  --font-hud: 'Orbitron', sans-serif;
+  --font-body: 'Source Code Pro', monospace;
+  --font-terminal: 'Share Tech Mono', monospace;
+  --font-warning: 'Saira Stencil', sans-serif;
+  --font-ancient: 'BJCree', serif;
+}
+
+/* --- 3. GLOBAL RESET & BASE --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--void-black);
+  color: var(--hud-cyan);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-image: linear-gradient(rgba(0, 240, 255, 0.02) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(0, 240, 255, 0.02) 1px, transparent 1px);
+  background-size: 25px 25px;
+}
+
+/* --- 4. FLUID TYPOGRAPHY & ANIMATIONS --- */
+@keyframes runePulse {
+  0% { text-shadow: 0 0 5px var(--rune-orange), 0 0 10px var(--rune-orange); }
+  50% { text-shadow: 0 0 15px var(--rune-orange), 0 0 30px var(--blood-red); }
+  100% { text-shadow: 0 0 5px var(--rune-orange), 0 0 10px var(--rune-orange); }
+}
+
+/* Global Headers (Defaults to Cyber styling) */
+h1, h2, h3 {
+  font-family: var(--font-runic);
+  color: var(--rune-orange);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+/* Fluid sizes: scales smoothly between mobile and desktop */
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); animation: runePulse 4s infinite alternate; }
+h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); }
+h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+h4, h5, h6 {
+  font-family: var(--font-hud);
+  color: var(--hud-cyan);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+p {
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  margin-bottom: 1.5rem;
+  color: #a0b0c0;
+}
+
+a {
+  color: var(--rune-orange);
+  text-decoration: none;
+  font-family: var(--font-hud);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--hud-cyan);
+  text-shadow: 0 0 8px var(--hud-cyan-glow);
+}
+
+/* --- 5. ISOLATED THEMED COMPONENTS (Contrast Fixes) --- */
+
+/* The "Parchment Scroll" */
+.ancient-scroll {
+  background: linear-gradient(135deg, var(--parchment-base), var(--parchment-dark));
+  color: var(--ancient-ink);
+  padding: clamp(1.5rem, 4vw, 3rem); /* Responsive padding */
+  border-radius: 2px;
+  border: 1px solid rgba(138, 3, 3, 0.3);
+  box-shadow: inset 0 0 60px rgba(0,0,0,0.3), 0 5px 15px rgba(0,0,0,0.8);
+  margin: 2rem 0;
+  position: relative;
+}
+
+/* CRITICAL CONTRAST FIX: Override global headers inside the scroll */
+.ancient-scroll h1, 
+.ancient-scroll h2, 
+.ancient-scroll h3 {
+  color: var(--ancient-ink);
+  text-shadow: none; /* Kill the glow */
+  animation: none;   /* Kill the pulse */
+  border-bottom: 2px solid rgba(43, 24, 16, 0.2);
+  padding-bottom: 0.5rem;
+  font-weight: 900;
+}
+
+.ancient-scroll p {
+  color: var(--ancient-ink);
+  font-weight: 600;
+}
+
+.ancient-scroll .glowing-rune {
+  color: var(--blood-red); /* Darker rune color for light background */
+  text-shadow: none;
+  animation: none;
+}
+
+/* The "Cyber Panel" */
+.cyber-panel {
+  background-color: rgba(15, 18, 25, 0.7);
+  border: 1px solid var(--steel-gray);
+  border-left: 4px solid var(--hud-cyan);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* HUD Corner Brackets for extra Sci-Fi feel */
+.cyber-panel::before, .cyber-panel::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.cyber-panel::before { top: -1px; right: -1px; border-top-color: var(--hud-cyan); border-right-color: var(--hud-cyan); }
+.cyber-panel::after { bottom: -1px; right: -1px; border-bottom-color: var(--hud-cyan); border-right-color: var(--hud-cyan); }
+
+.cyber-panel:hover {
+  border-left-color: var(--rune-orange);
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.2);
+}
+.cyber-panel:hover::before, .cyber-panel:hover::after {
+  border-color: var(--rune-orange);
+}
+
+/* Utilities */
+.text-terminal { font-family: var(--font-terminal); color: #00ff00; }
+.text-warning { font-family: var(--font-warning); color: var(--blood-red); text-transform: uppercase; font-weight: bold; letter-spacing: 2px; }
+
+/* Buttons */
+.btn-viking-tech {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.4);
+  color: var(--rune-orange);
+  font-family: var(--font-hud);
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  padding: 12px 24px;
+  border: 1px solid var(--rune-orange);
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: inset 0 0 10px rgba(255, 102, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.btn-viking-tech:hover {
+  background: var(--rune-orange);
+  color: var(--void-black);
+  box-shadow: 0 0 20px var(--rune-orange-glow);
+}
+
+/* --- 6. RESPONSIVE MOBILE TWEAKS --- */
+@media (max-width: 768px) {
+  /* Ensure buttons take full width on mobile so they don't break side-by-side */
+  .btn-viking-tech {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Reset margin on the last button so it doesn't push the container */
+  .btn-viking-tech:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Less aggressive borders on mobile to save screen real estate */
+  .cyber-panel {
+    border-left-width: 2px;
+  }
+}
+
+.glowing-rune {
+  /* This tells the browser to look for built-in fonts that support ancient runes */
+  font-family: 'Segoe UI Historic', 'Noto Sans Runic', 'Apple Symbols', sans-serif;
+  color: var(--rune-orange);
+  animation: runePulse 2s infinite alternate;
+  font-size: 1.2em;
+}
