@@ -104,7 +104,7 @@ include 'includes/header.php';
                 Traditional social media platforms rely on server-side encryption. They hold the keys to the vault, which means if their servers are breached, or if they decide to analyze your data for advertising, your privacy is compromised.
             </p>
             <p>
-                MyCitadel flips this architecture. When you type a message or create a post, the JavaScript running locally in your browser encrypts the data *before* it is transmitted over the network. 
+                MyCitadel flips this architecture. When you type a message or create a post, the JavaScript running locally in your browser encrypts the data <b>before</b> it is transmitted over the network. 
             </p>
             <p>
                 What reaches our PHP and MySQL servers is nothing but a scrambled, mathematically unsolvable string of ciphertext. We store the ciphertext, and we deliver it to your intended recipients. Their browsers use their private keys to decrypt it locally. We are merely the messengers; we cannot read the message.
@@ -154,13 +154,13 @@ include 'includes/header.php';
         <div class="ancient-scroll">
             <h2><i class="fas fa-eye-slash" style="color: var(--blood-red);"></i> Operating on "Near" Zero-Knowledge</h2>
             <p>
-                Absolute zero-knowledge on a web platform is a myth; basic routing requires some metadata. MyCitadel operates on a strict **Near Zero-Knowledge (NZK)** protocol.
+                Absolute zero-knowledge on a web platform is a myth; basic routing requires some metadata. MyCitadel operates on a strict <b>Near Zero-Knowledge (NZK)</b> protocol.
             </p>
             <p>
                 What does this mean in practice? We hold absolutely zero knowledge regarding the content of your communications, the plaintext of your passwords, or your true identity. However, to maintain the structural integrity of the Citadel, we must implement active defense mechanisms.
             </p>
             <p>
-                **The Security Exception:** We actively monitor your Session ID (`sid`), IP routing, and request frequencies. This is not for marketing; it is our radar system. By tracking these operational metrics, our back-end algorithms can identify brute-force attempts, mitigate Distributed Denial of Service (DDoS) attacks, and ban hostile actors trying to compromise the gates. We track the threat so we don't have to track the user.
+                <strong>The Security Exception:</strong> We actively monitor your Session ID (`sid`), IP routing, and request frequencies. This is not for marketing; it is our radar system. By tracking these operational metrics, our back-end algorithms can identify brute-force attempts, mitigate Distributed Denial of Service (DDoS) attacks, and ban hostile actors trying to compromise the gates. We track the threat so we don't have to track the user.
             </p>
         </div>
     </div>
