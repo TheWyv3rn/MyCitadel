@@ -1,0 +1,51 @@
+{
+  "global": {
+    "site_name": "MyCitadel",
+    "flag": "🇮🇳",
+    "online_status": "Citadel Status: Surakshit"
+  },
+  "nav": {
+    "system": "System",
+    "auth": "Pramanit Karein",
+    "vdp": "VDP",
+    "about": "Vivaran",
+    "howto": "Prakriya",
+    "policies": "Neetiya"
+  },
+  "footer": {
+    "ci": "CITADEL_INTEL",
+    "esid": "ESID_PEHCHAN",
+    "ap": "ACCESS_POINT",
+    "ce": "CRYPTO_ENGINE",
+    "nt": "NODE_TELEMETRY",
+    "ml": "MEM_LOAD",
+    "cl": "CPU_LOAD",
+    "su": "SYSTEM_UPTIME",
+    "core_i": "CORE_INTEGRITY",
+    "vdp": "VULNERABILITY_DISCLOSURE",
+    "prt": "PROTOCOLS",
+    "mc": "MyCitadel",
+    "nzk": "NEAR_ZERO_KNOWLEDGE_PROTOCOL"
+  },
+  "index": {
+    "hero1": "CITADEL MEIN AAPKA SWAGAT HAI",
+    "sub_hero": "Near Zero-Knowledge samajik vyavastha. Encrypted. Sovereign. Aapka.",
+    "cta": "Connection Shuru Karein",
+    "session": "SESSION_INIT",
+    "viewProtocols": "PROTOCOLS_DEKHEIN",
+    "256": "256-Bit",
+    "encryption": "Encryption",
+    "zkp": "ZKP",
+    "protocol": "Protocol",
+    "sovereign": "Sovereign",
+    "pf": "PRIVACY_PEHLE",
+    "pfd": "Koi IP logging nahi. Koi metadata collection nahi. Hum suraksha ke liye aapke IP ke keval pehle 2 set rakhte hain.",
+    "enc": "ENCRYPTED",
+    "cszkp": "CLIENT_SIDE_ZKP",
+    "cszkpd": "libsodium-wrappers ka upyog karke, aapka data aapke device par hi encrypt ho jata hai.",
+    "sa": "SODIUM_ACTIVE",
+    "dr": "DECENTRALIZED_RELAY",
+    "drd": "Aapka social feed ek sovereign stream hai. Koi central algorithm nahi. Pure peer-to-peer logic.",
+    "pr": "PEER_READY"
+  }
+}

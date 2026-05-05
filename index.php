@@ -1,193 +1,184 @@
-<?php 
-// 1. DYNAMIC SEO CONFIGURATION
-$pageTitle = "The Gates Are Open";
-$pageDescription = "Welcome to MyCitadel. A privacy-first, near zero-knowledge social network secured by advanced client-side cryptography.";
-$pageKeywords = "MyCitadel, zero-knowledge, XChaCha20, Poly1305, privacy, cypherpunk, encrypted social media";
+<?php
+/**
+ * PROJECT: MY CITADEL
+ * MODULE: INDEX GATEWAY (COMMAND CENTER)
+ * VERSION: 1.2.0 (PHP 8.2+ Highly Optimized)
+ * DESCRIPTION: The primary landing interface. Integrates particles.js, 
+ * multi-lingual hero sections, and real-time security status.
+ */
 
-// 2. INJECT HEADER (This automatically loads CSS, Bootstrap, and Navigation)
-include 'includes/header.php'; 
+declare(strict_types=1);
+
+// 1. Initialize the Gateway (Meta, Tracking, i18n, Vendor CSS)
+require_once __DIR__ . '/includes/header.php';
+
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
 ?>
 
-<!-- 3. OPTIONAL PARTICLES.JS BACKGROUND WRAPPER -->
-<!-- Keeps the animated nodes floating behind the content -->
-<div id="particles-js" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;"></div>
+<!-- [PARTICLES BACKGROUND CONTAINER] -->
+<div id="particles-js" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1; pointer-events: none;"></div>
 
-<!-- ==========================================
-     SECTION 1: SYSTEM INITIALIZATION (HERO)
-=========================================== -->
-<section class="row mb-5 mt-4" data-aos="fade-in">
-    <div class="col-12 text-center">
-        <div class="cyber-panel" style="padding: 4rem 2rem;">
-            <p class="text-terminal mb-3">
-                > INITIALIZING SECURE HANDSHAKE... [OK]<br>
-                > VERIFYING PEER-TO-PEER ENCRYPTION... [OK]<br>
-                > NULLIFYING TRACKERS... [OK]
-            </p>
-            <h1 class="display-3 mb-4">
-                <span class="glowing-rune"><i class="fas fa-bolt"></i></span> Welcome to the Citadel 
-                <span class="glowing-rune"><i class="fas fa-bolt"></i></span>
+<div class="container position-relative">
+    
+    <!-- [HERO SECTION: THE INITIALIZATION] -->
+    <section class="row align-items-center min-vh-100 py-5">
+        <div class="col-lg-7 col-md-12 animate__animated animate__fadeInLeft">
+            
+            <div class="mb-4">
+                <span class="data-stream stencil-text" style="font-size: 0.8rem;">
+                    <i class="fas fa-terminal"></i> <?php echo __t('index', 'session'); ?>: <?php echo $tracking_data['esid']; ?>
+                </span>
+            </div>
+
+            <h1 class="glowing-title display-2 stencil-text mb-3">
+                <?php echo __t('index', 'hero1'); ?>
             </h1>
-            <p class="lead w-75 mx-auto" style="color: #a0b0c0;">
-                You have successfully routed your connection to a secure node. This environment is protected by near zero-knowledge cryptography. Your identity, your communications, and your data are encrypted before they ever leave your device.
-            </p>
-            <div class="mt-5">
-                <a href="login.php" class="btn-viking-tech me-3"><i class="fas fa-shield-alt me-2"></i> Init Node (Login)</a>
-                <a href="#manifesto" class="btn-viking-tech" style="border-color: var(--hud-cyan); color: var(--hud-cyan);"><i class="fas fa-scroll me-2"></i> Read the Lore</a>
-                <a href="register.php" class="btn-viking-tech me-3" style="margin-left: 15px;"><i class="fas fa-shield-alt me-2"></i> Enter Node (Register)</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ==========================================
-     SECTION 2: WHAT IS MYCITADEL?
-=========================================== -->
-<section id="manifesto" class="row mb-5 align-items-center">
-    <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="ancient-scroll">
-            <h2><i class="fas fa-landmark" style="color: var(--blood-red);"></i> What is MyCitadel?</h2>
-            <p>
-                MyCitadel is not just a social media platform; it is a digital fortress built in response to the aggressive surveillance capitalism that dominates the modern internet. For decades, users have been treated as products—their data mined, sold to advertisers, and surrendered to unauthorized third parties without consent. 
-            </p>
-            <p>
-                We have engineered a sanctuary to reverse this paradigm. MyCitadel is a completely ad-free, anti-tracking communication environment. By moving the burden of encryption entirely to the user's browser, we mathematically guarantee that we cannot read, sell, or leak your private messages. 
-            </p>
-            <p>
-                Whether you are sharing sensitive intelligence, discussing philosophy, or simply talking with friends, the Citadel ensures that your voice remains yours alone.
-            </p>
-        </div>
-    </div>
-    <div class="col-lg-6 text-center">
-        <!-- Abstract visual representation using FontAwesome -->
-        <i class="fas fa-lock fa-10x" style="color: var(--rune-orange); text-shadow: 0 0 40px var(--rune-orange-glow); opacity: 0.8;"></i>
-    </div>
-</section>
-
-<!-- ==========================================
-     SECTION 3: WHO ARE THE CITIZENS?
-=========================================== -->
-<section class="row mb-5">
-    <div class="col-12">
-        <div class="cyber-panel">
-            <h2 class="text-center mb-5"><i class="fas fa-users-cog"></i> Who Are The Citizens?</h2>
-            <div class="row text-center">
-                <div class="col-md-4 mb-4">
-                    <i class="fas fa-user-secret fa-3x mb-3" style="color: var(--hud-cyan);"></i>
-                    <h4 class="text-warning">The Cypherpunks</h4>
-                    <p style="font-size: 0.95rem;">Cryptographers, hackers, and security researchers who understand that true privacy relies on open mathematical algorithms, not corporate promises.</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <i class="fas fa-newspaper fa-3x mb-3" style="color: var(--hud-cyan);"></i>
-                    <h4 class="text-warning">The Journalists</h4>
-                    <p style="font-size: 0.95rem;">Reporters and whistleblowers who require uncompromising operational security to protect their sources from state and corporate adversaries.</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <i class="fas fa-user-shield fa-3x mb-3" style="color: var(--hud-cyan);"></i>
-                    <h4 class="text-warning">The Sovereigns</h4>
-                    <p style="font-size: 0.95rem;">Everyday individuals who have simply had enough. People who believe that digital privacy is a fundamental human right, not a luxury.</p>
-                </div>
-            </div>
-            <p class="text-center mt-4 mb-0 text-terminal">
-                > STATUS: THE GATES ARE OPEN TO ALL WHO RESPECT THE CODE.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- ==========================================
-     SECTION 4: HOW DOES THIS WORK?
-=========================================== -->
-<section class="row mb-5">
-    <div class="col-12">
-        <div class="ancient-scroll">
-            <h2><i class="fas fa-cogs" style="color: var(--blood-red);"></i> The Mechanics of the Fortress</h2>
-            <p>
-                Traditional social media platforms rely on server-side encryption. They hold the keys to the vault, which means if their servers are breached, or if they decide to analyze your data for advertising, your privacy is compromised.
-            </p>
-            <p>
-                MyCitadel flips this architecture. When you type a message or create a post, the JavaScript running locally in your browser encrypts the data <b>before</b> it is transmitted over the network. 
-            </p>
-            <p>
-                What reaches our PHP and MySQL servers is nothing but a scrambled, mathematically unsolvable string of ciphertext. We store the ciphertext, and we deliver it to your intended recipients. Their browsers use their private keys to decrypt it locally. We are merely the messengers; we cannot read the message.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- ==========================================
-     SECTION 5: THE CRYPTOGRAPHIC ARSENAL
-=========================================== -->
-<section class="row mb-5">
-    <div class="col-12">
-        <div class="cyber-panel">
-            <h2><i class="fas fa-microchip"></i> The Cryptographic Arsenal</h2>
-            <p class="mb-4">We do not rely on outdated standards. The Citadel is fortified by modern, high-speed cryptographic primitives designed specifically to resist both traditional brute-force attacks and future threats.</p>
             
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="p-3 border" style="border-color: var(--steel-gray) !important; background: rgba(0,0,0,0.3);">
-                        <h5 style="color: var(--rune-orange);">1. Argon2id & Cryptographic Salt</h5>
-                        <p class="small mb-0">Your master password never leaves your device. It is hashed locally using Argon2id—the winner of the Password Hashing Competition. We combine this with randomly generated, unique "Salts" to ensure that even if two users have the same password, their cryptographic keys remain completely distinct, defeating rainbow table attacks entirely.</p>
-                    </div>
+            <p class="lead text-secondary mb-5 border-left border-neon-blue pl-4" style="max-width: 600px;">
+                <?php echo __t('index', 'sub_hero'); ?>
+                <br>
+                <span class="text-alien-green small italic mt-2 d-block">
+                    // <?php echo __t('global', 'online_status'); ?>
+                </span>
+            </p>
+
+            <div class="d-flex flex-wrap gap-4 align-items-center">
+                <a href="/register.php" class="btn-cyber btn-lg px-5">
+                    <i class="fas fa-fingerprint mr-2"></i> <?php echo __t('index', 'cta'); ?>
+                </a>
+                
+                <a href="/about.php" class="glitch-link text-uppercase font-weight-bold ml-lg-3">
+                    <i class="fas fa-project-diagram mr-2"></i> <?php echo __t('index', 'viewProtocols'); ?>
+                </a>
+            </div>
+
+            <div class="mt-5 d-flex align-items-center animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="mr-4 text-center">
+                    <h4 class="text-neon-blue mb-0"><?php echo __t('index', '256'); ?></h4>
+                    <small class="text-secondary uppercase"><?php echo __t('index', 'encryption'); ?></small>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-3 border" style="border-color: var(--steel-gray) !important; background: rgba(0,0,0,0.3);">
-                        <h5 style="color: var(--rune-orange);">2. XChaCha20</h5>
-                        <p class="small mb-0">For symmetric encryption (encrypting your actual messages), we utilize XChaCha20. Unlike AES, which can be vulnerable to cache-timing attacks in software implementations, XChaCha20 is designed to be immune to these side-channel attacks. It is faster on mobile devices and utilizes an extended 192-bit nonce to prevent collision vulnerabilities.</p>
-                    </div>
+                <div class="mr-4 text-center border-left border-dark pl-4">
+                    <h4 class="text-alien-green mb-0"><?php echo __t('index', 'zkp'); ?></h4>
+                    <small class="text-secondary uppercase"><?php echo __t('index', 'protocol'); ?></small>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-3 border" style="border-color: var(--steel-gray) !important; background: rgba(0,0,0,0.3);">
-                        <h5 style="color: var(--rune-orange);">3. Poly1305 MAC</h5>
-                        <p class="small mb-0">Encryption alone only provides confidentiality; it does not prevent tampering. We pair XChaCha20 with Poly1305, a highly secure Message Authentication Code (MAC). This guarantees cryptographic integrity. If a single bit of your encrypted message is altered in transit or at rest, the decryption process will fail, instantly alerting the system to tampering.</p>
-                    </div>
+                <div class="text-center border-left border-dark pl-4">
+                    <h4 class="text-space-purple mb-0">100%</h4>
+                    <small class="text-secondary uppercase"><?php echo __t('index', 'sovereign'); ?></small>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-<!-- ==========================================
-     SECTION 6: NEAR ZERO-KNOWLEDGE ARCHITECTURE
-=========================================== -->
-<section class="row mb-5">
-    <div class="col-12">
-        <div class="ancient-scroll">
-            <h2><i class="fas fa-eye-slash" style="color: var(--blood-red);"></i> Operating on "Near" Zero-Knowledge</h2>
-            <p>
-                Absolute zero-knowledge on a web platform is a myth; basic routing requires some metadata. MyCitadel operates on a strict <b>Near Zero-Knowledge (NZK) protocol.
-            </p>
-            <p>
-                What does this mean in practice? We hold absolutely zero knowledge regarding the content of your communications, the plaintext of your passwords, or your true identity. However, to maintain the structural integrity of the Citadel, we must implement active defense mechanisms.
-            </p>
-            <p>
-                <strong>The Security Exception:</strong> We actively monitor your Session ID (`sid`), IP routing, and request frequencies. This is not for marketing; it is our radar system. By tracking these operational metrics, our back-end algorithms can identify brute-force attempts, mitigate Distributed Denial of Service (DDoS) attacks, and ban hostile actors trying to compromise the gates. We track the threat so we don't have to track the user.
-            </p>
+        <!-- [RIGHT COLUMN: THE CORE VISUAL] -->
+        <div class="col-lg-5 d-none d-lg-block text-center animate__animated animate__zoomIn">
+            <div class="position-relative">
+                <!-- Floating Logo/Image with Neon Ring -->
+                <div class="citadel-orb-container">
+                    <img src="citadel.jpeg" alt="Citadel Core" class="img-fluid rounded-circle shadow-lg animate-float" style="border: 4px solid var(--neon-blue); padding: 10px; background: rgba(0, 242, 255, 0.1);">
+                    <div class="rotating-ring"></div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ==========================================
-     SECTION 7: OUR GOALS & THE ROAD AHEAD
-=========================================== -->
-<section class="row mb-5">
-    <div class="col-12 text-center">
-        <div class="cyber-panel p-5">
-            <h2 class="mb-4"><i class="fas fa-route"></i> The Road Ahead</h2>
-            <p class="w-75 mx-auto mb-4">
-                We are currently operating in Phase 1: Alpha Testing on secured, high-performance shared infrastructure. But the Citadel must grow. Our primary goal is to migrate all operations to dedicated bare-metal Xeon servers, ensuring complete sovereign control over the hardware stack.
-            </p>
-            <p class="w-75 mx-auto mb-5">
-                Furthermore, we are preparing to integrate with major Bug Bounty platforms (HackerOne, Bugcrowd). We believe that the only way to forge an unbreakable shield is to invite the world's best hackers to strike it. 
-            </p>
-            
-            <a href="about.php" class="btn-viking-tech me-3"><i class="fas fa-book-open"></i> Read the Full History</a>
-            <a href="vdp.php" class="btn-viking-tech" style="border-color: var(--blood-red); color: var(--blood-red);"><i class="fas fa-bug"></i> Hack The Citadel</a>
+    <!-- [FEATURE SECTION: THE TRIAD] -->
+    <section class="row g-4 pb-5">
+        <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+            <div class="citadel-card h-100">
+                <div class="icon-box mb-3 text-neon-blue">
+                    <i class="fas fa-user-shield fa-2x"></i>
+                </div>
+                <h3 class="stencil-text h5"><?php echo __t('index', 'pf'); ?></h3>
+                <p class="text-secondary small">
+                    <?php echo __t('index', 'pfd'); ?>
+                </p>
+                <div class="mt-3">
+                    <span class="badge bg-dark text-neon-blue border border-neon-blue"><?php echo __t('index', 'enc'); ?></span>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
 
-<?php 
-// 4. INJECT FOOTER (This automatically closes the container and loads JS libraries)
-include 'includes/footer.php'; 
+        <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+            <div class="citadel-card h-100">
+                <div class="icon-box mb-3 text-alien-green">
+                    <i class="fas fa-lock fa-2x"></i>
+                </div>
+                <h3 class="stencil-text h5"><?php echo __t('index', 'cszkp'); ?></h3>
+                <p class="text-secondary small">
+                    <?php echo __t('index', 'cszkpd'); ?>
+                </p>
+                <div class="mt-3">
+                    <span class="badge bg-dark text-alien-green border border-alien-green"><?php echo __t('index', 'sa'); ?></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+            <div class="citadel-card h-100">
+                <div class="icon-box mb-3 text-space-purple">
+                    <i class="fas fa-satellite fa-2x"></i>
+                </div>
+                <h3 class="stencil-text h5"><?php echo __t('index', 'dr'); ?></h3>
+                <p class="text-secondary small">
+                    <?php echo __t('index', 'drd'); ?>
+                </p>
+                <div class="mt-3">
+                    <span class="badge bg-dark text-space-purple border border-space-purple"><?php echo __t('index', 'pr'); ?></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- [PARTICLES INITIALIZATION] -->
+<script src="assets/vendor/particles.js-master/particles.min.js"></script>
+<script>
+    /* Citadel Particles Config */
+    particlesJS('particles-js', {
+        "particles": {
+            "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+            "color": { "value": "#00f2ff" },
+            "shape": { "type": "circle" },
+            "opacity": { "value": 0.2, "random": false },
+            "size": { "value": 3, "random": true },
+            "line_linked": { "enable": true, "distance": 150, "color": "#00f2ff", "opacity": 0.1, "width": 1 },
+            "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }
+        },
+        "retina_detect": true
+    });
+</script>
+
+<style>
+    /* Page-Specific Cyberpunk Visuals */
+    .citadel-orb-container {
+        position: relative;
+        display: inline-block;
+    }
+    .rotating-ring {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        border: 2px dashed var(--neon-blue);
+        border-radius: 50%;
+        animation: spin 20s linear infinite;
+        opacity: 0.3;
+    }
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+    
+    .border-neon-blue { border-color: var(--neon-blue) !important; }
+    .min-vh-75 { min-height: 75vh; }
+    .pl-4 { padding-left: 1.5rem !important; }
+</style>
+
+<?php
+// 2. Finalize with System Intelligence Dashboard (Footer)
+require_once __DIR__ . '/includes/footer.php';
 ?>

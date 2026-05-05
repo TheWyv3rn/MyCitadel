@@ -1,0 +1,51 @@
+{
+  "global": {
+    "site_name": "MyCitadel",
+    "flag": "🇻🇳",
+    "online_status": "Trạng thái Citadel: An toàn"
+  },
+  "nav": {
+    "system": "Hệ thống",
+    "auth": "Xác thực",
+    "vdp": "VDP",
+    "about": "Giới thiệu",
+    "howto": "Hướng dẫn",
+    "policies": "Chính sách"
+  },
+  "footer": {
+    "ci": "CITADEL_INTEL",
+    "esid": "DINH_DANH_ESID",
+    "ap": "DIEM_TRUY_CAP",
+    "ce": "BO_MAY_MA_HOA",
+    "nt": "DO_LUONG_NUT",
+    "ml": "TAI_BO_NHO",
+    "cl": "TAI_CPU",
+    "su": "THOI_GIAN_HOAT_DONG",
+    "core_i": "TOAN_VEN_LOI",
+    "vdp": "CONG_BO_LO_HONG",
+    "prt": "GIAO_THUC",
+    "mc": "MyCitadel",
+    "nzk": "GIAO_THUC_KIEN_THUC_GAN_NHU_BANG_KHONG"
+  },
+  "index": {
+    "hero1": "CHÀO MỪNG ĐẾN VỚI THÀNH TRÌ",
+    "sub_hero": "Hệ sinh thái xã hội Kiến thức gần như bằng không. Mã hóa. Chủ quyền. Của bạn.",
+    "cta": "Khởi tạo kết nối",
+    "session": "PHIEN_INIT",
+    "viewProtocols": "XEM_GIAO_THUC",
+    "256": "256-Bit",
+    "encryption": "Mã hóa",
+    "zkp": "ZKP",
+    "protocol": "Giao thức",
+    "sovereign": "Chủ quyền",
+    "pf": "QUYEN_RIENG_TU_TREN_HET",
+    "pfd": "Không lưu nhật ký IP. Không thu thập siêu dữ liệu. Chúng tôi chỉ giữ 2 cụm đầu của IP để xác thực bảo mật với ESID.",
+    "enc": "DA_MA_HOA",
+    "cszkp": "ZKP_PHIA_KHACH",
+    "cszkpd": "Sử dụng libsodium-wrappers, dữ liệu của bạn được mã hóa trên máy trước khi đi qua mạng của chúng tôi.",
+    "sa": "SODIUM_KICH_HOAT",
+    "dr": "TRUYEN_TAI_PHI_TAP_TRUNG",
+    "drd": "Bảng tin của bạn là một luồng chủ quyền. Không thuật toán trung tâm. Không chặn ngầm. Logic ngang hàng thuần túy.",
+    "pr": "NUT_SAN_SANG"
+  }
+}

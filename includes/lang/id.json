@@ -1,0 +1,51 @@
+{
+  "global": {
+    "site_name": "MyCitadel",
+    "flag": "🇮🇩",
+    "online_status": "Status Citadel: Aman"
+  },
+  "nav": {
+    "system": "Sistem",
+    "auth": "Autentikasi",
+    "vdp": "VDP",
+    "about": "Tentang",
+    "howto": "Panduan",
+    "policies": "Kebijakan"
+  },
+  "footer": {
+    "ci": "CITADEL_INTEL",
+    "esid": "IDENTITAS_ESID",
+    "ap": "TITIK_AKSES",
+    "ce": "MESIN_KRIPTO",
+    "nt": "TELEMETRI_NODE",
+    "ml": "BEBAN_MEM",
+    "cl": "BEBAN_CPU",
+    "su": "UPTIME_SISTEM",
+    "core_i": "INTEGRITAS_INTI",
+    "vdp": "PENGUNGKAPAN_KERENTANAN",
+    "prt": "PROTOKOL",
+    "mc": "MyCitadel",
+    "nzk": "PROTOKOL_PENGETAHUAN_HAMPIR_NOL"
+  },
+  "index": {
+    "hero1": "SELAMAT DATANG DI CITADEL",
+    "sub_hero": "Ekosistem Sosial Pengetahuan Hampir Nol. Terenkripsi. Berdaulat. Milik Anda.",
+    "cta": "Inisialisasi Koneksi",
+    "session": "SESI_INIT",
+    "viewProtocols": "LIHAT_PROTOKOL",
+    "256": "256-Bit",
+    "encryption": "Enkripsi",
+    "zkp": "ZKP",
+    "protocol": "Protokol",
+    "sovereign": "Berdaulat",
+    "pf": "PRIVASI_UTAMA",
+    "pfd": "Tanpa pencatatan IP. Tanpa pengumpulan metadata. Kami hanya menyimpan 2 oktet pertama IP Anda untuk validasi keamanan terhadap ESID.",
+    "enc": "TERENKRIPSI",
+    "cszkp": "ZKP_SISI_KLIEN",
+    "cszkpd": "Menggunakan libsodium-wrappers, data Anda dienkripsi di perangkat Anda sebelum melintasi jaringan kami.",
+    "sa": "SODIUM_AKTIF",
+    "dr": "RELAY_TERDESENTRALISASI",
+    "drd": "Feed sosial Anda adalah aliran berdaulat. Tanpa algoritma pusat. Tanpa shadowbanning. Logika peer-to-peer murni.",
+    "pr": "PEER_SIAP"
+  }
+}

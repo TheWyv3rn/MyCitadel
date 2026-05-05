@@ -1,95 +1,61 @@
 /**
- * MYCITADEL: NZK CORE CRYPTOGRAPHY ENGINE
- * Handles client-side Argon2id hashing to ensure Near Zero-Knowledge.
+ * PROJECT: MY CITADEL
+ * MODULE: SENTRY BEHAVIORAL TRACKER
+ * DESCRIPTION: Detects tampering, F12, Right-clicks, and UI interactions.
  */
-(function() {
-    window.addEventListener('load', function() {
-        
-        const regForm = document.getElementById('registerForm');
-        const passInput = document.getElementById('plain_password');
-        const strengthBar = document.getElementById('password-strength-bar');
-        const submitBtn = document.getElementById('submitBtn');
 
-        // 1. Password Strength Visualizer
-        if (passInput && strengthBar) {
-            passInput.addEventListener('input', function() {
-                let strength = 0;
-                const val = this.value;
-                if (val.length > 7) strength += 25;
-                if (/[A-Z]/.test(val)) strength += 25;
-                if (/[0-9]/.test(val)) strength += 25;
-                if (/[^A-Za-z0-9]/.test(val)) strength += 25;
+const CitadelSentry = {
+    init() {
+        this.trackRightClick();
+        this.trackDevTools();
+        this.trackInteraction();
+        console.log("%c CITADEL SENTRY ACTIVE ", "background: #00f2ff; color: #000; font-weight: bold;");
+    },
 
-                strengthBar.style.width = strength + '%';
-                strengthBar.style.backgroundColor = strength < 50 ? 'var(--blood-red)' : (strength < 100 ? 'var(--rune-orange)' : '#00ff00');
-            });
-        }
+    // Detect Right Click
+    trackRightClick() {
+        document.addEventListener('contextmenu', (e) => {
+            // Log this behavior to the server later
+            console.warn("Security Alert: Context menu suppressed.");
+            // e.preventDefault(); // Uncomment to disable right-click entirely
+        });
+    },
 
-        // 2. Form Submission & Client-Side Hashing
-        if (regForm) {
-            regForm.addEventListener('submit', async function(e) {
-                e.preventDefault();
-                
-                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> GENERATING PROOF-OF-WORK...';
-                submitBtn.disabled = true;
+    // Detect F12 / DevTools
+    trackDevTools() {
+        let threshold = 160;
+        setInterval(() => {
+            if (window.outerWidth - window.innerWidth > threshold || 
+                window.outerHeight - window.innerHeight > threshold) {
+                // Potential tampering detected
+                document.body.classList.add('tamper-detected');
+            }
+        }, 1000);
 
-                try {
-                    /**
-                     * ENGINE DETECTION
-                     * We search for the sodium object. If using the 'sumo' browser build,
-                     * it will be attached to window.sodium.
-                     */
-                    const cryptoEngine = window.sodium || window._sodium;
-                    
-                    if (!cryptoEngine) {
-                        throw new Error("Cryptography engine (Sodium) not detected. Ensure your local file is the 'browsers' build, not the 'modules' build.");
-                    }
+        document.addEventListener('keydown', (e) => {
+            if (e.keyCode == 123) { // F12
+                this.logEvent('f12_pressed');
+            }
+        });
+    },
 
-                    // Wait for WebAssembly/ASM.js initialization (The "Handshake")
-                    await cryptoEngine.ready;
-                    
-                    const alias = document.getElementById('alias_name').value;
-                    const password = passInput.value;
+    // Track interactions for session profiling
+    trackInteraction() {
+        let lastActivity = Date.now();
 
-                    // Create a deterministic client-side salt to prevent pre-computation attacks
-                    // We use a static string appended to the alias for consistent NZK behavior.
-                    const salt = cryptoEngine.crypto_generichash(16, alias + "citadel_v1_salt");
-                    
-                    // Compute Argon2id hash in the browser
-                    // This is the "Proof of Work" that keeps the plaintext password away from the server.
-                    const hashBuffer = cryptoEngine.crypto_pwhash(
-                        32,
-                        password,
-                        salt,
-                        cryptoEngine.crypto_pwhash_OPSLIMIT_INTERACTIVE,
-                        cryptoEngine.crypto_pwhash_MEMLIMIT_INTERACTIVE,
-                        cryptoEngine.crypto_pwhash_ALG_ARGON2ID13
-                    );
+        document.addEventListener('scroll', () => {
+            lastActivity = Date.now();
+        });
 
-                    // Convert to hex for standard POST transmission
-                    const finalHash = cryptoEngine.to_hex(hashBuffer);
-                    document.getElementById('nzk_hash').value = finalHash;
-                    
-                    // Clear the plain password from memory immediately
-                    passInput.value = "";
-                    
-                    // Final submission to the backend (auth/register_action.php)
-                    regForm.submit();
+        document.addEventListener('keypress', (e) => {
+            this.logEvent('input_activity', { target: e.target.name });
+        });
+    },
 
-                } catch (err) {
-                    console.error("NZK_FATAL:", err);
-                    submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> HANDSHAKE FAILED';
-                    submitBtn.disabled = false;
-                    
-                    if (typeof Toastify !== 'undefined') {
-                        Toastify({
-                            text: "> " + err.message,
-                            style: { background: "var(--blood-red)" },
-                            duration: 10000
-                        }).showToast();
-                    }
-                }
-            });
-        }
-    });
-})();
+    logEvent(type, data = {}) {
+        // Here we would use fetch() to send data to a log_action.php
+        console.log(`[CITADEL LOG]: ${type}`, data);
+    }
+};
+
+CitadelSentry.init();

@@ -1,0 +1,51 @@
+{
+  "global": {
+    "site_name": "MyCitadel",
+    "flag": "🇨🇳",
+    "online_status": "堡垒状态：安全"
+  },
+  "nav": {
+    "system": "系统",
+    "auth": "身份验证",
+    "vdp": "漏洞披露",
+    "about": "关于",
+    "howto": "指南",
+    "policies": "政策"
+  },
+  "footer": {
+    "ci": "堡垒情报",
+    "esid": "ESID身份",
+    "ap": "访问点",
+    "ce": "加密引擎",
+    "nt": "节点遥测",
+    "ml": "内存负载",
+    "cl": "CPU负载",
+    "su": "系统运行时间",
+    "core_i": "核心完整性",
+    "vdp": "漏洞披露",
+    "prt": "协议",
+    "mc": "MyCitadel",
+    "nzk": "近零知识协议"
+  },
+  "index": {
+    "hero1": "欢迎来到我的堡垒",
+    "sub_hero": "近零知识社交生态系统。加密。主权。属于你。",
+    "cta": "初始化连接",
+    "session": "会话初始化",
+    "viewProtocols": "查看协议",
+    "256": "256位",
+    "encryption": "加密",
+    "zkp": "ZKP",
+    "protocol": "协议",
+    "sovereign": "主权",
+    "pf": "隐私至上",
+    "pfd": "无 IP 日志。无元数据收集。我们仅保留 IP 的前两个段，用于针对 ESID 的安全验证。",
+    "enc": "已加密",
+    "cszkp": "客户端 ZKP",
+    "cszkpd": "使用 libsodium-wrappers，您的数据在传输之前已在本地完成加密。",
+    "sa": "SODIUM 已启用",
+    "dr": "去中心化中继",
+    "drd": "您的社交动态是主权流。没有中央算法。没有影子禁令。纯粹的点对点逻辑。",
+    "pr": "节点就绪"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "global": {
+    "site_name": "MyCitadel",
+    "flag": "🇮🇹",
+    "online_status": "Stato Cittadella: Sicuro"
+  },
+  "nav": {
+    "system": "Sistema",
+    "auth": "Autenticazione",
+    "vdp": "VDP",
+    "about": "Informazioni",
+    "howto": "Guida",
+    "policies": "Policy"
+  },
+  "footer": {
+    "ci": "CITADEL_INTEL",
+    "esid": "IDENTITÀ_ESID",
+    "ap": "PUNTO_ACCESSO",
+    "ce": "MOTORE_CRIPTO",
+    "nt": "TELEMETRIA_NODO",
+    "ml": "CARICO_MEM",
+    "cl": "CARICO_CPU",
+    "su": "UPTIME_SISTEMA",
+    "core_i": "INTEGRITÀ_NUCLEO",
+    "vdp": "DIVULGAZIONE_VULNERABILITÀ",
+    "prt": "PROTOCOLLI",
+    "mc": "MyCitadel",
+    "nzk": "PROTOCOLLO_CONOSCENZA_QUASI_ZERO"
+  },
+  "index": {
+    "hero1": "BENVENUTI NELLA CITTADELLA",
+    "sub_hero": "Ecosistema Sociale a Conoscenza Quasi Zero. Criptato. Sovrano. Tuo.",
+    "cta": "Inizializza Connessione",
+    "session": "SESSIONE_INIT",
+    "viewProtocols": "VEDI_PROTOCOLLI",
+    "256": "256-Bit",
+    "encryption": "Crittografia",
+    "zkp": "ZKP",
+    "protocol": "Protocollo",
+    "sovereign": "Sovrano",
+    "pf": "PRIVACY_INNANZITUTTO",
+    "pfd": "Nessun log IP. Nessuna raccolta di metadati. Conserviamo solo i primi 2 ottetti del tuo IP per la convalida di sicurezza rispetto all'ESID.",
+    "enc": "CRIPTATO",
+    "cszkp": "ZKP_LATO_CLIENTE",
+    "cszkpd": "Utilizzando libsodium-wrappers, i tuoi dati vengono criptati sul tuo dispositivo prima di transitare sulla nostra rete.",
+    "sa": "SODIUM_ATTIVO",
+    "dr": "RELAY_DECENTRALIZZATO",
+    "drd": "Il tuo feed social è un flusso sovrano. Nessun algoritmo centrale. Nessun shadowbanning. Pura logica peer-to-peer.",
+    "pr": "PEER_PRONTO"
+  }
+}

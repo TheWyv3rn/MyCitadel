@@ -1,229 +1,395 @@
-/* ====================================================================
-  MYCITADEL: CYBER-VIKING THEME v3.0 (Enhanced Responsive & Contrast)
-  Architecture: Zero-Knowledge / UI: Ancient Tech
-==================================================================== 
-*/
+/* * PROJECT: MY CITADEL (NEAR-ZERO-KNOWLEDGE SOCIAL ECOSYSTEM)
+ * VERSION: 1.0.0
+ * AUTHOR: THE WYVERN & GEMINI
+ * DESCRIPTION: HIGH-POWERED, SCY-FI FUTURISTIC RESPONSIVE FRAMEWORK
+ * * TABLE OF CONTENTS:
+ * 1. DESIGN TOKENS (VARIABLES)
+ * 2. FONT-FACE DEFINITIONS
+ * 3. GLOBAL RESETS & BASE STYLES
+ * 4. ANIMATION KEYFRAMES
+ * 5. LAYOUT SYSTEM (GRID & FLEX)
+ * 6. NAVIGATION COMPONENT
+ * 7. CORE UI COMPONENTS (CARDS, BUTTONS, GLITCHES)
+ * 8. TYPOGRAPHY (GLOWING EFFECTS)
+ * 9. FOOTER
+ * 10. RESPONSIVE BREAKPOINTS
+ */
 
-/* --- 1. LOCAL FONT REGISTRATION --- */
-@font-face { font-family: 'Cinzel'; src: url('../fonts/Cinzel-Regular.ttf') format('truetype'); font-weight: normal; }
-@font-face { font-family: 'Cinzel Bold'; src: url('../fonts/Cinzel-Bold.ttf') format('truetype'); font-weight: bold; }
-@font-face { font-family: 'BJCree'; src: url('../fonts/BJCree-Regular.ttf') format('truetype'); }
-@font-face { font-family: 'Orbitron'; src: url('../fonts/Orbitron-Regular.ttf') format('truetype'); font-weight: normal; }
-@font-face { font-family: 'Share Tech Mono'; src: url('../fonts/ShareTechMono-Regular.ttf') format('truetype'); }
-@font-face { font-family: 'Source Code Pro'; src: url('../fonts/SourceCodePro-Regular.ttf') format('truetype'); }
-@font-face { font-family: 'Saira Stencil'; src: url('../fonts/SairaStencil-Regular.ttf') format('truetype'); }
-
-/* --- 2. CORE VARIABLES --- */
+/* ==========================================
+   1. DESIGN TOKENS (VARIABLES)
+   ========================================== */
 :root {
-  /* Sci-Fi Base Colors */
-  --void-black: #05070a;
-  --hud-cyan: #00f0ff;
-  --hud-cyan-glow: rgba(0, 240, 255, 0.4);
-  --steel-gray: #2a2e35;
-
-  /* Nordic / Ancient Colors */
-  --rune-orange: #ff6600;
-  --rune-orange-glow: rgba(255, 102, 0, 0.7);
-  --parchment-base: #e3cfa8; /* Lightened slightly for better contrast */
-  --parchment-dark: #b89361;
-  --ancient-ink: #2b1810; /* Deep burnt umber for reading on parchment */
-  --blood-red: #8a0303;
-
-  /* Typography */
-  --font-runic: 'Cinzel Bold', serif;
-  --font-hud: 'Orbitron', sans-serif;
-  --font-body: 'Source Code Pro', monospace;
-  --font-terminal: 'Share Tech Mono', monospace;
-  --font-warning: 'Saira Stencil', sans-serif;
-  --font-ancient: 'BJCree', serif;
+    /* Primary Color Palette */
+    --neon-blue: #00f2ff;
+    --alien-green: #39ff14;
+    --space-purple: #7b2ff7;
+    --deep-void: #050505;
+    --void-surface: rgba(15, 15, 25, 0.85);
+    --void-border: rgba(0, 242, 255, 0.2);
+    
+    /* Functional Colors */
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+    --glitch-red: #ff003c;
+    
+    /* Typography */
+    --font-main: 'Orbitron', sans-serif;
+    --font-mono: 'Source Code Pro', monospace;
+    --font-stencil: 'Saira Stencil One', cursive;
+    --font-title: 'Cinzel', serif;
+    
+    /* Spacing & Borders */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --glow-strength: 0 0 10px rgba(0, 242, 255, 0.5);
+    --glass-blur: blur(12px);
+    
+    /* Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* --- 3. GLOBAL RESET & BASE --- */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* ==========================================
+   2. FONT-FACE DEFINITIONS
+   ========================================== */
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Saira Stencil';
+    src: url('../fonts/SairaStencil-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/SourceCodePro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel-Bold.ttf') format('truetype');
+}
+
+/* ==========================================
+   3. GLOBAL RESETS & BASE STYLES
+   ========================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px; /* Base size for rem units */
 }
 
 body {
-  background-color: var(--void-black);
-  color: var(--hud-cyan);
-  font-family: var(--font-body);
-  line-height: 1.6;
-  overflow-x: hidden;
-  background-image: linear-gradient(rgba(0, 240, 255, 0.02) 1px, transparent 1px),
-  linear-gradient(90deg, rgba(0, 240, 255, 0.02) 1px, transparent 1px);
-  background-size: 25px 25px;
+    background-color: var(--deep-void);
+    background-image: 
+        radial-gradient(circle at 50% 50%, rgba(123, 47, 247, 0.05) 0%, transparent 80%),
+        linear-gradient(rgba(0, 242, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 242, 255, 0.02) 1px, transparent 1px);
+    background-size: 100% 100%, 50px 50px, 50px 50px;
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-/* --- 4. FLUID TYPOGRAPHY & ANIMATIONS --- */
-@keyframes runePulse {
-  0% { text-shadow: 0 0 5px var(--rune-orange), 0 0 10px var(--rune-orange); }
-  50% { text-shadow: 0 0 15px var(--rune-orange), 0 0 30px var(--blood-red); }
-  100% { text-shadow: 0 0 5px var(--rune-orange), 0 0 10px var(--rune-orange); }
+/* Custom Scrollbar for the Void */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--deep-void);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--space-purple);
+    border-radius: var(--radius-md);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--neon-blue);
+    box-shadow: var(--glow-strength);
 }
 
-/* Global Headers (Defaults to Cyber styling) */
-h1, h2, h3 {
-  font-family: var(--font-runic);
-  color: var(--rune-orange);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
-  line-height: 1.2;
+/* ==========================================
+   4. ANIMATION KEYFRAMES
+   ========================================== */
+
+/* Neon Pulsing */
+@keyframes pulse-neon {
+    0%, 100% { opacity: 1; text-shadow: 0 0 10px var(--neon-blue); }
+    50% { opacity: 0.8; text-shadow: 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue); }
 }
 
-/* Fluid sizes: scales smoothly between mobile and desktop */
-h1 { font-size: clamp(2rem, 5vw, 3.5rem); animation: runePulse 4s infinite alternate; }
-h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); }
-h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
-h4, h5, h6 {
-  font-family: var(--font-hud);
-  color: var(--hud-cyan);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: clamp(1rem, 2vw, 1.25rem);
+/* Floating Animation for Icons/Images */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
 }
 
-p {
-  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
-  margin-bottom: 1.5rem;
-  color: #a0b0c0;
+/* Glitch Effect */
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
 }
 
-a {
-  color: var(--rune-orange);
-  text-decoration: none;
-  font-family: var(--font-hud);
-  transition: all 0.3s ease;
-}
-
-a:hover {
-  color: var(--hud-cyan);
-  text-shadow: 0 0 8px var(--hud-cyan-glow);
-}
-
-/* --- 5. ISOLATED THEMED COMPONENTS (Contrast Fixes) --- */
-
-/* The "Parchment Scroll" */
-.ancient-scroll {
-  background: linear-gradient(135deg, var(--parchment-base), var(--parchment-dark));
-  color: var(--ancient-ink);
-  padding: clamp(1.5rem, 4vw, 3rem); /* Responsive padding */
-  border-radius: 2px;
-  border: 1px solid rgba(138, 3, 3, 0.3);
-  box-shadow: inset 0 0 60px rgba(0,0,0,0.3), 0 5px 15px rgba(0,0,0,0.8);
-  margin: 2rem 0;
-  position: relative;
-}
-
-/* CRITICAL CONTRAST FIX: Override global headers inside the scroll */
-.ancient-scroll h1, 
-.ancient-scroll h2, 
-.ancient-scroll h3 {
-  color: var(--ancient-ink);
-  text-shadow: none; /* Kill the glow */
-  animation: none;   /* Kill the pulse */
-  border-bottom: 2px solid rgba(43, 24, 16, 0.2);
-  padding-bottom: 0.5rem;
-  font-weight: 900;
-}
-
-.ancient-scroll p {
-  color: var(--ancient-ink);
-  font-weight: 600;
-}
-
-.ancient-scroll .glowing-rune {
-  color: var(--blood-red); /* Darker rune color for light background */
-  text-shadow: none;
-  animation: none;
-}
-
-/* The "Cyber Panel" */
-.cyber-panel {
-  background-color: rgba(15, 18, 25, 0.7);
-  border: 1px solid var(--steel-gray);
-  border-left: 4px solid var(--hud-cyan);
-  padding: clamp(1.5rem, 4vw, 2.5rem);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-/* HUD Corner Brackets for extra Sci-Fi feel */
-.cyber-panel::before, .cyber-panel::after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-.cyber-panel::before { top: -1px; right: -1px; border-top-color: var(--hud-cyan); border-right-color: var(--hud-cyan); }
-.cyber-panel::after { bottom: -1px; right: -1px; border-bottom-color: var(--hud-cyan); border-right-color: var(--hud-cyan); }
-
-.cyber-panel:hover {
-  border-left-color: var(--rune-orange);
-  box-shadow: 0 0 20px rgba(255, 102, 0, 0.2);
-}
-.cyber-panel:hover::before, .cyber-panel:hover::after {
-  border-color: var(--rune-orange);
-}
-
-/* Utilities */
-.text-terminal { font-family: var(--font-terminal); color: #00ff00; }
-.text-warning { font-family: var(--font-warning); color: var(--blood-red); text-transform: uppercase; font-weight: bold; letter-spacing: 2px; }
-
-/* Buttons */
-.btn-viking-tech {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0,0,0,0.4);
-  color: var(--rune-orange);
-  font-family: var(--font-hud);
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
-  padding: 12px 24px;
-  border: 1px solid var(--rune-orange);
-  text-transform: uppercase;
-  cursor: pointer;
-  box-shadow: inset 0 0 10px rgba(255, 102, 0, 0.2);
-  transition: all 0.2s ease-in-out;
-  text-align: center;
-}
-
-.btn-viking-tech:hover {
-  background: var(--rune-orange);
-  color: var(--void-black);
-  box-shadow: 0 0 20px var(--rune-orange-glow);
-}
-
-/* --- 6. RESPONSIVE MOBILE TWEAKS --- */
-@media (max-width: 768px) {
-  /* Ensure buttons take full width on mobile so they don't break side-by-side */
-  .btn-viking-tech {
+/* ==========================================
+   5. LAYOUT SYSTEM
+   ========================================== */
+.container {
     width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  /* Reset margin on the last button so it doesn't push the container */
-  .btn-viking-tech:last-child {
-    margin-bottom: 0;
-  }
-  
-  /* Less aggressive borders on mobile to save screen real estate */
-  .cyber-panel {
-    border-left-width: 2px;
-  }
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
-.glowing-rune {
-  /* This tells the browser to look for built-in fonts that support ancient runes */
-  font-family: 'Segoe UI Historic', 'Noto Sans Runic', 'Apple Symbols', sans-serif;
-  color: var(--rune-orange);
-  animation: runePulse 2s infinite alternate;
-  font-size: 1.2em;
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================
+   6. NAVIGATION COMPONENT (GLASSMORPHISM)
+   ========================================== */
+.citadel-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--void-surface);
+    backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--void-border);
+    padding: 1rem 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    color: var(--neon-blue);
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: var(--transition-fast);
+}
+
+.nav-brand:hover {
+    text-shadow: 0 0 15px var(--neon-blue);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition-fast);
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--alien-green);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--alien-green);
+    transition: var(--transition-smooth);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    box-shadow: 0 0 10px var(--alien-green);
+}
+
+/* ==========================================
+   7. CORE UI COMPONENTS
+   ========================================== */
+
+/* Futuristic Data Cards */
+.citadel-card {
+    background: var(--void-surface);
+    border: 1px solid var(--void-border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.citadel-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--space-purple);
+}
+
+.citadel-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-blue);
+    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.1);
+}
+
+/* Glitch Hyperlinks */
+.glitch-link {
+    color: var(--neon-blue);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.glitch-link:hover {
+    animation: glitch 0.3s cubic-bezier(.25,.46,.45,.94) both infinite;
+    color: var(--alien-green);
+}
+
+/* Floating Action Buttons */
+.btn-cyber {
+    background: transparent;
+    border: 1px solid var(--alien-green);
+    color: var(--alien-green);
+    padding: 0.8rem 1.5rem;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition-smooth);
+    overflow: hidden;
+}
+
+.btn-cyber:hover {
+    background: var(--alien-green);
+    color: var(--deep-void);
+    box-shadow: 0 0 20px var(--alien-green);
+}
+
+/* Floating Images/Icons Class */
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* ==========================================
+   8. TYPOGRAPHY
+   ========================================== */
+h1, h2, h3 {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.glowing-title {
+    color: var(--neon-blue);
+    animation: pulse-neon 3s infinite;
+}
+
+.stencil-text {
+    font-family: var(--font-stencil);
+    letter-spacing: 3px;
+}
+
+.data-stream {
+    font-family: var(--font-mono);
+    color: var(--alien-green);
+    background: rgba(57, 255, 20, 0.05);
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm);
+}
+
+/* ==========================================
+   9. FOOTER
+   ========================================== */
+.citadel-footer {
+    margin-top: 5rem;
+    padding: 3rem 0;
+    border-top: 1px solid var(--void-border);
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.footer-status {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.status-online {
+    color: var(--alien-green);
+}
+
+/* ==========================================
+   10. RESPONSIVE BREAKPOINTS
+   ========================================== */
+
+/* Tablets & Smaller Laptops */
+@media (max-width: 992px) {
+    .nav-links {
+        gap: 1rem;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .nav-links {
+        display: none; /* In a real scenario, implement a hamburger menu here */
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .citadel-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Ultra Wide / TV */
+@media (min-width: 1800px) {
+    .container {
+        max-width: 1600px;
+    }
+    html {
+        font-size: 18px;
+    }
 }

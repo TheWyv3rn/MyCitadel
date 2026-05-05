@@ -1,0 +1,51 @@
+{
+  "global": {
+    "site_name": "MyCitadel",
+    "flag": "🇫🇷",
+    "online_status": "Statut de la Citadelle : Sécurisé"
+  },
+  "nav": {
+    "system": "Système",
+    "auth": "S'authentifier",
+    "vdp": "VDP",
+    "about": "À Propos",
+    "howto": "Guide",
+    "policies": "Politiques"
+  },
+  "footer": {
+    "ci": "CITADEL_INTEL",
+    "esid": "IDENTITE_ESID",
+    "ap": "POINT_ACCES",
+    "ce": "MOTEUR_CRIPTO",
+    "nt": "TELEMETRIE_NOEUD",
+    "ml": "CHARGE_MEM",
+    "cl": "CHARGE_CPU",
+    "su": "UPTIME_SYSTEME",
+    "core_i": "INTEGRITE_NOYAU",
+    "vdp": "DIVULGATION_VULNERABILITES",
+    "prt": "PROTOCOLES",
+    "mc": "MyCitadel",
+    "nzk": "PROTOCOLE_CONNAISSANCE_QUASI_NULLE"
+  },
+  "index": {
+    "hero1": "BIENVENU À LA CITADELLE",
+    "sub_hero": "Écosystème Social à Connaissance Quasi Nulle. Chiffré. Souverain. À Vous.",
+    "cta": "Initialiser la Connexion",
+    "session": "SESSION_INIT",
+    "viewProtocols": "VOIR_PROTOCOLES",
+    "256": "256-Bits",
+    "encryption": "Chiffrement",
+    "zkp": "ZKP",
+    "protocol": "Protocole",
+    "sovereign": "Souverain",
+    "pf": "CONFIDENTIALITE_D_ABORD",
+    "pfd": "Aucun journal IP. Aucune collecte de métadonnées. Nous ne gardons que les 2 premiers octets de votre IP pour la validation de sécurité contre l'ESID.",
+    "enc": "CHIFFRE",
+    "cszkp": "ZKP_COTE_CLIENT",
+    "cszkpd": "Grâce à libsodium-wrappers, vos données sont chiffrées sur votre machine avant de transiter par notre réseau.",
+    "sa": "SODIUM_ACTIF",
+    "dr": "RELAIS_DECENTRALISE",
+    "drd": "Votre flux social est un flux souverain. Pas d'algorithme central. Pas de shadowbanning. Logique pure de pair à pair.",
+    "pr": "PAIR_PRET"
+  }
+}

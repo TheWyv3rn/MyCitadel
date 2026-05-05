@@ -1,0 +1,51 @@
+{
+  "global": {
+    "site_name": "MyCitadel",
+    "flag": "🇳🇱",
+    "online_status": "Citadel Status: Veilig"
+  },
+  "nav": {
+    "system": "Systeem",
+    "auth": "Authenticeren",
+    "vdp": "VDP",
+    "about": "Over",
+    "howto": "Handleiding",
+    "policies": "Beleid"
+  },
+  "footer": {
+    "ci": "CITADEL_INTEL",
+    "esid": "ESID_IDENTITEIT",
+    "ap": "TOEGANGSPUNT",
+    "ce": "CRYPTO_ENGINE",
+    "nt": "NODE_TELEMETRIE",
+    "ml": "GEHEUGENBELASTING",
+    "cl": "CPU_BELASTING",
+    "su": "SYSTEM_UPTIME",
+    "core_i": "CORE_INTEGRITEIT",
+    "vdp": "VULNERABILITY_DISCLOSURE",
+    "prt": "PROTOCOLLEN",
+    "mc": "MyCitadel",
+    "nzk": "NEAR_ZERO_KNOWLEDGE_PROTOCOL"
+  },
+  "index": {
+    "hero1": "WELKOM BIJ DE CITADEL",
+    "sub_hero": "Near Zero-Knowledge Sociaal Ecosysteem. Versleuteld. Souverein. Van Jou.",
+    "cta": "Initialiseer Verbinding",
+    "session": "SESSIE_INIT",
+    "viewProtocols": "BEKIJK_PROTOCOLLEN",
+    "256": "256-Bit",
+    "encryption": "Versleuteling",
+    "zkp": "ZKP",
+    "protocol": "Protocol",
+    "sovereign": "Souverein",
+    "pf": "PRIVACY_EERST",
+    "pfd": "Geen IP-logs. Geen metadata verzameling. We bewaren alleen de eerste 2 octetten van je IP voor veiligheidsvalidatie tegen de ESID.",
+    "enc": "GECODERD",
+    "cszkp": "CLIENT_SIDE_ZKP",
+    "cszkpd": "Met behulp van libsodium-wrappers wordt je data versleuteld op je eigen apparaat voordat het ons netwerk betreedt.",
+    "sa": "SODIUM_ACTIEF",
+    "dr": "GEDECENTRALISEERD_RELAIS",
+    "drd": "Je sociale feed is een souvereine stream. Geen centraal algoritme. Geen shadowbanning. Pure peer-to-peer logica.",
+    "pr": "PEER_GEREED"
+  }
+}

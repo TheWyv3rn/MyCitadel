@@ -1,0 +1,51 @@
+{
+  "global": {
+    "site_name": "MyCitadel",
+    "flag": "🇵🇱",
+    "online_status": "Status Cytadeli: Bezpieczny"
+  },
+  "nav": {
+    "system": "System",
+    "auth": "Uwierzytelnij",
+    "vdp": "VDP",
+    "about": "O nas",
+    "howto": "Instrukcja",
+    "policies": "Zasady"
+  },
+  "footer": {
+    "ci": "INTEL_CYTADELI",
+    "esid": "TOZSAMOSC_ESID",
+    "ap": "PUNKT_DOSTEPU",
+    "ce": "SILNIK_KRYPTO",
+    "nt": "TELEMETRIA_WEZLA",
+    "ml": "OBCIAZENIE_MEM",
+    "cl": "OBCIAZENIE_CPU",
+    "su": "CZAS_PRACY_SYSTEMU",
+    "core_i": "INTEGRALNOSC_RDZENIA",
+    "vdp": "ZGLASZANIE_LUK",
+    "prt": "PROTOKOLY",
+    "mc": "MyCitadel",
+    "nzk": "PROTOKOL_NIEMAL_ZEROWEJ_WIEDZY"
+  },
+  "index": {
+    "hero1": "WITAJ W CYTADELI",
+    "sub_hero": "Ekosystem Społecznościowy Niemal Zerowej Wiedzy. Szyfrowany. Suwerenny. Twój.",
+    "cta": "Inicjuj Połączenie",
+    "session": "SESJA_INIT",
+    "viewProtocols": "ZOBACZ_PROTOKOLY",
+    "256": "256-Bit",
+    "encryption": "Szyfrowanie",
+    "zkp": "ZKP",
+    "protocol": "Protokół",
+    "sovereign": "Suwerenny",
+    "pf": "PRYWATNOSC_PRZEDE_WSZYSTKIM",
+    "pfd": "Brak logowania IP. Brak zbierania metadanych. Przechowujemy tylko pierwsze 2 oktety Twojego IP w celu walidacji bezpieczeństwa względem ESID.",
+    "enc": "ZASZYFROWANO",
+    "cszkp": "ZKP_PO_STRONIE_KLIENTA",
+    "cszkpd": "Dzięki libsodium-wrappers Twoje dane są szyfrowane na Twoim urządzeniu, zanim trafią do naszej sieci.",
+    "sa": "SODIUM_AKTYWNE",
+    "dr": "ZDECENTRALIZOWANY_PRZEKAZ",
+    "drd": "Twój kanał społecznościowy to suwerenny strumień. Brak centralnego algorytmu. Brak shadowbanningu. Czysta logika peer-to-peer.",
+    "pr": "WEZEL_GOTOWY"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "global": {
+    "site_name": "MyCitadel",
+    "flag": "🇹🇷",
+    "online_status": "Citadel Durumu: Güvenli"
+  },
+  "nav": {
+    "system": "Sistem",
+    "auth": "Kimlik Doğrula",
+    "vdp": "VDP",
+    "about": "Hakkında",
+    "howto": "Nasıl",
+    "policies": "Politikalar"
+  },
+  "footer": {
+    "ci": "CITADEL_INTEL",
+    "esid": "ESID_KIMLIGI",
+    "ap": "ERISIM_NOKTASI",
+    "ce": "KRIPTO_MOTORU",
+    "nt": "DÜGÜM_TELEMETRISI",
+    "ml": "BELLEK_YÜKÜ",
+    "cl": "CPU_YÜKÜ",
+    "su": "SISTEM_UPTIME",
+    "core_i": "CEKIRDEK_BÜTÜNLÜGÜ",
+    "vdp": "GÜVENLIK_BILDIRIMI",
+    "prt": "PROTOKOLLER",
+    "mc": "MyCitadel",
+    "nzk": "YAKLASIK_SIFIR_BILGI_PROTOKOLÜ"
+  },
+  "index": {
+    "hero1": "CITADEL'E HOS GELDINIZ",
+    "sub_hero": "Yaklaşık Sıfır Bilgi Sosyal Ekosistemi. Şifreli. Egemen. Sizin.",
+    "cta": "Bağlantıyı Başlat",
+    "session": "OTURUM_INIT",
+    "viewProtocols": "PROTOKOLLERI_GÖR",
+    "256": "256-Bit",
+    "encryption": "Şifreleme",
+    "zkp": "ZKP",
+    "protocol": "Protokol",
+    "sovereign": "Egemen",
+    "pf": "ÖNCE_GIZLILIK",
+    "pfd": "IP günlüğü yok. Meta veri toplama yok. Güvenlik doğrulaması için IP'nizin yalnızca ilk 2 oktetini ESID ile eşleştirmek üzere saklıyoruz.",
+    "enc": "SIFRELENDI",
+    "cszkp": "ISTEMCI_TARAFLI_ZKP",
+    "cszkpd": "libsodium-wrappers kullanarak, verileriniz ağımıza ulaşmadan önce kendi cihazınızda şifrelenir.",
+    "sa": "SODIUM_AKTIF",
+    "dr": "MERKEZIYETSIZ_RÖLE",
+    "drd": "Sosyal akışınız egemen bir yayındır. Merkezi algoritma yok. Shadowban yok. Saf uçtan uca mantık.",
+    "pr": "EAS_HAZIR"
+  }
+}

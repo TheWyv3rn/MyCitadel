@@ -1,0 +1,51 @@
+{
+  "global": {
+    "site_name": "MyCitadel",
+    "flag": "🇺🇸",
+    "online_status": "Citadel Status: Secure"
+  },
+  "nav": {
+    "system": "System",
+    "auth": "Authenticate",
+    "vdp": "VDP",
+    "about": "About",
+    "howto": "How To",
+    "policies": "Policies"
+  },
+  "footer": {
+    "ci": "CITADEL_INTEL",
+    "esid": "ESID_IDENTITY",
+    "ap": "ACCESS_POINT",
+    "ce": "CRYPTO_ENGINE",
+    "nt": "NODE_TELEMETRY",
+    "ml": "MEM_LOAD",
+    "cl": "CPU_LOAD",
+    "su": "SYSTEM_UPTIME",
+    "core_i": "CORE_INTEGRITY",
+    "vdp": "VULNERABILITY_DISCLOSURE",
+    "prt": "PROTOCOLS",
+    "mc": "MyCitadel",
+    "nzk": "NEAR_ZERO_KNOWLEDGE_PROTOCOL"
+  },
+  "index": {
+    "hero1": "WELCOME TO THE CITADEL",
+    "sub_hero": "Near Zero-Knowledge Social Ecosystem. Encrypted. Sovereign. Yours.",
+    "cta": "Initialize Connection",
+    "session": "SESSION_INIT",
+    "viewProtocols": "VIEW_PROTOCOLS",
+    "256": "256-Bit",
+    "encryption": "Encryption",
+    "zkp": "ZKP",
+    "protocol": "Protocol",
+    "sovereign": "Sovereign",
+    "pf": "PRIVACY_FIRST",
+    "pfd": "Zero IP logging. Zero metadata collection. We keep the first 2 octets of your IP only for security validation against the ESID.",
+    "enc": "ENCRYPTED",
+    "cszkp": "CLIENT_SIDE_ZKP",
+    "cszkpd": "Using libsodium-wrappers, your data is encrypted on your machine before it ever transits our network.",
+    "sa": "SODIUM_ACTIVE",
+    "dr": "DECENTRALIZED_RELAY",
+    "drd": "Your social feed is a sovereign stream. No central algorithm. No shadowbanning. Pure peer-to-peer logic.",
+    "pr": "PEER_READY"
+  }
+}
