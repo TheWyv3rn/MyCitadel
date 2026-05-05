@@ -1,8 +1,12 @@
-</main> <?php
+</main> 
+    <?php
         // PHP Telemetry Calculations
         $gen_time = isset($start_time) ? round((microtime(true) - $start_time) * 1000, 2) . ' ms' : 'SECURE';
         $mem_usage = round(memory_get_usage() / 1024, 1) . ' KB';
         $server_os = php_uname('s'); // e.g., Linux
+        $uri = $_SERVER['REQUEST_URI'];
+        $root_folder = '/mycitadel/'; // Update this if your folder name changes
+        $path_to_root = (str_contains($uri, $root_folder)) ? $root_folder : './';
     ?>
 
     <footer class="container" style="margin-top: 5rem; margin-bottom: 2rem;">
@@ -54,27 +58,36 @@
     =========================================== -->
 
     <!-- 1. Core Framework -->
-    <script src="assets/vendor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo $path_to_root; ?>assets/vendor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- 2. UI, Animation, & Data Visualization -->
-    <!-- Particles.js for the Cyber Background -->
-    <script src="assets/vendor/particles.js-master/particles.min.js"></script>
-    <!-- Toastify for sleek, non-intrusive notifications -->
-    <script src="assets/vendor/toastify-js-master/src/toastify.js"></script>
-    <!-- Tippy.js for advanced tooltips -->
-    <script src="assets/vendor/tippyjs-master/headless/tippy.umd.min.js"></script>
-    <!-- Choices.js for customized, techy select boxes -->
-    <script src="assets/vendor/Choices-main/public/assets/scripts/choices.min.js"></script>
-    <!-- ApexCharts for rendering Reputation/Influence data -->
-    <script src="assets/vendor/apexcharts.js-main/dist/apexcharts.min.js"></script>
+    <!-- Particles.js: Background node animation -->
+    <script src="<?php echo $path_to_root; ?>assets/vendor/particles.js-master/particles.min.js"></script>
+    
+    <!-- Toastify: Use the minified build, not /src/ to avoid syntax errors -->
+    <script src="<?php echo $path_to_root; ?>assets/vendor/toastify-js-master/src/toastify.js"></script>
+    
+    <!-- Tippy.js: Using the UMD bundle which includes Popper.js dependency -->
+    <script src="<?php echo $path_to_root; ?>assets/vendor/tippyjs-master/build/bundle-umd.js"></script>
+    
+    <!-- Choices.js -->
+    <script src="<?php echo $path_to_root; ?>assets/vendor/Choices-main/public/assets/scripts/choices.min.js"></script>
+    
+    <!-- ApexCharts -->
+    <script src="<?php echo $path_to_root; ?>assets/vendor/apexcharts.js-main/dist/apexcharts.min.js"></script>
 
     <!-- 3. Security, Input, & Cryptography Prep -->
-    <!-- DOMPurify to sanitize ALL user input against XSS -->
-    <script src="assets/vendor/DOMPurify-main/dist/purify.min.js"></script>
-    <!-- zxcvbn for client-side password strength estimation -->
-    <script src="assets/vendor/zxcvbn-master/dist/zxcvbn.js"></script>
-    <!-- EasyMDE for Markdown editing (Forum/Posts) -->
-    <script src="assets/vendor/easy-markdown-editor-master/dist/easymde.min.js"></script>
+    <!-- DOMPurify: Critical for NZK input sanitization -->
+    <script src="<?php echo $path_to_root; ?>assets/vendor/DOMPurify-main/dist/purify.min.js"></script>
+    
+    <!-- zxcvbn: Password strength -->
+    <script src="<?php echo $path_to_root; ?>assets/vendor/zxcvbn-master/dist/zxcvbn.js"></script>
+    
+    <!-- EasyMDE: Pointing to /dist/ version to avoid "require is not defined" error -->
+    <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+
+    <!-- 4. Custom Citadel Logic -->
+    <script src="<?php echo $path_to_root; ?>assets/js/main.js"></script>
 
     <!-- ==========================================
          GLOBAL SYSTEM INITIALIZATION

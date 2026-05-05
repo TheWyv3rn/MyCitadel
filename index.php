@@ -33,6 +33,7 @@ include 'includes/header.php';
             <div class="mt-5">
                 <a href="login.php" class="btn-viking-tech me-3"><i class="fas fa-shield-alt me-2"></i> Init Node (Login)</a>
                 <a href="#manifesto" class="btn-viking-tech" style="border-color: var(--hud-cyan); color: var(--hud-cyan);"><i class="fas fa-scroll me-2"></i> Read the Lore</a>
+                <a href="register.php" class="btn-viking-tech me-3" style="margin-left: 15px;"><i class="fas fa-shield-alt me-2"></i> Enter Node (Register)</a>
             </div>
         </div>
     </div>
@@ -154,7 +155,7 @@ include 'includes/header.php';
         <div class="ancient-scroll">
             <h2><i class="fas fa-eye-slash" style="color: var(--blood-red);"></i> Operating on "Near" Zero-Knowledge</h2>
             <p>
-                Absolute zero-knowledge on a web platform is a myth; basic routing requires some metadata. MyCitadel operates on a strict <b>Near Zero-Knowledge (NZK)</b> protocol.
+                Absolute zero-knowledge on a web platform is a myth; basic routing requires some metadata. MyCitadel operates on a strict <b>Near Zero-Knowledge (NZK) protocol.
             </p>
             <p>
                 What does this mean in practice? We hold absolutely zero knowledge regarding the content of your communications, the plaintext of your passwords, or your true identity. However, to maintain the structural integrity of the Citadel, we must implement active defense mechanisms.

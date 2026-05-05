@@ -1,0 +1,46 @@
+{
+  "name": "MyCitadel: Zero-Knowledge Fortress",
+  "short_name": "Citadel",
+  "description": "A privacy-first, near zero-knowledge social media platform engineered for absolute security.",
+  "id": "/mycitadel/",
+  "start_url": "/mycitadel/index.php",
+  "scope": "/mycitadel/",
+  "display": "standalone",
+  "display_override": ["standalone", "fullscreen", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#05070a",
+  "theme_color": "#ff6600",
+  "categories": ["social", "security", "privacy"],
+  "icons": [
+    {
+      "src": "/mycitadel/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/mycitadel/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/mycitadel/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Initialize Node",
+      "url": "/mycitadel/register.php",
+      "description": "Register a new citizen node"
+    },
+    {
+      "name": "Authenticate",
+      "url": "/mycitadel/login.php",
+      "description": "Access your secure comms"
+    }
+  ]
+}

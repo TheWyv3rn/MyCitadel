@@ -15,10 +15,10 @@ function set_active_glow($page, $current_page) {
     <!-- We merge Bootstrap's 'navbar' class with our custom 'cyber-panel' -->
     <nav class="navbar navbar-expand-lg cyber-panel" style="padding: 1rem 2rem;">
         <div class="container-fluid p-0">
-             
+            
             <!-- Brand / Logo -->
             <a class="navbar-brand d-flex align-items-center" href="index.php" style="color: var(--rune-orange); text-decoration: none;">
-                <span class="glowing-rune me-2" style="font-size: 2rem;"><i class="fas fa-bolt"></i></span>
+                <span class="glowing-rune me-2" style="font-size: 2rem;">ᛗ</span>
                 <h2 style="margin: 0; font-size: 1.8rem; letter-spacing: 3px; font-family: var(--font-runic); padding-top: 5px;">CITADEL</h2>
             </a>
 
