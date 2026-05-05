@@ -85,8 +85,7 @@ $dir = is_rtl($active_lang) ? 'rtl' : 'ltr';
     
     <!-- [THE CITADEL CORE THEME] -->
     <!-- Appending filemtime ensures cache-busting during development -->
-    <link rel="stylesheet" href="<?php echo ASSETS_URL; ?>/css/main.css?v=<?php echo filemtime(BASE_PATH . '/assets/css/main.css'); ?>">
-    
+    <link rel="stylesheet" href="<?php echo ASSETS_URL; ?>/css/main.css?v=<?php echo filemtime(BASE_PATH . '/assets/css/main.css'); ?>">    
     <!-- [CRITICAL PRE-LOADER] -->
     <style>
         /* Prevents Flash of Unstyled Content (FOUC) and ensures smooth entry */

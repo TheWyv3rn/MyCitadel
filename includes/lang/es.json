@@ -190,5 +190,29 @@
     "ai": "ai.mycitadel.lol // ESCANEO_ACTIVO",
     "ho_itn": "HackerOne_ITNinja",
     "email": "security@mycitadel.lol"
+  },
+  "auth": {
+    "reg_title": "Ciudadanía de la Ciudadela",
+    "reg_sub": "¡Crea tu propio Alias!",
+    "alias": "Alias de Ciudadano",
+    "alias_hint": "Identificador único dentro de la Ciudadela",
+    "email": "Dirección de Comms (Email)",
+    "pass": "Clave de Acceso",
+    "pass_confirm": "Validar Clave de Acceso",
+    "pass_req": "Requisito de Entropía: 2x Mayúsculas, 2x Minúsculas, 2x Números, 2x Símbolos",
+    "agree": "Me comprometo a respetar los Protocolos de Conducta de la Ciudadela",
+    "submit": "Generar Ciudadanía",
+    "alias_taken": "ERROR: El alias ya está registrado en los archivos",
+    "alias_ok": "ÉXITO: Alias disponible",
+    "mismatch": "ERROR: Las claves de acceso no coinciden",
+    "weak_pass": "ERROR: Entropía insuficiente en la clave de acceso",
+    "success": "IDENTIDAD_ESTABLECIDA. Proceder a la autenticación.",
+    "login_link": "¿Ya eres ciudadano? Autentícate aquí.",
+    "login_title": "Bienvenido de nuevo a la Ciudadela",
+    "login_sub": "Inicia sesión en tu cuenta",
+    "login_btn": "Entrar en la Ciudadela",
+    "no_account": "¿Aún no eres ciudadano? Establece tu identidad.",
+    "error_auth": "ERROR_CRÍTICO: Falló la verificación de identidad.",
+    "error_locked": "ERROR_CRÍTICO: Cuenta bloqueada debido al protocolo fantasma."
   }
 }

@@ -190,5 +190,29 @@
     "ai": "ai.mycitadel.lol // AKTİF_TARAMA",
     "ho_itn": "HackerOne_ITNinja",
     "email": "security@mycitadel.lol"
+  },
+  "auth": {
+    "reg_title": "Citadel Vatandaşlığı",
+    "reg_sub": "Kendi Takma Adınızı Oluşturun!",
+    "alias": "Vatandaş Takma Adı",
+    "alias_hint": "Citadel içindeki benzersiz tanımlayıcı",
+    "email": "İletişim Adresi (E-posta)",
+    "pass": "Erişim Anahtarı",
+    "pass_confirm": "Erişim Anahtarını Doğrula",
+    "pass_req": "Entropi Gereksinimi: 2x Büyük Harf, 2x Küçük Harf, 2x Rakam, 2x Sembol",
+    "agree": "Citadel Davranış Protokollerine uymaya söz veriyorum",
+    "submit": "Vatandaşlık Oluştur",
+    "alias_taken": "HATA: Takma ad zaten arşivlerde kayıtlı",
+    "alias_ok": "BAŞARILI: Takma ad kullanılabilir",
+    "mismatch": "HATA: Erişim anahtarları eşleşmiyor",
+    "weak_pass": "HATA: Erişim anahtarında yetersiz entropi",
+    "success": "KİMLİK_OLUŞTURULDU. Kimlik doğrulamaya geçin.",
+    "login_link": "Zaten vatandaş mısınız? Buradan kimlik doğrulayın.",
+    "login_title": "Citadel'e tekrar hoş geldiniz",
+    "login_sub": "Hesabınıza Giriş Yapın",
+    "login_btn": "Citadel'e Gir",
+    "no_account": "Henüz vatandaş değil misiniz? Kimliğinizi oluşturun.",
+    "error_auth": "KRİTİK_HATA: Kimlik doğrulama başarısız oldu.",
+    "error_locked": "KRİTİK_HATA: Hayalet protokolü nedeniyle hesap kilitlendi."
   }
 }

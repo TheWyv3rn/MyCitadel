@@ -190,5 +190,339 @@
     "ai": "ai.mycitadel.lol // ACTIVE_SCANNING",
     "ho_itn": "HackerOne_ITNinja",
     "email": "security@mycitadel.lol"
+  },
+  "auth": {
+    "reg_title": "Citadel Citizenship",
+    "reg_sub": "Create Your Own Alias!",
+    "alias": "Citizen Alias",
+    "alias_hint": "Unique identifier within the Citadel",
+    "email": "Comms Address (Email)",
+    "pass": "Access Key",
+    "pass_confirm": "Validate Access Key",
+    "pass_req": "Entropy Requirement: 2x Upper, 2x Lower, 2x Num, 2x Symbol",
+    "agree": "I pledge to uphold the Citadel Conduct Protocols",
+    "submit": "Generate Citizenship",
+    "alias_taken": "ERROR: Alias already registered in archives",
+    "alias_ok": "SUCCESS: Alias available",
+    "mismatch": "ERROR: Access keys do not match",
+    "weak_pass": "ERROR: Insufficient entropy in access key",
+    "success": "IDENTITY_ESTABLISHED. Proceed to authentication.",
+    "login_link": "Already a Citizen? Authenticate here.",
+    "login_title": "Welcome back to the Citadel",
+    "login_sub": "Log Into Your Account",
+    "login_btn": "Enter the Citadel",
+    "no_account": "Not yet a Citizen? Establish Identity.",
+    "error_auth": "CRITICAL_ERROR: Identity verification failed.",
+    "error_locked": "CRITICAL_ERROR: Account locked due to ghost protocol."
+  },
+  "badges": {
+    "BADGE_BUG_1": {
+      "name": "Initial Vulnerability",
+      "desc": "First authenticated and verified bug report submitted to the archives."
+    },
+    "BADGE_BUG_5": {
+      "name": "Advanced Stress-Tester",
+      "desc": "Successfully identified 5 critical infrastructure flaws."
+    },
+    "BADGE_BUG_10": {
+      "name": "Citadel Overseer",
+      "desc": "10 verified reports. You are a pillar of our defensive network."
+    },
+    "BADGE_GIT_1": {
+      "name": "First Commit",
+      "desc": "Initial neural link to the repository established."
+    },
+    "BADGE_GIT_5": {
+      "name": "System Architect",
+      "desc": "5 successful Git pushes. The codebase evolves through you."
+    },
+    "BADGE_GIT_10": {
+      "name": "Core Developer",
+      "desc": "10 successful Git pushes. Absolute mastery of the Citadel's logic."
+    },
+    "BADGE_POST_1": {
+      "name": "First Broadcast",
+      "desc": "Initial signal transmitted to the global feed."
+    },
+    "BADGE_POST_5": {
+      "name": "Frequent Broadcaster",
+      "desc": "5 neural transmissions recorded in the public archives."
+    },
+    "BADGE_POST_10": {
+      "name": "Data Streamer",
+      "desc": "10 signals published. Your voice is gaining frequency."
+    },
+    "BADGE_POST_50": {
+      "name": "Network Influencer",
+      "desc": "50 broadcasts established. You are a known source of information."
+    },
+    "BADGE_POST_100": {
+      "name": "Citadel Voice",
+      "desc": "100 transmissions. Your presence is woven into the network."
+    },
+    "BADGE_POST_1000": {
+      "name": "Broadcast Legend",
+      "desc": "1,000 transmissions. You are the heartbeat of the Citadel."
+    },
+    "BADGE_COMMENT_1": {
+      "name": "Initial Feedback",
+      "desc": "First response transmitted to a fellow Citizen."
+    },
+    "BADGE_COMMENT_5": {
+      "name": "Conversationalist",
+      "desc": "5 responses recorded. Engaging in neural dialogue."
+    },
+    "BADGE_COMMENT_10": {
+      "name": "Network Participant",
+      "desc": "10 comments submitted. Contributing to the collective data."
+    },
+    "BADGE_COMMENT_50": {
+      "name": "Active Debater",
+      "desc": "50 comments. Your perspectives are frequently recorded."
+    },
+    "BADGE_COMMENT_100": {
+      "name": "Dialogue Specialist",
+      "desc": "100 comments. A master of inter-citizen communication."
+    },
+    "BADGE_COMMENT_1000": {
+      "name": "Collective Whisperer",
+      "desc": "1,000 comments. Your feedback drives the Citadel conversation."
+    },
+    "BADGE_COMMENTED_1": {
+      "name": "Signal Received",
+      "desc": "Another Citizen has responded to your broadcast."
+    },
+    "BADGE_COMMENTED_5": {
+      "name": "Discussion Trigger",
+      "desc": "Your broadcasts have initiated 5 neural dialogues."
+    },
+    "BADGE_COMMENTED_10": {
+      "name": "Thought Leader",
+      "desc": "10 responses received. Your signals provoke community interest."
+    },
+    "BADGE_COMMENTED_50": {
+      "name": "Public Interest",
+      "desc": "50 citizens have responded to your transmissions."
+    },
+    "BADGE_COMMENTED_100": {
+      "name": "Social Hub",
+      "desc": "100 comments received. You are a focal point of the network."
+    },
+    "BADGE_COMMENTED_1000": {
+      "name": "Citadel Oracle",
+      "desc": "1,000 responses received. Your signals command total attention."
+    },
+    "BADGE_LIKE_1": {
+      "name": "Neural Resonance",
+      "desc": "First validation sent to another Citizen's broadcast."
+    },
+    "BADGE_LIKE_5": {
+      "name": "Frequent Validator",
+      "desc": "5 likes sent. Supporting the network's quality."
+    },
+    "BADGE_LIKE_10": {
+      "name": "Data Curator",
+      "desc": "10 likes sent. Identifying high-value signals."
+    },
+    "BADGE_LIKE_50": {
+      "name": "Signal Supporter",
+      "desc": "50 likes sent. You actively shape the Citadel's mood."
+    },
+    "BADGE_LIKE_100": {
+      "name": "Core Patron",
+      "desc": "100 likes sent. A dedicated validator of Citizen content."
+    },
+    "BADGE_LIKE_1000": {
+      "name": "The Great Validator",
+      "desc": "1,000 likes sent. You define the network's consensus."
+    },
+    "BADGE_LIKED_1": {
+      "name": "Positive Echo",
+      "desc": "Your broadcast has received its first validation."
+    },
+    "BADGE_LIKED_5": {
+      "name": "Validated Signal",
+      "desc": "5 citizens have expressed resonance with your data."
+    },
+    "BADGE_LIKED_10": {
+      "name": "High Fidelity",
+      "desc": "10 likes received. Your broadcasts are considered high-value."
+    },
+    "BADGE_LIKED_50": {
+      "name": "Respected Source",
+      "desc": "50 likes received. The Citadel values your transmissions."
+    },
+    "BADGE_LIKED_100": {
+      "name": "Network Star",
+      "desc": "100 likes received. Your content consistently resonates."
+    },
+    "BADGE_LIKED_1000": {
+      "name": "Citadel Idol",
+      "desc": "1,000 likes received. You are a beacon of quality in the void."
+    },
+    "BADGE_SLIKE_1": {
+      "name": "Hyper-Link",
+      "desc": "First Super Like sent. Exceptional resonance achieved."
+    },
+    "BADGE_SLIKE_5": {
+      "name": "Hyper-Validator",
+      "desc": "5 Super Likes sent. Identifying the elite signals."
+    },
+    "BADGE_SLIKE_10": {
+      "name": "Burst Communicator",
+      "desc": "10 Super Likes sent. High-energy validation recorded."
+    },
+    "BADGE_SLIKE_50": {
+      "name": "Super Curator",
+      "desc": "50 Super Likes sent. You only validate the absolute best."
+    },
+    "BADGE_SLIKE_100": {
+      "name": "Plasma Patron",
+      "desc": "100 Super Likes sent. A powerhouse of positive feedback."
+    },
+    "BADGE_SLIKE_1000": {
+      "name": "The Architect of Praise",
+      "desc": "1,000 Super Likes sent. You define the network's peak content."
+    },
+    "BADGE_SDIS_1": {
+      "name": "System Critic",
+      "desc": "First Super Dislike sent. Dissent recorded in the stream."
+    },
+    "BADGE_SDIS_5": {
+      "name": "Signal Filter",
+      "desc": "5 Super Dislikes sent. You actively purge low-value noise."
+    },
+    "BADGE_SDIS_10": {
+      "name": "Void Watcher",
+      "desc": "10 Super Dislikes sent. Maintaining the Citadel's standards."
+    },
+    "BADGE_SDIS_50": {
+      "name": "Harsh Realist",
+      "desc": "50 Super Dislikes sent. Your standards are exceptionally high."
+    },
+    "BADGE_SDIS_100": {
+      "name": "Inquisition Lead",
+      "desc": "100 Super Dislikes sent. Guardian against the mediocre."
+    },
+    "BADGE_SDIS_1000": {
+      "name": "The Purger",
+      "desc": "1,000 Super Dislikes sent. You are the void that consumes the weak."
+    },
+    "BADGE_SLIKED_1": {
+      "name": "Elite Resonance",
+      "desc": "Your broadcast has received a high-energy Super Like."
+    },
+    "BADGE_SLIKED_5": {
+      "name": "Hyper-Signal",
+      "desc": "5 Super Likes received. Your transmissions are elite-grade."
+    },
+    "BADGE_SLIKED_10": {
+      "name": "Neural Peak",
+      "desc": "10 Super Likes received. You are at the top of the Citadel's feed."
+    },
+    "BADGE_SLIKED_50": {
+      "name": "Super Nova",
+      "desc": "50 Super Likes received. A radiant source of perfect data."
+    },
+    "BADGE_SLIKED_100": {
+      "name": "The Chosen One",
+      "desc": "100 Super Likes received. Your broadcasts are legendary."
+    },
+    "BADGE_SLIKED_1000": {
+      "name": "Transcendent Citizen",
+      "desc": "1,000 Super Likes. You have reached the pinnacle of validation."
+    },
+    "BADGE_SDISD_1": {
+      "name": "Static Detected",
+      "desc": "A citizen has issued a Super Dislike against your signal."
+    },
+    "BADGE_SDISD_5": {
+      "name": "Void Attraction",
+      "desc": "5 Super Dislikes received. Your content is polarizing the network."
+    },
+    "BADGE_SDISD_10": {
+      "name": "Notoriety Level 1",
+      "desc": "10 Super Dislikes received. You are becoming a known disruptor."
+    },
+    "BADGE_SDISD_50": {
+      "name": "System Outcast",
+      "desc": "50 Super Dislikes received. The Citadel rejects your broadcasts."
+    },
+    "BADGE_SDISD_100": {
+      "name": "Enemy of the State",
+      "desc": "100 Super Dislikes. Your presence is highly controversial."
+    },
+    "BADGE_SDISD_1000": {
+      "name": "The Great Antagonist",
+      "desc": "1,000 Super Dislikes. You are the shadow in the Citadel's light."
+    },
+    "BADGE_PROF_AVATAR": {
+      "name": "Visual Identity",
+      "desc": "Neural likeness uploaded to the Citadel dossier."
+    },
+    "BADGE_PROF_BANNER": {
+      "name": "Domain Aesthetic",
+      "desc": "Customized profile banner established."
+    },
+    "BADGE_PROF_BIO": {
+      "name": "Citizen Narrative",
+      "desc": "Personal history and bio archives finalized."
+    },
+    "BADGE_PROF_SOCIALS": {
+      "name": "Neural Expansion",
+      "desc": "External social links integrated into your dossier."
+    },
+    "BADGE_PROF_EDUCATION": {
+      "name": "Intellectual Archive",
+      "desc": "Academic and educational records verified."
+    },
+    "BADGE_PROF_JOB": {
+      "name": "Professional Tier",
+      "desc": "Employment and occupational data established."
+    },
+    "BADGE_PROF_SECURITY": {
+      "name": "Fortified Link",
+      "desc": "All identity and security protocols fully operational."
+    },
+    "BADGE_COMM_PM_1": {
+      "name": "Direct Link",
+      "desc": "First private neural transmission established."
+    },
+    "BADGE_COMM_PM_5": {
+      "name": "Private Channeler",
+      "desc": "5 private communications recorded."
+    },
+    "BADGE_COMM_PM_10": {
+      "name": "Shadow Whisperer",
+      "desc": "10 private channels active. You move in the quiet layers."
+    },
+    "BADGE_COMM_GRP_1": {
+      "name": "Group Node",
+      "desc": "Joined or initiated the first multi-citizen transmission."
+    },
+    "BADGE_COMM_GRP_5": {
+      "name": "Cluster Coordinator",
+      "desc": "5 group nodes established. You are a center of activity."
+    },
+    "BADGE_COMM_GRP_10": {
+      "name": "The Collective Mind",
+      "desc": "10 group transmissions. You manage entire clusters of Citizens."
+    }
+  },  
+  "dash": {
+    "welcome": "WELCOME_CITIZEN",
+    "rep_h": "REPUTATION_STANDING",
+    "rep_desc": "Long-term credibility within the network",
+    "inf_h": "INFLUENCE_POWER",
+    "inf_desc": "Current capacity to affect neural streams",
+    "feed_h": "NEURAL_STREAM",
+    "quick_actions": "CORE_COMMANDS",
+    "error_session": "ERROR: Session integrity check failed.",
+    "status": "STATUS: ONLINE",
+    "lgt": "DISCONNECT",
+    "neural": "Neural Binding",
+    "ip": "IP",
+    "offline": "Streams Offline for Maintenance",
+    "p2p": "Awaiting P2P Handshake"
   }
 }

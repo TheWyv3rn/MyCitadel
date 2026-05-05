@@ -190,5 +190,29 @@
     "ai": "ai.mycitadel.lol // AKTYWNE_SKANOWANIE",
     "ho_itn": "HackerOne_ITNinja",
     "email": "security@mycitadel.lol"
+  },
+  "auth": {
+    "reg_title": "Obywatelstwo Cytadeli",
+    "reg_sub": "Stwórz własny Alias!",
+    "alias": "Alias Obywatela",
+    "alias_hint": "Unikalny identyfikator w Cytadeli",
+    "email": "Adres komunikacyjny (E-mail)",
+    "pass": "Klucz dostępu",
+    "pass_confirm": "Potwierdź klucz dostępu",
+    "pass_req": "Wymagana entropia: 2x Wielka litera, 2x Mała litera, 2x Cyfra, 2x Symbol",
+    "agree": "Zobowiązuję się do przestrzegania protokołów postępowania Cytadeli",
+    "submit": "Wygeneruj obywatelstwo",
+    "alias_taken": "BŁĄD: Alias jest już zarejestrowany w archiwach",
+    "alias_ok": "SUKCES: Alias jest dostępny",
+    "mismatch": "BŁĄD: Klucze dostępu nie są identyczne",
+    "weak_pass": "BŁĄD: Niewystarczająca entropia klucza dostępu",
+    "success": "TOŻSAMOŚĆ_USTALONA. Przejdź do uwierzytelniania.",
+    "login_link": "Jesteś już Obywatelem? Uwierzytelnij się tutaj.",
+    "login_title": "Witaj z powrotem w Cytadeli",
+    "login_sub": "Zaloguj się do swojego konta",
+    "login_btn": "Wejdź do Cytadeli",
+    "no_account": "Nie jesteś jeszcze Obywatelem? Ustal tożsamość.",
+    "error_auth": "BŁĄD_KRYTYCZNY: Weryfikacja tożsamości nie powiodła się.",
+    "error_locked": "BŁĄD_KRYTYCZNY: Konto zablokowane z powodu protokołu ducha."
   }
 }

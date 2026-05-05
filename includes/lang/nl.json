@@ -190,5 +190,29 @@
     "ai": "ai.mycitadel.lol // ACTIEF_SCANNEN",
     "ho_itn": "HackerOne_ITNinja",
     "email": "security@mycitadel.lol"
+  },
+  "auth": {
+    "reg_title": "Citadel Burgerschap",
+    "reg_sub": "Maak je eigen Alias!",
+    "alias": "Burger Alias",
+    "alias_hint": "Unieke identificatie binnen de Citadel",
+    "email": "Communicatieadres (E-mail)",
+    "pass": "Toegangssleutel",
+    "pass_confirm": "Valideer Toegangssleutel",
+    "pass_req": "Entropievereiste: 2x Hoofdletter, 2x Kleine letter, 2x Cijfer, 2x Symbool",
+    "agree": "Ik beloof de gedragsprotocollen van de Citadel na te leven",
+    "submit": "Genereer Burgerschap",
+    "alias_taken": "FOUT: Alias is al geregistreerd in de archieven",
+    "alias_ok": "SUCCES: Alias beschikbaar",
+    "mismatch": "FOUT: Toegangssleutels komen niet overeen",
+    "weak_pass": "FOUT: Onvoldoende entropie in toegangssleutel",
+    "success": "IDENTITEIT_GEVESTIGD. Ga door naar authenticatie.",
+    "login_link": "Al burger? Authenticeer hier.",
+    "login_title": "Welkom terug bij de Citadel",
+    "login_sub": "Log in op je account",
+    "login_btn": "Betreed de Citadel",
+    "no_account": "Nog geen burger? Vestig je identiteit.",
+    "error_auth": "KRITIEKE_FOUT: Identificatie mislukt.",
+    "error_locked": "KRITIEKE_FOUT: Account geblokkeerd vanwege ghost-protocol."
   }
 }

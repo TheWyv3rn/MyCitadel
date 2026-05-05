@@ -190,5 +190,29 @@
     "ai": "ai.mycitadel.lol // ĐANG_QUÉT_TÍCH_CỰC",
     "ho_itn": "HackerOne_ITNinja",
     "email": "security@mycitadel.lol"
+  },
+  "auth": {
+    "reg_title": "Quyền Công Dân Citadel",
+    "reg_sub": "Tạo Bí Danh Của Riêng Bạn!",
+    "alias": "Bí Danh Cư Dân",
+    "alias_hint": "Mã định danh duy nhất trong Citadel",
+    "email": "Địa Chỉ Liên Lạc (Email)",
+    "pass": "Khóa Truy Cập",
+    "pass_confirm": "Xác Nhận Khóa Truy Cập",
+    "pass_req": "Yêu Cầu Entropi: 2 chữ Hoa, 2 chữ Thường, 2 Số, 2 Ký Tự",
+    "agree": "Tôi cam kết tuân thủ các Giao thức Hành vi của Citadel",
+    "submit": "Thiết Lập Quyền Công Dân",
+    "alias_taken": "LỖI: Bí danh đã được đăng ký trong kho lưu trữ",
+    "alias_ok": "THÀNH CÔNG: Bí danh có sẵn",
+    "mismatch": "LỖI: Khóa truy cập không khớp",
+    "weak_pass": "LỖI: Entropi không đủ trong khóa truy cập",
+    "success": "DANH_TÍNH_ĐÃ_XÁC_LẬP. Tiến hành xác thực.",
+    "login_link": "Đã là cư dân? Xác thực tại đây.",
+    "login_title": "Chào mừng trở lại Citadel",
+    "login_sub": "Đăng Nhập Vào Tài Khoản",
+    "login_btn": "Vào Citadel",
+    "no_account": "Chưa là cư dân? Thiết lập danh tính.",
+    "error_auth": "LỖI_NGHIÊM_TRỌNG: Xác minh danh tính thất bại.",
+    "error_locked": "LỖI_NGHIÊM_TRỌNG: Tài khoản bị khóa do giao thức bóng ma."
   }
 }

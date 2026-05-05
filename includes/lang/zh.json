@@ -190,5 +190,29 @@
     "ai": "ai.mycitadel.lol // 实时扫描中",
     "ho_itn": "HackerOne_ITNinja",
     "email": "security@mycitadel.lol"
+  },
+  "auth": {
+    "reg_title": "堡垒公民身份",
+    "reg_sub": "创建你自己的代号！",
+    "alias": "公民代号",
+    "alias_hint": "堡垒内的唯一标识符",
+    "email": "通讯地址 (电子邮件)",
+    "pass": "访问密钥",
+    "pass_confirm": "验证访问密钥",
+    "pass_req": "熵值要求：2个大写字母、2个小写字母、2个数字、2个符号",
+    "agree": "我承诺遵守堡垒行为协议",
+    "submit": "生成公民身份",
+    "alias_taken": "错误：代号已在档案中注册",
+    "alias_ok": "成功：代号可用",
+    "mismatch": "错误：访问密钥不匹配",
+    "weak_pass": "错误：访问密钥熵值不足",
+    "success": "身份已建立。请进行身份验证。",
+    "login_link": "已经是公民？请在此验证。",
+    "login_title": "欢迎回到堡垒",
+    "login_sub": "登录您的账户",
+    "login_btn": "进入堡垒",
+    "no_account": "还不是公民？建立身份。",
+    "error_auth": "致命错误：身份验证失败。",
+    "error_locked": "致命错误：账户因幽灵协议而被锁定。"
   }
 }

@@ -45,11 +45,11 @@ error_reporting(E_ALL);
             </p>
 
             <div class="d-flex flex-wrap gap-4 align-items-center">
-                <a href="/register.php" class="btn-cyber btn-lg px-5">
+                <a href="register.php" class="btn-cyber btn-lg px-5">
                     <i class="fas fa-fingerprint mr-2"></i> <?php echo __t('index', 'cta'); ?>
                 </a>
                 
-                <a href="/about.php" class="glitch-link text-uppercase font-weight-bold ml-lg-3">
+                <a href="about.php" class="glitch-link text-uppercase font-weight-bold ml-lg-3">
                     <i class="fas fa-project-diagram mr-2"></i> <?php echo __t('index', 'viewProtocols'); ?>
                 </a>
             </div>

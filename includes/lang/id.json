@@ -190,5 +190,29 @@
     "ai": "ai.mycitadel.lol // PEMINDAIAN_AKTIF",
     "ho_itn": "HackerOne_ITNinja",
     "email": "security@mycitadel.lol"
+  },
+  "auth": {
+    "reg_title": "Kewarganegaraan Citadel",
+    "reg_sub": "Buat Alias Anda Sendiri!",
+    "alias": "Alias Warga",
+    "alias_hint": "Pengidentifikasi unik di dalam Citadel",
+    "email": "Alamat Komunikasi (Email)",
+    "pass": "Kunci Akses",
+    "pass_confirm": "Validasi Kunci Akses",
+    "pass_req": "Persyaratan Entropi: 2x Huruf Besar, 2x Huruf Kecil, 2x Angka, 2x Simbol",
+    "agree": "Saya berjanji untuk mematuhi Protokol Perilaku Citadel",
+    "submit": "Hasilkan Kewarganegaraan",
+    "alias_taken": "ERROR: Alias sudah terdaftar di arsip",
+    "alias_ok": "SUKSES: Alias tersedia",
+    "mismatch": "ERROR: Kunci akses tidak cocok",
+    "weak_pass": "ERROR: Entropi tidak mencukupi pada kunci akses",
+    "success": "IDENTITAS_TERBENTUK. Lanjutkan ke autentikasi.",
+    "login_link": "Sudah menjadi Warga? Autentikasi di sini.",
+    "login_title": "Selamat datang kembali di Citadel",
+    "login_sub": "Masuk ke Akun Anda",
+    "login_btn": "Masuk ke Citadel",
+    "no_account": "Belum menjadi Warga? Bentuk Identitas.",
+    "error_auth": "ERROR_KRITIS: Verifikasi identitas gagal.",
+    "error_locked": "ERROR_KRITIS: Akun terkunci karena protokol hantu."
   }
 }

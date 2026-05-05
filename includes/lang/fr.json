@@ -190,5 +190,29 @@
     "ai": "ai.mycitadel.lol // SCAN_ACTIF",
     "ho_itn": "HackerOne_ITNinja",
     "email": "security@mycitadel.lol"
+  },
+  "auth": {
+    "reg_title": "Citoyenneté de la Citadelle",
+    "reg_sub": "Créez votre propre Alias !",
+    "alias": "Alias de Citoyen",
+    "alias_hint": "Identifiant unique au sein de la Citadelle",
+    "email": "Adresse de Comms (E-mail)",
+    "pass": "Clé d'Accès",
+    "pass_confirm": "Valider la Clé d'Accès",
+    "pass_req": "Exigence d'Entropie : 2x Majusc, 2x Minusc, 2x Chiffres, 2x Symboles",
+    "agree": "Je m'engage à respecter les protocoles de conduite de la Citadelle",
+    "submit": "Générer la Citoyenneté",
+    "alias_taken": "ERREUR : Alias déjà enregistré dans les archives",
+    "alias_ok": "SUCCÈS : Alias disponible",
+    "mismatch": "ERREUR : Les clés d'accès ne correspondent pas",
+    "weak_pass": "ERREUR : Entropie insuffisante dans la clé d'accès",
+    "success": "IDENTITÉ_ÉTABLIE. Procédez à l'authentification.",
+    "login_link": "Déjà Citoyen ? Authentifiez-vous ici.",
+    "login_title": "Bienvenue à nouveau dans la Citadelle",
+    "login_sub": "Connectez-vous à votre compte",
+    "login_btn": "Entrer dans la Citadelle",
+    "no_account": "Pas encore Citoyen ? Établissez votre identité.",
+    "error_auth": "ERREUR_CRITIQUE : Échec de la vérification d'identité.",
+    "error_locked": "ERREUR_CRITIQUE : Compte verrouillé en raison du protocole fantôme."
   }
 }

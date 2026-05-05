@@ -190,5 +190,29 @@
     "ai": "ai.mycitadel.lol // SCANSIONE_ATTIVA",
     "ho_itn": "HackerOne_ITNinja",
     "email": "security@mycitadel.lol"
+  },
+  "auth": {
+    "reg_title": "Cittadinanza della Cittadella",
+    "reg_sub": "Crea il tuo Alias!",
+    "alias": "Alias del Cittadino",
+    "alias_hint": "Identificatore univoco all'interno della Cittadella",
+    "email": "Indirizzo di Comunicazione (Email)",
+    "pass": "Chiave di Accesso",
+    "pass_confirm": "Conferma Chiave di Accesso",
+    "pass_req": "Requisito di Entropia: 2x Maiuscole, 2x Minuscole, 2x Numeri, 2x Simboli",
+    "agree": "Prometto di rispettare i protocolli di condotta della Cittadella",
+    "submit": "Genera Cittadinanza",
+    "alias_taken": "ERRORE: Alias già registrato negli archivi",
+    "alias_ok": "SUCCESSO: Alias disponibile",
+    "mismatch": "ERRORE: Le chiavi di accesso non corrispondono",
+    "weak_pass": "ERRORE: Entropia insufficiente nella chiave di accesso",
+    "success": "IDENTITÀ_STABILITA. Procedi all'autenticazione.",
+    "login_link": "Già Cittadino? Autenticati qui.",
+    "login_title": "Bentornato nella Cittadella",
+    "login_sub": "Accedi al tuo account",
+    "login_btn": "Entra nella Cittadella",
+    "no_account": "Non ancora Cittadino? Stabilisci la tua identità.",
+    "error_auth": "ERRORE_CRITICO: Verifica dell'identità fallita.",
+    "error_locked": "ERRORE_CRITICO: Account bloccato a causa del protocollo fantasma."
   }
 }
