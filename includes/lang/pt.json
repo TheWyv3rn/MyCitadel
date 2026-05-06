@@ -9,8 +9,14 @@
     "auth": "Autenticar",
     "vdp": "VDP",
     "about": "Sobre",
-    "howto": "Como",
-    "policies": "Políticas"
+    "howto": "Como Fazer",
+    "policies": "Políticas",
+    "dash_h": "Painel",
+    "feed_h": "Feed Neural",
+    "comms_h": "Comunicações",
+    "cits_h": "Cidadãos",
+    "notif_h": "Notificações",
+    "logout_h": "Sair"
   },
   "footer": {
     "ci": "INTEL_CIDADELA",
@@ -214,5 +220,314 @@
     "no_account": "Ainda não é cidadão? Estabeleça a sua identidade.",
     "error_auth": "ERRO_CRÍTICO: A verificação de identidade falhou.",
     "error_locked": "ERRO_CRÍTICO: Conta bloqueada devido ao protocolo fantasma."
+  },
+    "badges": {
+    "BADGE_BUG_1": {
+      "name": "Vulnerabilidade Inicial",
+      "desc": "Primeiro relatório de erro autenticado e verificado enviado para os arquivos."
+    },
+    "BADGE_BUG_5": {
+      "name": "Stress-Tester Avançado",
+      "desc": "Identificou com sucesso 5 falhas críticas de infraestrutura."
+    },
+    "BADGE_BUG_10": {
+      "name": "Supervisor da Cidadela",
+      "desc": "10 relatórios verificados. É um pilar da nossa rede defensiva."
+    },
+    "BADGE_GIT_1": {
+      "name": "Primeiro Commit",
+      "desc": "Ligação neural inicial ao repositório estabelecida."
+    },
+    "BADGE_GIT_5": {
+      "name": "Arquiteto de Sistemas",
+      "desc": "5 envios de Git bem-sucedidos. A base de código evolui através de si."
+    },
+    "BADGE_GIT_10": {
+      "name": "Desenvolvedor Core",
+      "desc": "10 envios de Git bem-sucedidos. Domínio absoluto da lógica da Cidadela."
+    },
+    "BADGE_POST_1": {
+      "name": "Primeira Transmissão",
+      "desc": "Sinal inicial transmitido para o feed global."
+    },
+    "BADGE_POST_5": {
+      "name": "Emissor Frequente",
+      "desc": "5 transmissões neurais registadas nos arquivos públicos."
+    },
+    "BADGE_POST_10": {
+      "name": "Streamer de Dados",
+      "desc": "10 sinais publicados. A sua voz está a ganhar frequência."
+    },
+    "BADGE_POST_50": {
+      "name": "Influenciador de Rede",
+      "desc": "50 transmissões estabelecidas. É uma fonte de informação reconhecida."
+    },
+    "BADGE_POST_100": {
+      "name": "Voz da Cidadela",
+      "desc": "100 transmissões. A sua presença está tecida na rede."
+    },
+    "BADGE_POST_1000": {
+      "name": "Lenda da Transmissão",
+      "desc": "1.000 transmissões. É o batimento cardíaco da Cidadela."
+    },
+    "BADGE_COMMENT_1": {
+      "name": "Feedback Inicial",
+      "desc": "Primeira resposta transmitida a um concidadão."
+    },
+    "BADGE_COMMENT_5": {
+      "name": "Conversador",
+      "desc": "5 respostas registadas. Envolvido em diálogo neural."
+    },
+    "BADGE_COMMENT_10": {
+      "name": "Participante da Rede",
+      "desc": "10 comentários enviados. Contribuindo para os dados coletivos."
+    },
+    "BADGE_COMMENT_50": {
+      "name": "Debatedor Ativo",
+      "desc": "50 comentários. As suas perspetivas são registadas frequentemente."
+    },
+    "BADGE_COMMENT_100": {
+      "name": "Especialista em Diálogo",
+      "desc": "100 comentários. Um mestre da comunicação entre cidadãos."
+    },
+    "BADGE_COMMENT_1000": {
+      "name": "Sussurrador do Coletivo",
+      "desc": "1.000 comentários. O seu feedback impulsiona a conversa na Cidadela."
+    },
+    "BADGE_COMMENTED_1": {
+      "name": "Sinal Recebido",
+      "desc": "Outro Cidadão respondeu à sua transmissão."
+    },
+    "BADGE_COMMENTED_5": {
+      "name": "Gatilho de Discussão",
+      "desc": "As suas transmissões iniciaram 5 diálogos neurais."
+    },
+    "BADGE_COMMENTED_10": {
+      "name": "Líder de Pensamento",
+      "desc": "10 respostas recebidas. Os seus sinais provocam interesse na comunidade."
+    },
+    "BADGE_COMMENTED_50": {
+      "name": "Interesse Público",
+      "desc": "50 cidadãos responderam às suas transmissões."
+    },
+    "BADGE_COMMENTED_100": {
+      "name": "Centro Social",
+      "desc": "100 comentários recebidos. É um ponto focal da rede."
+    },
+    "BADGE_COMMENTED_1000": {
+      "name": "Oráculo da Cidadela",
+      "desc": "1.000 respostas recebidas. Os seus sinais comandam atenção total."
+    },
+    "BADGE_LIKE_1": {
+      "name": "Ressonância Neural",
+      "desc": "Primeira validação enviada para a transmissão de outro Cidadão."
+    },
+    "BADGE_LIKE_5": {
+      "name": "Validador Frequente",
+      "desc": "5 likes enviados. Apoiando a qualidade da rede."
+    },
+    "BADGE_LIKE_10": {
+      "name": "Curador de Dados",
+      "desc": "10 likes enviados. Identificando sinais de alto valor."
+    },
+    "BADGE_LIKE_50": {
+      "name": "Apoiador de Sinais",
+      "desc": "50 likes enviados. Molda ativamente o humor da Cidadela."
+    },
+    "BADGE_LIKE_100": {
+      "name": "Patrono do Núcleo",
+      "desc": "100 likes enviados. Um validador dedicado de conteúdo de Cidadãos."
+    },
+    "BADGE_LIKE_1000": {
+      "name": "O Grande Validador",
+      "desc": "1.000 likes enviados. Define o consenso da rede."
+    },
+    "BADGE_LIKED_1": {
+      "name": "Eco Positivo",
+      "desc": "A sua transmissão recebeu a sua primeira validação."
+    },
+    "BADGE_LIKED_5": {
+      "name": "Sinal Validado",
+      "desc": "5 cidadãos expressaram ressonância com os seus dados."
+    },
+    "BADGE_LIKED_10": {
+      "name": "Alta Fidelidade",
+      "desc": "10 likes recebidos. As suas transmissões são consideradas de alto valor."
+    },
+    "BADGE_LIKED_50": {
+      "name": "Fonte Respeitada",
+      "desc": "50 likes recebidos. A Cidadela valoriza as suas transmissões."
+    },
+    "BADGE_LIKED_100": {
+      "name": "Estrela da Rede",
+      "desc": "100 likes recebidos. O seu conteúdo ressoa consistentemente."
+    },
+    "BADGE_LIKED_1000": {
+      "name": "Ídolo da Cidadela",
+      "desc": "1.000 likes recebidos. É um farol de qualidade no vazio."
+    },
+    "BADGE_SLIKE_1": {
+      "name": "Hiper-Link",
+      "desc": "Primeiro Super Like enviado. Ressonância excecional alcançada."
+    },
+    "BADGE_SLIKE_5": {
+      "name": "Hiper-Validador",
+      "desc": "5 Super Likes enviados. Identificando os sinais de elite."
+    },
+    "BADGE_SLIKE_10": {
+      "name": "Comunicador em Rajada",
+      "desc": "10 Super Likes enviados. Validação de alta energia registada."
+    },
+    "BADGE_SLIKE_50": {
+      "name": "Super Curador",
+      "desc": "50 Super Likes enviados. Só valida o que há de melhor."
+    },
+    "BADGE_SLIKE_100": {
+      "name": "Patrono de Plasma",
+      "desc": "100 Super Likes enviados. Uma central de feedback positivo."
+    },
+    "BADGE_SLIKE_1000": {
+      "name": "O Arquiteto do Elogio",
+      "desc": "1.000 Super Likes enviados. Define o conteúdo de pico da rede."
+    },
+    "BADGE_SDIS_1": {
+      "name": "Crítico do Sistema",
+      "desc": "Primeiro Super Dislike enviado. Dissidência registada no stream."
+    },
+    "BADGE_SDIS_5": {
+      "name": "Filtro de Sinal",
+      "desc": "5 Super Dislikes enviados. Purgando ativamente ruído de baixo valor."
+    },
+    "BADGE_SDIS_10": {
+      "name": "Vigilante do Vazio",
+      "desc": "10 Super Dislikes enviados. Mantendo os padrões da Cidadela."
+    },
+    "BADGE_SDIS_50": {
+      "name": "Realista Severo",
+      "desc": "50 Super Dislikes enviados. Os seus padrões são excecionalmente altos."
+    },
+    "BADGE_SDIS_100": {
+      "name": "Líder da Inquisição",
+      "desc": "100 Super Dislikes enviados. Guardião contra a mediocridade."
+    },
+    "BADGE_SDIS_1000": {
+      "name": "O Expurgador",
+      "desc": "1.000 Super Dislikes enviados. É o vazio que consome os fracos."
+    },
+    "BADGE_SLIKED_1": {
+      "name": "Ressonância de Elite",
+      "desc": "A sua transmissão recebeu um Super Like de alta energia."
+    },
+    "BADGE_SLIKED_5": {
+      "name": "Hiper-Sinal",
+      "desc": "5 Super Likes recebidos. As suas transmissões são de nível elite."
+    },
+    "BADGE_SLIKED_10": {
+      "name": "Pico Neural",
+      "desc": "10 Super Likes recebidos. Está no topo do feed da Cidadela."
+    },
+    "BADGE_SLIKED_50": {
+      "name": "Super Nova",
+      "desc": "50 Super Likes recebidos. Uma fonte radiante de dados perfeitos."
+    },
+    "BADGE_SLIKED_100": {
+      "name": "O Escolhido",
+      "desc": "100 Super Likes recebidos. As suas transmissões são lendárias."
+    },
+    "BADGE_SLIKED_1000": {
+      "name": "Cidadão Transcendente",
+      "desc": "1.000 Super Likes. Atingiu o auge da validação."
+    },
+    "BADGE_SDISD_1": {
+      "name": "Estática Detetada",
+      "desc": "Um cidadão emitiu um Super Dislike contra o seu sinal."
+    },
+    "BADGE_SDISD_5": {
+      "name": "Atração do Vazio",
+      "desc": "5 Super Dislikes recebidos. O seu conteúdo está a polarizar a rede."
+    },
+    "BADGE_SDISD_10": {
+      "name": "Nível de Notoriedade 1",
+      "desc": "10 Super Dislikes recebidos. Está a tornar-se um disruptor conhecido."
+    },
+    "BADGE_SDISD_50": {
+      "name": "Exilado do Sistema",
+      "desc": "50 Super Dislikes recebidos. A Cidadela rejeita as suas transmissões."
+    },
+    "BADGE_SDISD_100": {
+      "name": "Inimigo do Estado",
+      "desc": "100 Super Dislikes. A sua presença é altamente controversa."
+    },
+    "BADGE_SDISD_1000": {
+      "name": "O Grande Antagonista",
+      "desc": "1.000 Super Dislikes. É a sombra na luz da Cidadela."
+    },
+    "BADGE_PROF_AVATAR": {
+      "name": "Identidade Visual",
+      "desc": "Semelhança neural carregada para o dossier da Cidadela."
+    },
+    "BADGE_PROF_BANNER": {
+      "name": "Estética de Domínio",
+      "desc": "Banner de perfil personalizado estabelecido."
+    },
+    "BADGE_PROF_BIO": {
+      "name": "Narrativa de Cidadão",
+      "desc": "História pessoal e arquivos de bio finalizados."
+    },
+    "BADGE_PROF_SOCIALS": {
+      "name": "Expansão Neural",
+      "desc": "Links sociais externos integrados no seu dossier."
+    },
+    "BADGE_PROF_EDUCATION": {
+      "name": "Arquivo Intelectual",
+      "desc": "Registos académicos e educacionais verificados."
+    },
+    "BADGE_PROF_JOB": {
+      "name": "Nível Profissional",
+      "desc": "Dados de emprego e ocupação estabelecidos."
+    },
+    "BADGE_PROF_SECURITY": {
+      "name": "Link Fortificado",
+      "desc": "Todos os protocolos de identidade e segurança totalmente operacionais."
+    },
+    "BADGE_COMM_PM_1": {
+      "name": "Link Direto",
+      "desc": "Primeira transmissão neural privada estabelecida."
+    },
+    "BADGE_COMM_PM_5": {
+      "name": "Canalizador Privado",
+      "desc": "5 comunicações privadas registadas."
+    },
+    "BADGE_COMM_PM_10": {
+      "name": "Sussurrador das Sombras",
+      "desc": "10 canais privados ativos. Move-se nas camadas silenciosas."
+    },
+    "BADGE_COMM_GRP_1": {
+      "name": "Nó de Grupo",
+      "desc": "Juntou-se ou iniciou a primeira transmissão multi-cidadão."
+    },
+    "BADGE_COMM_GRP_5": {
+      "name": "Coordenador de Cluster",
+      "desc": "5 nós de grupo estabelecidos. É um centro de atividade."
+    },
+    "BADGE_COMM_GRP_10": {
+      "name": "A Mente Coletiva",
+      "desc": "10 transmissões de grupo. Gere clusters inteiros de Cidadãos."
+    }
+  },
+  "dash": {
+    "rep_h": "Status de Reputação",
+    "inf_h": "Poder de Influência",
+    "elite": "CIDADÃO ELITE",
+    "esit": "ESID",
+    "est": "ESTABELECIDO",
+    "na": "Nenhuma narrativa de identidade transmitida. Fragmento de dados ausente.",
+    "ntw_avg": "Média da Rede",
+    "nai": "Índice de Atividade Neural",
+    "badge_title": "Suas Conquistas",
+    "connection": "Telemetria de Conexão",
+    "direct": "Mensagens Diretas",
+    "group": "Mensagens de Grupo",
+    "comments": "Comentários"
   }
 }

@@ -9,8 +9,14 @@
     "auth": "Kimlik Doğrula",
     "vdp": "VDP",
     "about": "Hakkında",
-    "howto": "Nasıl",
-    "policies": "Politikalar"
+    "howto": "Nasıl Yapılır",
+    "policies": "Politikalar",
+    "dash_h": "Panel",
+    "feed_h": "Nöral Akış",
+    "comms_h": "İletişim",
+    "cits_h": "Vatandaşlar",
+    "notif_h": "Bildirimler",
+    "logout_h": "Çıkış Yap"
   },
   "footer": {
     "ci": "CITADEL_INTEL",
@@ -214,5 +220,314 @@
     "no_account": "Henüz vatandaş değil misiniz? Kimliğinizi oluşturun.",
     "error_auth": "KRİTİK_HATA: Kimlik doğrulama başarısız oldu.",
     "error_locked": "KRİTİK_HATA: Hayalet protokolü nedeniyle hesap kilitlendi."
+  },
+    "badges": {
+    "BADGE_BUG_1": {
+      "name": "İlk Zafiyet",
+      "desc": "Arşivlere sunulan ilk kimliği doğrulanmış ve doğrulanmış hata raporu."
+    },
+    "BADGE_BUG_5": {
+      "name": "Gelişmiş Stres Testçisi",
+      "desc": "5 kritik altyapı kusuru başarıyla tanımlandı."
+    },
+    "BADGE_BUG_10": {
+      "name": "Citadel Gözetmeni",
+      "desc": "10 doğrulanmış rapor. Savunma ağımızın bir sütunusun."
+    },
+    "BADGE_GIT_1": {
+      "name": "İlk Commit",
+      "desc": "Depoya ilk nöral bağlantı kuruldu."
+    },
+    "BADGE_GIT_5": {
+      "name": "Sistem Mimarı",
+      "desc": "5 başarılı Git push işlemi. Kod tabanı senin sayende evrimleşiyor."
+    },
+    "BADGE_GIT_10": {
+      "name": "Çekirdek Geliştirici",
+      "desc": "10 başarılı Git push işlemi. Citadel mantığında mutlak ustalık."
+    },
+    "BADGE_POST_1": {
+      "name": "İlk Yayın",
+      "desc": "Küresel akışa iletilen ilk sinyal."
+    },
+    "BADGE_POST_5": {
+      "name": "Sık Yayıncı",
+      "desc": "Kamu arşivlerinde kayıtlı 5 nöral iletim."
+    },
+    "BADGE_POST_10": {
+      "name": "Veri Akışçısı",
+      "desc": "10 sinyal yayınlandı. Sesin frekans kazanıyor."
+    },
+    "BADGE_POST_50": {
+      "name": "Ağ Etkileyicisi",
+      "desc": "50 yayın kuruldu. Bilinen bir bilgi kaynağısın."
+    },
+    "BADGE_POST_100": {
+      "name": "Citadel'in Sesi",
+      "desc": "100 iletim. Varlığın ağın içine dokunmuş durumda."
+    },
+    "BADGE_POST_1000": {
+      "name": "Yayın Efsanesi",
+      "desc": "1.000 iletim. Citadel'in kalp atışısın."
+    },
+    "BADGE_COMMENT_1": {
+      "name": "İlk Geri Bildirim",
+      "desc": "Bir vatandaş arkadaşına iletilen ilk yanıt."
+    },
+    "BADGE_COMMENT_5": {
+      "name": "Sohbet Erbabı",
+      "desc": "5 yanıt kaydedildi. Nöral diyaloğa giriliyor."
+    },
+    "BADGE_COMMENT_10": {
+      "name": "Ağ Katılımcısı",
+      "desc": "10 yorum gönderildi. Kolektif verilere katkıda bulunuyor."
+    },
+    "BADGE_COMMENT_50": {
+      "name": "Aktif Tartışmacı",
+      "desc": "50 yorum. Perspektiflerin sık sık kaydediliyor."
+    },
+    "BADGE_COMMENT_100": {
+      "name": "Diyalog Uzmanı",
+      "desc": "100 yorum. Vatandaşlar arası iletişim ustası."
+    },
+    "BADGE_COMMENT_1000": {
+      "name": "Kolektif Fısıldayıcı",
+      "desc": "1.000 yorum. Geri bildirimlerin Citadel konuşmalarını yönlendiriyor."
+    },
+    "BADGE_COMMENTED_1": {
+      "name": "Sinyal Alındı",
+      "desc": "Başka bir vatandaş yayınına yanıt verdi."
+    },
+    "BADGE_COMMENTED_5": {
+      "name": "Tartışma Tetikleyici",
+      "desc": "Yayınların 5 nöral diyalog başlattı."
+    },
+    "BADGE_COMMENTED_10": {
+      "name": "Fikir Önderi",
+      "desc": "10 yanıt alındı. Sinyallerin topluluğun ilgisini çekiyor."
+    },
+    "BADGE_COMMENTED_50": {
+      "name": "Kamuoyu İlgisi",
+      "desc": "50 vatandaş iletimlerine yanıt verdi."
+    },
+    "BADGE_COMMENTED_100": {
+      "name": "Sosyal Merkez",
+      "desc": "100 yorum alındı. Ağın odak noktasısın."
+    },
+    "BADGE_COMMENTED_1000": {
+      "name": "Citadel Kahini",
+      "desc": "1.000 yanıt alındı. Sinyallerin tam dikkat gerektiriyor."
+    },
+    "BADGE_LIKE_1": {
+      "name": "Nöral Rezonans",
+      "desc": "Başka bir vatandaşın yayınına gönderilen ilk doğrulama."
+    },
+    "BADGE_LIKE_5": {
+      "name": "Sık Doğrulayıcı",
+      "desc": "5 beğeni gönderildi. Ağın kalitesini destekliyor."
+    },
+    "BADGE_LIKE_10": {
+      "name": "Veri Küratörü",
+      "desc": "10 beğeni gönderildi. Yüksek değerli sinyaller tanımlanıyor."
+    },
+    "BADGE_LIKE_50": {
+      "name": "Sinyal Destekçisi",
+      "desc": "50 beğeni gönderildi. Citadel'in ruh halini aktif olarak şekillendiriyorsun."
+    },
+    "BADGE_LIKE_100": {
+      "name": "Çekirdek Hamisi",
+      "desc": "100 beğeni gönderildi. Vatandaş içeriğinin sadık bir doğrulayıcısı."
+    },
+    "BADGE_LIKE_1000": {
+      "name": "Büyük Doğrulayıcı",
+      "desc": "1.000 beğeni gönderildi. Ağın konsensüsünü sen belirlersin."
+    },
+    "BADGE_LIKED_1": {
+      "name": "Pozitif Eko",
+      "desc": "Yayının ilk doğrulamasını aldı."
+    },
+    "BADGE_LIKED_5": {
+      "name": "Doğrulanmış Sinyal",
+      "desc": "5 vatandaş verilerinle rezonansa girdi."
+    },
+    "BADGE_LIKED_10": {
+      "name": "Yüksek Sadakat",
+      "desc": "10 beğeni alındı. Yayınların yüksek değerli kabul ediliyor."
+    },
+    "BADGE_LIKED_50": {
+      "name": "Saygın Kaynak",
+      "desc": "50 beğeni alındı. Citadel iletimlerine değer veriyor."
+    },
+    "BADGE_LIKED_100": {
+      "name": "Ağ Yıldızı",
+      "desc": "100 beğeni alındı. İçeriğin sürekli rezonans yaratıyor."
+    },
+    "BADGE_LIKED_1000": {
+      "name": "Citadel İdolü",
+      "desc": "1.000 beğeni alındı. Boşlukta bir kalite fenerisin."
+    },
+    "BADGE_SLIKE_1": {
+      "name": "Hiper-Bağlantı",
+      "desc": "İlk Süper Beğeni gönderildi. İstisnai rezonans sağlandı."
+    },
+    "BADGE_SLIKE_5": {
+      "name": "Hiper-Doğrulayıcı",
+      "desc": "5 Süper Beğeni gönderildi. Elit sinyaller tanımlanıyor."
+    },
+    "BADGE_SLIKE_10": {
+      "name": "Seri İletişimci",
+      "desc": "10 Süper Beğeni gönderildi. Yüksek enerjili doğrulama kaydedildi."
+    },
+    "BADGE_SLIKE_50": {
+      "name": "Süper Küratör",
+      "desc": "50 Süper Beğeni gönderildi. Sadece mutlak en iyiyi doğrularsın."
+    },
+    "BADGE_SLIKE_100": {
+      "name": "Plazma Hamisi",
+      "desc": "100 Süper Beğeni gönderildi. Pozitif geri bildirimin güç merkezi."
+    },
+    "BADGE_SLIKE_1000": {
+      "name": "Övgü Mimarı",
+      "desc": "1.000 Süper Beğeni gönderildi. Ağın zirve içeriğini sen belirlersin."
+    },
+    "BADGE_SDIS_1": {
+      "name": "Sistem Eleştirmeni",
+      "desc": "İlk Süper Beğenmeme gönderildi. Akışta muhalefet kaydedildi."
+    },
+    "BADGE_SDIS_5": {
+      "name": "Sinyal Filtresi",
+      "desc": "5 Süper Beğenmeme gönderildi. Düşük değerli gürültüyü aktif olarak temizliyorsun."
+    },
+    "BADGE_SDIS_10": {
+      "name": "Boşluk Gözcüsü",
+      "desc": "10 Süper Beğenmeme gönderildi. Citadel standartları korunuyor."
+    },
+    "BADGE_SDIS_50": {
+      "name": "Sert Gerçekçi",
+      "desc": "50 Süper Beğenmeme gönderildi. Standartların olağanüstü yüksek."
+    },
+    "BADGE_SDIS_100": {
+      "name": "Engizisyon Lideri",
+      "desc": "100 Süper Beğenmeme gönderildi. Sıradanlığa karşı muhafız."
+    },
+    "BADGE_SDIS_1000": {
+      "name": "Tasfiyeci",
+      "desc": "1.000 Süper Beğenmeme gönderildi. Sen zayıfları tüketen boşluksun."
+    },
+    "BADGE_SLIKED_1": {
+      "name": "Elit Rezonans",
+      "desc": "Yayının yüksek enerjili bir Süper Beğeni aldı."
+    },
+    "BADGE_SLIKED_5": {
+      "name": "Hiper-Sinyal",
+      "desc": "5 Süper Beğeni alındı. İletimlerin elit seviyede."
+    },
+    "BADGE_SLIKED_10": {
+      "name": "Nöral Zirve",
+      "desc": "10 Süper Beğeni alındı. Citadel akışının zirvesindesin."
+    },
+    "BADGE_SLIKED_50": {
+      "name": "Süper Nova",
+      "desc": "50 Süper Beğeni alındı. Mükemmel verilerin ışıldayan kaynağı."
+    },
+    "BADGE_SLIKED_100": {
+      "name": "Seçilmiş Kişi",
+      "desc": "100 Süper Beğeni alındı. Yayınların efsanevi."
+    },
+    "BADGE_SLIKED_1000": {
+      "name": "Üstün Vatandaş",
+      "desc": "1.000 Süper Beğeni. Doğrulamanın zirvesine ulaştın."
+    },
+    "BADGE_SDISD_1": {
+      "name": "Parazit Tespit Edildi",
+      "desc": "Bir vatandaş sinyaline karşı Süper Beğenmeme yayınladı."
+    },
+    "BADGE_SDISD_5": {
+      "name": "Boşluk Çekimi",
+      "desc": "5 Süper Beğenmeme alındı. İçeriğin ağı kutuplaştırıyor."
+    },
+    "BADGE_SDISD_10": {
+      "name": "Sabıka Seviyesi 1",
+      "desc": "10 Süper Beğenmeme alındı. Bilinen bir bozguncu olmaya başlıyorsun."
+    },
+    "BADGE_SDISD_50": {
+      "name": "Sistem Dışlanmışı",
+      "desc": "50 Süper Beğenmeme alındı. Citadel yayınlarını reddediyor."
+    },
+    "BADGE_SDISD_100": {
+      "name": "Devlet Düşmanı",
+      "desc": "100 Süper Beğenmeme. Varlığın oldukça tartışmalı."
+    },
+    "BADGE_SDISD_1000": {
+      "name": "Büyük Antagonist",
+      "desc": "1.000 Süper Beğenmeme. Sen Citadel'in ışığındaki gölgesin."
+    },
+    "BADGE_PROF_AVATAR": {
+      "name": "Görsel Kimlik",
+      "desc": "Nöral benzerlik Citadel dosyasına yüklendi."
+    },
+    "BADGE_PROF_BANNER": {
+      "name": "Alan Estetiği",
+      "desc": "Özelleştirilmiş profil başlığı oluşturuldu."
+    },
+    "BADGE_PROF_BIO": {
+      "name": "Vatandaş Anlatısı",
+      "desc": "Kişisel geçmiş ve biyografi arşivleri tamamlandı."
+    },
+    "BADGE_PROF_SOCIALS": {
+      "name": "Nöral Genişleme",
+      "desc": "Harici sosyal bağlantılar dosyana entegre edildi."
+    },
+    "BADGE_PROF_EDUCATION": {
+      "name": "Entelektüel Arşiv",
+      "desc": "Akademik ve eğitim kayıtları doğrulandı."
+    },
+    "BADGE_PROF_JOB": {
+      "name": "Profesyonel Kademe",
+      "desc": "İstihdam ve mesleki veriler oluşturuldu."
+    },
+    "BADGE_PROF_SECURITY": {
+      "name": "Tahkim Edilmiş Bağlantı",
+      "desc": "Tüm kimlik ve güvenlik protokolleri tamamen operasyonel."
+    },
+    "BADGE_COMM_PM_1": {
+      "name": "Doğrudan Bağlantı",
+      "desc": "İlk özel nöral iletim kuruldu."
+    },
+    "BADGE_COMM_PM_5": {
+      "name": "Özel Kanalcı",
+      "desc": "5 özel iletişim kaydedildi."
+    },
+    "BADGE_COMM_PM_10": {
+      "name": "Gölge Fısıldayıcısı",
+      "desc": "10 özel kanal aktif. Sessiz katmanlarda hareket ediyorsun."
+    },
+    "BADGE_COMM_GRP_1": {
+      "name": "Grup Düğümü",
+      "desc": "İlk çok vatandaşlı iletime katıldı veya başlattı."
+    },
+    "BADGE_COMM_GRP_5": {
+      "name": "Küme Koordinatörü",
+      "desc": "5 grup düğümü kuruldu. Bir etkinlik merkezisin."
+    },
+    "BADGE_COMM_GRP_10": {
+      "name": "Kolektif Zihin",
+      "desc": "10 grup iletimi. Tüm Vatandaş kümelerini yönetiyorsun."
+    }
+  },
+  "dash": {
+    "rep_h": "İtibar Durumu",
+    "inf_h": "Etki Gücü",
+    "elite": "ELİT VATANDAŞ",
+    "esit": "ESID",
+    "est": "KURULDU",
+    "na": "Kimlik anlatısı yayınlanmadı. Veri parçası eksik.",
+    "ntw_avg": "Ağ Ortalaması",
+    "nai": "Nöral Aktivite Endeksi",
+    "badge_title": "Başarılarınız",
+    "connection": "Bağlantı Telemetrisi",
+    "direct": "Doğrudan Mesajlar",
+    "group": "Grup Mesajları",
+    "comments": "Yorumlar"
   }
 }

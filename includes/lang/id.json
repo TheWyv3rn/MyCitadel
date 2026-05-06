@@ -10,7 +10,13 @@
     "vdp": "VDP",
     "about": "Tentang",
     "howto": "Panduan",
-    "policies": "Kebijakan"
+    "policies": "Kebijakan",
+    "dash_h": "Dasbor",
+    "feed_h": "Aliran Neural",
+    "comms_h": "Komunikasi",
+    "cits_h": "Warga",
+    "notif_h": "Notifikasi",
+    "logout_h": "Keluar"
   },
   "footer": {
     "ci": "CITADEL_INTEL",
@@ -214,5 +220,314 @@
     "no_account": "Belum menjadi Warga? Bentuk Identitas.",
     "error_auth": "ERROR_KRITIS: Verifikasi identitas gagal.",
     "error_locked": "ERROR_KRITIS: Akun terkunci karena protokol hantu."
+  },
+    "badges": {
+    "BADGE_BUG_1": {
+      "name": "Kerentanan Awal",
+      "desc": "Laporan bug pertama yang terautentikasi dan terverifikasi yang dikirimkan ke arsip."
+    },
+    "BADGE_BUG_5": {
+      "name": "Penguji Tekanan Lanjutan",
+      "desc": "Berhasil mengidentifikasi 5 kelemahan infrastruktur kritis."
+    },
+    "BADGE_BUG_10": {
+      "name": "Pengawas Citadel",
+      "desc": "10 laporan terverifikasi. Anda adalah pilar jaringan pertahanan kami."
+    },
+    "BADGE_GIT_1": {
+      "name": "Commit Pertama",
+      "desc": "Tautan neural awal ke repositori telah ditetapkan."
+    },
+    "BADGE_GIT_5": {
+      "name": "Arsitek Sistem",
+      "desc": "5 push Git yang berhasil. Kode sumber berkembang melalui Anda."
+    },
+    "BADGE_GIT_10": {
+      "name": "Pengembang Inti",
+      "desc": "10 push Git yang berhasil. Penguasaan mutlak atas logika Citadel."
+    },
+    "BADGE_POST_1": {
+      "name": "Siaran Pertama",
+      "desc": "Sinyal awal dikirim ke feed global."
+    },
+    "BADGE_POST_5": {
+      "name": "Penyiar Setia",
+      "desc": "5 transmisi neural terekam dalam arsip publik."
+    },
+    "BADGE_POST_10": {
+      "name": "Pengalir Data",
+      "desc": "10 sinyal diterbitkan. Suara Anda mulai mendapatkan frekuensi."
+    },
+    "BADGE_POST_50": {
+      "name": "Pemengaruh Jaringan",
+      "desc": "50 siaran ditetapkan. Anda adalah sumber informasi yang dikenal."
+    },
+    "BADGE_POST_100": {
+      "name": "Suara Citadel",
+      "desc": "100 transmisi. Kehadiran Anda terjalin ke dalam jaringan."
+    },
+    "BADGE_POST_1000": {
+      "name": "Legenda Siaran",
+      "desc": "1.000 transmisi. Anda adalah detak jantung Citadel."
+    },
+    "BADGE_COMMENT_1": {
+      "name": "Umpan Balik Awal",
+      "desc": "Tanggapan pertama dikirimkan kepada sesama Warga."
+    },
+    "BADGE_COMMENT_5": {
+      "name": "Pengobrol",
+      "desc": "5 tanggapan terekam. Terlibat dalam dialog neural."
+    },
+    "BADGE_COMMENT_10": {
+      "name": "Peserta Jaringan",
+      "desc": "10 komentar dikirimkan. Berkontribusi pada data kolektif."
+    },
+    "BADGE_COMMENT_50": {
+      "name": "Pendebat Aktif",
+      "desc": "50 komentar. Perspektif Anda sering terekam."
+    },
+    "BADGE_COMMENT_100": {
+      "name": "Spesialis Dialog",
+      "desc": "100 komentar. Ahli dalam komunikasi antar-warga."
+    },
+    "BADGE_COMMENT_1000": {
+      "name": "Pembisik Kolektif",
+      "desc": "1.000 komentar. Umpan balik Anda menggerakkan percakapan Citadel."
+    },
+    "BADGE_COMMENTED_1": {
+      "name": "Sinyal Diterima",
+      "desc": "Warga lain telah menanggapi siaran Anda."
+    },
+    "BADGE_COMMENTED_5": {
+      "name": "Pemicu Diskusi",
+      "desc": "Siaran Anda telah menginisiasi 5 dialog neural."
+    },
+    "BADGE_COMMENTED_10": {
+      "name": "Pemimpin Pemikiran",
+      "desc": "10 tanggapan diterima. Sinyal Anda memicu minat komunitas."
+    },
+    "BADGE_COMMENTED_50": {
+      "name": "Minat Publik",
+      "desc": "50 warga telah menanggapi transmisi Anda."
+    },
+    "BADGE_COMMENTED_100": {
+      "name": "Pusat Sosial",
+      "desc": "100 komentar diterima. Anda adalah titik fokus jaringan."
+    },
+    "BADGE_COMMENTED_1000": {
+      "name": "Orakel Citadel",
+      "desc": "1.000 tanggapan diterima. Sinyal Anda menuntut perhatian total."
+    },
+    "BADGE_LIKE_1": {
+      "name": "Resonansi Neural",
+      "desc": "Validasi pertama dikirim ke siaran Warga lain."
+    },
+    "BADGE_LIKE_5": {
+      "name": "Validator Setia",
+      "desc": "5 like terkirim. Mendukung kualitas jaringan."
+    },
+    "BADGE_LIKE_10": {
+      "name": "Kurator Data",
+      "desc": "10 like terkirim. Mengidentifikasi sinyal bernilai tinggi."
+    },
+    "BADGE_LIKE_50": {
+      "name": "Pendukung Sinyal",
+      "desc": "50 like terkirim. Anda secara aktif membentuk suasana Citadel."
+    },
+    "BADGE_LIKE_100": {
+      "name": "Patron Inti",
+      "desc": "100 like terkirim. Validator berdedikasi untuk konten Warga."
+    },
+    "BADGE_LIKE_1000": {
+      "name": "Validator Agung",
+      "desc": "1.000 like terkirim. Anda menentukan konsensus jaringan."
+    },
+    "BADGE_LIKED_1": {
+      "name": "Gema Positif",
+      "desc": "Siaran Anda telah menerima validasi pertamanya."
+    },
+    "BADGE_LIKED_5": {
+      "name": "Sinyal Tervalidasi",
+      "desc": "5 warga telah menyatakan resonansi dengan data Anda."
+    },
+    "BADGE_LIKED_10": {
+      "name": "Kesetiaan Tinggi",
+      "desc": "10 like diterima. Siaran Anda dianggap bernilai tinggi."
+    },
+    "BADGE_LIKED_50": {
+      "name": "Sumber Dihormati",
+      "desc": "50 like diterima. Citadel menghargai transmisi Anda."
+    },
+    "BADGE_LIKED_100": {
+      "name": "Bintang Jaringan",
+      "desc": "100 like diterima. Konten Anda secara konsisten beresonansi."
+    },
+    "BADGE_LIKED_1000": {
+      "name": "Idola Citadel",
+      "desc": "1.000 like diterima. Anda adalah suar kualitas di dalam void."
+    },
+    "BADGE_SLIKE_1": {
+      "name": "Hiper-Link",
+      "desc": "Super Like pertama terkirim. Resonansi luar biasa tercapai."
+    },
+    "BADGE_SLIKE_5": {
+      "name": "Hiper-Validator",
+      "desc": "5 Super Like terkirim. Mengidentifikasi sinyal elit."
+    },
+    "BADGE_SLIKE_10": {
+      "name": "Komunikator Burst",
+      "desc": "10 Super Like terkirim. Validasi energi tinggi terekam."
+    },
+    "BADGE_SLIKE_50": {
+      "name": "Super Kurator",
+      "desc": "50 Super Like terkirim. Anda hanya memvalidasi yang terbaik."
+    },
+    "BADGE_SLIKE_100": {
+      "name": "Patron Plasma",
+      "desc": "100 Super Like terkirim. Pembangkit umpan balik positif."
+    },
+    "BADGE_SLIKE_1000": {
+      "name": "Arsitek Pujian",
+      "desc": "1.000 Super Like terkirim. Anda menentukan konten puncak jaringan."
+    },
+    "BADGE_SDIS_1": {
+      "name": "Kritik Sistem",
+      "desc": "Super Dislike pertama terkirim. Ketidaksetujuan terekam dalam stream."
+    },
+    "BADGE_SDIS_5": {
+      "name": "Penyaring Sinyal",
+      "desc": "5 Super Dislike terkirim. Anda secara aktif membersihkan gangguan bernilai rendah."
+    },
+    "BADGE_SDIS_10": {
+      "name": "Penjaga Void",
+      "desc": "10 Super Dislike terkirim. Mempertahankan standar Citadel."
+    },
+    "BADGE_SDIS_50": {
+      "name": "Realis Keras",
+      "desc": "50 Super Dislike terkirim. Standar Anda sangat tinggi."
+    },
+    "BADGE_SDIS_100": {
+      "name": "Pimpinan Inkuisisi",
+      "desc": "100 Super Dislike terkirim. Penjaga terhadap hal-hal yang medioker."
+    },
+    "BADGE_SDIS_1000": {
+      "name": "Pembersih",
+      "desc": "1.000 Super Dislike terkirim. Anda adalah void yang melahap yang lemah."
+    },
+    "BADGE_SLIKED_1": {
+      "name": "Resonansi Elit",
+      "desc": "Siaran Anda telah menerima Super Like berenergi tinggi."
+    },
+    "BADGE_SLIKED_5": {
+      "name": "Hiper-Sinyal",
+      "desc": "5 Super Like diterima. Transmisi Anda adalah kelas elit."
+    },
+    "BADGE_SLIKED_10": {
+      "name": "Puncak Neural",
+      "desc": "10 Super Like diterima. Anda berada di puncak feed Citadel."
+    },
+    "BADGE_SLIKED_50": {
+      "name": "Super Nova",
+      "desc": "50 Super Like diterima. Sumber data sempurna yang bersinar."
+    },
+    "BADGE_SLIKED_100": {
+      "name": "Yang Terpilih",
+      "desc": "100 Super Like diterima. Siaran Anda legendarer."
+    },
+    "BADGE_SLIKED_1000": {
+      "name": "Warga Transenden",
+      "desc": "1.000 Super Like. Anda telah mencapai puncak validasi."
+    },
+    "BADGE_SDISD_1": {
+      "name": "Statis Terdeteksi",
+      "desc": "Seorang warga telah mengeluarkan Super Dislike terhadap sinyal Anda."
+    },
+    "BADGE_SDISD_5": {
+      "name": "Tarikan Void",
+      "desc": "5 Super Dislike diterima. Konten Anda mempolarisasi jaringan."
+    },
+    "BADGE_SDISD_10": {
+      "name": "Tingkat Ketenaran 1",
+      "desc": "10 Super Dislike diterima. Anda mulai dikenal sebagai pengganggu."
+    },
+    "BADGE_SDISD_50": {
+      "name": "Terbuang dari Sistem",
+      "desc": "50 Super Dislike diterima. Citadel menolak siaran Anda."
+    },
+    "BADGE_SDISD_100": {
+      "name": "Musuh Negara",
+      "desc": "100 Super Dislike. Kehadiran Anda sangat kontroversial."
+    },
+    "BADGE_SDISD_1000": {
+      "name": "Antagonis Agung",
+      "desc": "1.000 Super Dislike. Anda adalah bayangan di dalam cahaya Citadel."
+    },
+    "BADGE_PROF_AVATAR": {
+      "name": "Identitas Visual",
+      "desc": "Kemiripan neural diunggah ke dossier Citadel."
+    },
+    "BADGE_PROF_BANNER": {
+      "name": "Estetika Domain",
+      "desc": "Banner profil kustom ditetapkan."
+    },
+    "BADGE_PROF_BIO": {
+      "name": "Narasi Warga",
+      "desc": "Sejarah pribadi dan arsip bio diselesaikan."
+    },
+    "BADGE_PROF_SOCIALS": {
+      "name": "Ekspansi Neural",
+      "desc": "Tautan sosial eksternal terintegrasi ke dalam dossier Anda."
+    },
+    "BADGE_PROF_EDUCATION": {
+      "name": "Arsip Intelektual",
+      "desc": "Catatan akademik dan pendidikan terverifikasi."
+    },
+    "BADGE_PROF_JOB": {
+      "name": "Tingkat Profesional",
+      "desc": "Data pekerjaan dan okupasi ditetapkan."
+    },
+    "BADGE_PROF_SECURITY": {
+      "name": "Tautan Terbentengi",
+      "desc": "Semua protokol identitas dan keamanan beroperasi penuh."
+    },
+    "BADGE_COMM_PM_1": {
+      "name": "Tautan Langsung",
+      "desc": "Transmisi neural privat pertama ditetapkan."
+    },
+    "BADGE_COMM_PM_5": {
+      "name": "Penyalur Privat",
+      "desc": "5 komunikasi privat terekam."
+    },
+    "BADGE_COMM_PM_10": {
+      "name": "Pembisik Bayangan",
+      "desc": "10 saluran privat aktif. Anda bergerak di lapisan sunyi."
+    },
+    "BADGE_COMM_GRP_1": {
+      "name": "Node Grup",
+      "desc": "Bergabung atau memulai transmisi multi-warga pertama."
+    },
+    "BADGE_COMM_GRP_5": {
+      "name": "Koordinator Klaster",
+      "desc": "5 node grup ditetapkan. Anda adalah pusat aktivitas."
+    },
+    "BADGE_COMM_GRP_10": {
+      "name": "Pikiran Kolektif",
+      "desc": "10 transmisi grup. Anda mengelola seluruh klaster Warga."
+    }
+  },
+  "dash": {
+    "rep_h": "Status Reputasi",
+    "inf_h": "Kekuatan Pengaruh",
+    "elite": "WARGA ELITE",
+    "esit": "ESID",
+    "est": "MAPAN",
+    "na": "Tidak ada narasi identitas yang disiarkan. Fragmen data hilang.",
+    "ntw_avg": "Rata-rata Jaringan",
+    "nai": "Indeks Aktivitas Neural",
+    "badge_title": "Pencapaian Anda",
+    "connection": "Telemetri Koneksi",
+    "direct": "Pesan Langsung",
+    "group": "Pesan Grup",
+    "comments": "Komentar"
   }
 }

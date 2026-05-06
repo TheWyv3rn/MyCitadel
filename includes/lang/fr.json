@@ -6,11 +6,17 @@
   },
   "nav": {
     "system": "Système",
-    "auth": "S'authentifier",
+    "auth": "Authentification",
     "vdp": "VDP",
-    "about": "À Propos",
+    "about": "À propos",
     "howto": "Guide",
-    "policies": "Politiques"
+    "policies": "Politiques",
+    "dash_h": "Tableau de bord",
+    "feed_h": "Flux Neural",
+    "comms_h": "Communications",
+    "cits_h": "Citoyens",
+    "notif_h": "Notifications",
+    "logout_h": "Déconnexion"
   },
   "footer": {
     "ci": "CITADEL_INTEL",
@@ -214,5 +220,314 @@
     "no_account": "Pas encore Citoyen ? Établissez votre identité.",
     "error_auth": "ERREUR_CRITIQUE : Échec de la vérification d'identité.",
     "error_locked": "ERREUR_CRITIQUE : Compte verrouillé en raison du protocole fantôme."
+  },
+  "badges": {
+    "BADGE_BUG_1": {
+      "name": "Vulnérabilité Initiale",
+      "desc": "Premier rapport de bug authentifié et vérifié soumis aux archives."
+    },
+    "BADGE_BUG_5": {
+      "name": "Testeur de Stress Avancé",
+      "desc": "Identification réussie de 5 failles critiques dans l'infrastructure."
+    },
+    "BADGE_BUG_10": {
+      "name": "Surveillant de la Citadelle",
+      "desc": "10 rapports vérifiés. Vous êtes un pilier de notre réseau défensif."
+    },
+    "BADGE_GIT_1": {
+      "name": "Premier Commit",
+      "desc": "Lien neural initial établi avec le répertoire."
+    },
+    "BADGE_GIT_5": {
+      "name": "Architecte Système",
+      "desc": "5 pushs Git réussis. Le code source évolue à travers vous."
+    },
+    "BADGE_GIT_10": {
+      "name": "Développeur Noyau",
+      "desc": "10 pushs Git réussis. Maîtrise absolue de la logique de la Citadelle."
+    },
+    "BADGE_POST_1": {
+      "name": "Première Diffusion",
+      "desc": "Signal initial transmis au flux global."
+    },
+    "BADGE_POST_5": {
+      "name": "Diffuseur Fréquent",
+      "desc": "5 transmissions neurales enregistrées dans les archives publiques."
+    },
+    "BADGE_POST_10": {
+      "name": "Streameur de Données",
+      "desc": "10 signaux publiés. Votre voix gagne en fréquence."
+    },
+    "BADGE_POST_50": {
+      "name": "Influenceur Réseau",
+      "desc": "50 diffusions établies. Vous êtes une source d'information reconnue."
+    },
+    "BADGE_POST_100": {
+      "name": "Voix de la Citadelle",
+      "desc": "100 transmissions. Votre présence est tissée dans le réseau."
+    },
+    "BADGE_POST_1000": {
+      "name": "Légende de la Diffusion",
+      "desc": "1 000 transmissions. Vous êtes le cœur battant de la Citadelle."
+    },
+    "BADGE_COMMENT_1": {
+      "name": "Retour Initial",
+      "desc": "Première réponse transmise à un concitoyen."
+    },
+    "BADGE_COMMENT_5": {
+      "name": "Conversationaliste",
+      "desc": "5 réponses enregistrées. Engagement dans un dialogue neural."
+    },
+    "BADGE_COMMENT_10": {
+      "name": "Participant Réseau",
+      "desc": "10 commentaires soumis. Contribution aux données collectives."
+    },
+    "BADGE_COMMENT_50": {
+      "name": "Débatteur Actif",
+      "desc": "50 commentaires. Vos perspectives sont fréquemment enregistrées."
+    },
+    "BADGE_COMMENT_100": {
+      "name": "Spécialiste du Dialogue",
+      "desc": "100 commentaires. Un maître de la communication entre citoyens."
+    },
+    "BADGE_COMMENT_1000": {
+      "name": "Murmureur Collectif",
+      "desc": "1 000 commentaires. Vos retours dirigent la conversation de la Citadelle."
+    },
+    "BADGE_COMMENTED_1": {
+      "name": "Signal Reçu",
+      "desc": "Un autre citoyen a répondu à votre diffusion."
+    },
+    "BADGE_COMMENTED_5": {
+      "name": "Déclencheur de Discussion",
+      "desc": "Vos diffusions ont initié 5 dialogues neuraux."
+    },
+    "BADGE_COMMENTED_10": {
+      "name": "Leader d'Opinion",
+      "desc": "10 réponses reçues. Vos signaux provoquent l'intérêt de la communauté."
+    },
+    "BADGE_COMMENTED_50": {
+      "name": "Intérêt Public",
+      "desc": "50 citoyens ont répondu à vos transmissions."
+    },
+    "BADGE_COMMENTED_100": {
+      "name": "Hub Social",
+      "desc": "100 commentaires reçus. Vous êtes un point focal du réseau."
+    },
+    "BADGE_COMMENTED_1000": {
+      "name": "Oracle de la Citadelle",
+      "desc": "1 000 réponses reçues. Vos signaux commandent une attention totale."
+    },
+    "BADGE_LIKE_1": {
+      "name": "Résonance Neurale",
+      "desc": "Première validation envoyée à la diffusion d'un autre citoyen."
+    },
+    "BADGE_LIKE_5": {
+      "name": "Validateur Fréquent",
+      "desc": "5 mentions J'aime envoyées. Soutien à la qualité du réseau."
+    },
+    "BADGE_LIKE_10": {
+      "name": "Curateur de Données",
+      "desc": "10 mentions J'aime envoyées. Identification des signaux à haute valeur."
+    },
+    "BADGE_LIKE_50": {
+      "name": "Supporteur de Signaux",
+      "desc": "50 mentions J'aime envoyées. Vous façonnez activement l'ambiance de la Citadelle."
+    },
+    "BADGE_LIKE_100": {
+      "name": "Patron du Noyau",
+      "desc": "100 mentions J'aime envoyées. Un validateur dévoué du contenu citoyen."
+    },
+    "BADGE_LIKE_1000": {
+      "name": "Le Grand Validateur",
+      "desc": "1 000 mentions J'aime envoyées. Vous définissez le consensus du réseau."
+    },
+    "BADGE_LIKED_1": {
+      "name": "Écho Positif",
+      "desc": "Votre diffusion a reçu sa première validation."
+    },
+    "BADGE_LIKED_5": {
+      "name": "Signal Validé",
+      "desc": "5 citoyens ont exprimé une résonance avec vos données."
+    },
+    "BADGE_LIKED_10": {
+      "name": "Haute Fidélité",
+      "desc": "10 mentions J'aime reçues. Vos diffusions sont considérées comme de haute valeur."
+    },
+    "BADGE_LIKED_50": {
+      "name": "Source Respectée",
+      "desc": "50 mentions J'aime reçues. La Citadelle valorise vos transmissions."
+    },
+    "BADGE_LIKED_100": {
+      "name": "Étoile du Réseau",
+      "desc": "100 mentions J'aime reçues. Votre contenu résonne de manière constante."
+    },
+    "BADGE_LIKED_1000": {
+      "name": "Idole de la Citadelle",
+      "desc": "1 000 mentions J'aime reçues. Vous êtes un phare de qualité dans le vide."
+    },
+    "BADGE_SLIKE_1": {
+      "name": "Hyper-Lien",
+      "desc": "Premier Super Like envoyé. Résonance exceptionnelle atteinte."
+    },
+    "BADGE_SLIKE_5": {
+      "name": "Hyper-Validateur",
+      "desc": "5 Super Likes envoyés. Identification des signaux d'élite."
+    },
+    "BADGE_SLIKE_10": {
+      "name": "Communicateur à Rafales",
+      "desc": "10 Super Likes envoyés. Validation à haute énergie enregistrée."
+    },
+    "BADGE_SLIKE_50": {
+      "name": "Super Curateur",
+      "desc": "50 Super Likes envoyés. Vous ne validez que le meilleur de l'élite."
+    },
+    "BADGE_SLIKE_100": {
+      "name": "Patron Plasma",
+      "desc": "100 Super Likes envoyés. Un moteur de retours positifs."
+    },
+    "BADGE_SLIKE_1000": {
+      "name": "L'Architecte de la Louange",
+      "desc": "1 000 Super Likes envoyés. Vous définissez le contenu de pointe du réseau."
+    },
+    "BADGE_SDIS_1": {
+      "name": "Critique Système",
+      "desc": "Premier Super Dislike envoyé. Dissidence enregistrée dans le flux."
+    },
+    "BADGE_SDIS_5": {
+      "name": "Filtre de Signal",
+      "desc": "5 Super Dislikes envoyés. Vous purgez activement le bruit de faible valeur."
+    },
+    "BADGE_SDIS_10": {
+      "name": "Observateur du Vide",
+      "desc": "10 Super Dislikes envoyés. Maintien des standards de la Citadelle."
+    },
+    "BADGE_SDIS_50": {
+      "name": "Réaliste Sévère",
+      "desc": "50 Super Dislikes envoyés. Vos standards sont exceptionnellement élevés."
+    },
+    "BADGE_SDIS_100": {
+      "name": "Chef de l'Inquisition",
+      "desc": "100 Super Dislikes envoyés. Gardien contre la médiocrité."
+    },
+    "BADGE_SDIS_1000": {
+      "name": "Le Purgeur",
+      "desc": "1 000 Super Dislikes envoyés. Vous êtes le vide qui consomme les faibles."
+    },
+    "BADGE_SLIKED_1": {
+      "name": "Résonance d'Élite",
+      "desc": "Votre diffusion a reçu un Super Like à haute énergie."
+    },
+    "BADGE_SLIKED_5": {
+      "name": "Hyper-Signal",
+      "desc": "5 Super Likes reçus. Vos transmissions sont de qualité supérieure."
+    },
+    "BADGE_SLIKED_10": {
+      "name": "Pic Neural",
+      "desc": "10 Super Likes reçus. Vous êtes au sommet du flux de la Citadelle."
+    },
+    "BADGE_SLIKED_50": {
+      "name": "Super Nova",
+      "desc": "50 Super Likes reçus. Une source radiante de données parfaites."
+    },
+    "BADGE_SLIKED_100": {
+      "name": "L'Élu",
+      "desc": "100 Super Likes reçus. Vos diffusions sont légendaires."
+    },
+    "BADGE_SLIKED_1000": {
+      "name": "Citoyen Transcendant",
+      "desc": "1 000 Super Likes. Vous avez atteint le summum de la validation."
+    },
+    "BADGE_SDISD_1": {
+      "name": "Interférence Détectée",
+      "desc": "Un citoyen a émis un Super Dislike contre votre signal."
+    },
+    "BADGE_SDISD_5": {
+      "name": "Attraction du Vide",
+      "desc": "5 Super Dislikes reçus. Votre contenu polarise le réseau."
+    },
+    "BADGE_SDISD_10": {
+      "name": "Niveau de Notoriété 1",
+      "desc": "10 Super Dislikes reçus. Vous devenez un perturbateur connu."
+    },
+    "BADGE_SDISD_50": {
+      "name": "Exclu du Système",
+      "desc": "50 Super Dislikes reçus. La Citadelle rejette vos diffusions."
+    },
+    "BADGE_SDISD_100": {
+      "name": "Ennemi de l'État",
+      "desc": "100 Super Dislikes. Votre présence est hautement controversée."
+    },
+    "BADGE_SDISD_1000": {
+      "name": "Le Grand Antagoniste",
+      "desc": "1 000 Super Dislikes. Vous êtes l'ombre dans la lumière de la Citadelle."
+    },
+    "BADGE_PROF_AVATAR": {
+      "name": "Identité Visuelle",
+      "desc": "Ressemblance neurale téléchargée dans le dossier de la Citadelle."
+    },
+    "BADGE_PROF_BANNER": {
+      "name": "Esthétique du Domaine",
+      "desc": "Bannière de profil personnalisée établie."
+    },
+    "BADGE_PROF_BIO": {
+      "name": "Récit du Citoyen",
+      "desc": "Histoire personnelle et archives biographiques finalisées."
+    },
+    "BADGE_PROF_SOCIALS": {
+      "name": "Expansion Neurale",
+      "desc": "Liens sociaux externes intégrés à votre dossier."
+    },
+    "BADGE_PROF_EDUCATION": {
+      "name": "Archive Intellectuelle",
+      "desc": "Dossiers académiques et éducatifs vérifiés."
+    },
+    "BADGE_PROF_JOB": {
+      "name": "Niveau Professionnel",
+      "desc": "Données d'emploi et professionnelles établies."
+    },
+    "BADGE_PROF_SECURITY": {
+      "name": "Lien Fortifié",
+      "desc": "Tous les protocoles d'identité et de sécurité sont opérationnels."
+    },
+    "BADGE_COMM_PM_1": {
+      "name": "Lien Direct",
+      "desc": "Première transmission neurale privée établie."
+    },
+    "BADGE_COMM_PM_5": {
+      "name": "Canaliseur Privé",
+      "desc": "5 communications privées enregistrées."
+    },
+    "BADGE_COMM_PM_10": {
+      "name": "Murmureur de l'Ombre",
+      "desc": "10 canaux privés actifs. Vous évoluez dans les couches silencieuses."
+    },
+    "BADGE_COMM_GRP_1": {
+      "name": "Nœud de Groupe",
+      "desc": "Première transmission multi-citoyens rejointe ou initiée."
+    },
+    "BADGE_COMM_GRP_5": {
+      "name": "Coordinateur de Cluster",
+      "desc": "5 nœuds de groupe établis. Vous êtes un centre d'activité."
+    },
+    "BADGE_COMM_GRP_10": {
+      "name": "L'Esprit Collectif",
+      "desc": "10 transmissions de groupe. Vous gérez des clusters entiers de citoyens."
+    }
+  },
+  "dash": {
+    "rep_h": "Statut de Réputation",
+    "inf_h": "Pouvoir d'Influence",
+    "elite": "CITOYEN ÉLITE",
+    "esit": "ESID",
+    "est": "ÉTABLI",
+    "na": "Aucun récit d'identité diffusé. Fragment de données manquant.",
+    "ntw_avg": "Moyenne du Réseau",
+    "nai": "Indice d'Activité Neurale",
+    "badge_title": "Vos Accomplissements",
+    "connection": "Télémétrie de Connexion",
+    "direct": "Messages Directs",
+    "group": "Messages de Groupe",
+    "comments": "Commentaires"
   }
 }

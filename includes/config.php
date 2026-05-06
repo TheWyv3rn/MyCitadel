@@ -37,13 +37,13 @@ define('ASSETS_URL', SITE_URL . '/assets');
 define('VENDOR_URL', ASSETS_URL . '/vendor');
 
 // 3. Database Credentials
-define('DB_HOST', 'DB_LOCATION_HERE');
-define('DB_NAME', 'DB_NAME_HERE');
-define('DB_USER', 'DB_USER_HERE'); 
-define('DB_PASS', 'DB_PWD_HERE'); 
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'citadel_core');
+define('DB_USER', 'citadel_admin'); 
+define('DB_PASS', '3190H4ck3r2026'); 
 
 // 4. System-Level Cryptography (The Pepper)
-define('CITADEL_MASTER_KEY', 'SALT_KEY_HERE'); 
+define('CITADEL_MASTER_KEY', 'f6516f91a9d0a42147daf28cb954cf8457e3afb68787a7469e035b2d4ed27854'); 
 
 /**
  * DATABASE HANDSHAKE (PDO Singleton)

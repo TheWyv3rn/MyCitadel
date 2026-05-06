@@ -10,7 +10,13 @@
     "vdp": "VDP",
     "about": "Over",
     "howto": "Handleiding",
-    "policies": "Beleid"
+    "policies": "Beleid",
+    "dash_h": "Dashboard",
+    "feed_h": "Neurale Feed",
+    "comms_h": "Communicatie",
+    "cits_h": "Burgers",
+    "notif_h": "Meldingen",
+    "logout_h": "Uitloggen"
   },
   "footer": {
     "ci": "CITADEL_INTEL",
@@ -214,5 +220,314 @@
     "no_account": "Nog geen burger? Vestig je identiteit.",
     "error_auth": "KRITIEKE_FOUT: Identificatie mislukt.",
     "error_locked": "KRITIEKE_FOUT: Account geblokkeerd vanwege ghost-protocol."
+  },
+    "badges": {
+    "BADGE_BUG_1": {
+      "name": "Initiële Kwetsbaarheid",
+      "desc": "Eerste geauthenticeerde en geverifieerde bugmelding ingediend bij de archieven."
+    },
+    "BADGE_BUG_5": {
+      "name": "Geavanceerde Stress-Tester",
+      "desc": "Succesvol 5 kritieke infrastructuurfouten geïdentificeerd."
+    },
+    "BADGE_BUG_10": {
+      "name": "Citadel Opziener",
+      "desc": "10 geverifieerde meldingen. Je bent een pilaar van ons defensieve netwerk."
+    },
+    "BADGE_GIT_1": {
+      "name": "Eerste Commit",
+      "desc": "Initiële neurale link met de repository tot stand gebracht."
+    },
+    "BADGE_GIT_5": {
+      "name": "Systeemarchitect",
+      "desc": "5 succesvolle Git-pushes. De codebase evolueert door jou."
+    },
+    "BADGE_GIT_10": {
+      "name": "Kernontwikkelaar",
+      "desc": "10 succesvolle Git-pushes. Absolute beheersing van de logica van de Citadel."
+    },
+    "BADGE_POST_1": {
+      "name": "Eerste Uitzending",
+      "desc": "Initieel signaal verzonden naar de globale feed."
+    },
+    "BADGE_POST_5": {
+      "name": "Frequente Zender",
+      "desc": "5 neurale transmissies geregistreerd in de publieke archieven."
+    },
+    "BADGE_POST_10": {
+      "name": "Datastreamer",
+      "desc": "10 signalen gepubliceerd. Je stem wint aan frequentie."
+    },
+    "BADGE_POST_50": {
+      "name": "Netwerkinvloedmaker",
+      "desc": "50 uitzendingen tot stand gebracht. Je bent een bekende informatiebron."
+    },
+    "BADGE_POST_100": {
+      "name": "Stem van de Citadel",
+      "desc": "100 transmissies. Je aanwezigheid is verweven in het netwerk."
+    },
+    "BADGE_POST_1000": {
+      "name": "Uitzendlegende",
+      "desc": "1.000 transmissies. Je bent de hartslag van de Citadel."
+    },
+    "BADGE_COMMENT_1": {
+      "name": "Initiële Feedback",
+      "desc": "Eerste reactie verzonden naar een mede-Burger."
+    },
+    "BADGE_COMMENT_5": {
+      "name": "Conversationist",
+      "desc": "5 reacties geregistreerd. Deelnemen aan neurale dialoog."
+    },
+    "BADGE_COMMENT_10": {
+      "name": "Netwerkdeelnemer",
+      "desc": "10 opmerkingen ingediend. Bijdragen aan de collectieve data."
+    },
+    "BADGE_COMMENT_50": {
+      "name": "Actieve Debater",
+      "desc": "50 opmerkingen. Je perspectieven worden regelmatig geregistreerd."
+    },
+    "BADGE_COMMENT_100": {
+      "name": "Dialoogspecialist",
+      "desc": "100 opmerkingen. Een meester in communicatie tussen burgers."
+    },
+    "BADGE_COMMENT_1000": {
+      "name": "Fluisteraar van het Collectief",
+      "desc": "1.000 opmerkingen. Je feedback stuurt de Citadel-conversatie aan."
+    },
+    "BADGE_COMMENTED_1": {
+      "name": "Signaal Ontvangen",
+      "desc": "Een andere Burger heeft gereageerd op je uitzending."
+    },
+    "BADGE_COMMENTED_5": {
+      "name": "Discussie-trigger",
+      "desc": "Je uitzendingen hebben 5 neurale dialogen geïnitieerd."
+    },
+    "BADGE_COMMENTED_10": {
+      "name": "Thought Leader",
+      "desc": "10 reacties ontvangen. Je signalen wekken interesse bij de gemeenschap."
+    },
+    "BADGE_COMMENTED_50": {
+      "name": "Publieke Belangstelling",
+      "desc": "50 burgers hebben gereageerd op je transmissies."
+    },
+    "BADGE_COMMENTED_100": {
+      "name": "Sociaal Knooppunt",
+      "desc": "100 reacties ontvangen. Je bent een focuspunt van het netwerk."
+    },
+    "BADGE_COMMENTED_1000": {
+      "name": "Citadel Orakel",
+      "desc": "1.000 reacties ontvangen. Je signalen eisen totale aandacht op."
+    },
+    "BADGE_LIKE_1": {
+      "name": "Neurale Resonantie",
+      "desc": "Eerste validatie verzonden naar de uitzending van een andere Burger."
+    },
+    "BADGE_LIKE_5": {
+      "name": "Frequente Validator",
+      "desc": "5 likes verzonden. Ondersteuning van de kwaliteit van het netwerk."
+    },
+    "BADGE_LIKE_10": {
+      "name": "Datacurator",
+      "desc": "10 likes verzonden. Identificatie van signalen met hoge waarde."
+    },
+    "BADGE_LIKE_50": {
+      "name": "Signaalondersteuner",
+      "desc": "50 likes verzonden. Je geeft actief vorm aan de sfeer van de Citadel."
+    },
+    "BADGE_LIKE_100": {
+      "name": "Kernpatroon",
+      "desc": "100 likes verzonden. Een toegewijde validator van Burger-content."
+    },
+    "BADGE_LIKE_1000": {
+      "name": "De Grote Validator",
+      "desc": "1.000 likes verzonden. Jij definieert de consensus van het netwerk."
+    },
+    "BADGE_LIKED_1": {
+      "name": "Positieve Echo",
+      "desc": "Je uitzending heeft zijn eerste validatie ontvangen."
+    },
+    "BADGE_LIKED_5": {
+      "name": "Gevalideerd Signaal",
+      "desc": "5 burgers hebben resonantie met je data geuit."
+    },
+    "BADGE_LIKED_10": {
+      "name": "High Fidelity",
+      "desc": "10 likes ontvangen. Je uitzendingen worden als waardevol beschouwd."
+    },
+    "BADGE_LIKED_50": {
+      "name": "Gerespecteerde Bron",
+      "desc": "50 likes ontvangen. De Citadel waardeert je transmissies."
+    },
+    "BADGE_LIKED_100": {
+      "name": "Netwerkster",
+      "desc": "100 likes ontvangen. Je content resoneert consistent."
+    },
+    "BADGE_LIKED_1000": {
+      "name": "Citadel Idool",
+      "desc": "1.000 likes ontvangen. Je bent een baken van kwaliteit in de leegte."
+    },
+    "BADGE_SLIKE_1": {
+      "name": "Hyper-Link",
+      "desc": "Eerste Super Like verzonden. Uitzonderlijke resonantie bereikt."
+    },
+    "BADGE_SLIKE_5": {
+      "name": "Hyper-Validator",
+      "desc": "5 Super Likes verzonden. Identificatie van de elite-signalen."
+    },
+    "BADGE_SLIKE_10": {
+      "name": "Burst-communicator",
+      "desc": "10 Super Likes verzonden. Validatie met hoge energie geregistreerd."
+    },
+    "BADGE_SLIKE_50": {
+      "name": "Supercurator",
+      "desc": "50 Super Likes verzonden. Je valideert alleen het allerbeste."
+    },
+    "BADGE_SLIKE_100": {
+      "name": "Plasmapatroon",
+      "desc": "100 Super Likes verzonden. Een krachtcentrale van positieve feedback."
+    },
+    "BADGE_SLIKE_1000": {
+      "name": "De Architect van de Lof",
+      "desc": "1.000 Super Likes verzonden. Jij definieert de topcontent van het netwerk."
+    },
+    "BADGE_SDIS_1": {
+      "name": "Systeemcriticus",
+      "desc": "Eerste Super Dislike verzonden. Meningsverschil geregistreerd in de stream."
+    },
+    "BADGE_SDIS_5": {
+      "name": "Signaalfilter",
+      "desc": "5 Super Dislikes verzonden. Je zuivert actief ruis van lage waarde."
+    },
+    "BADGE_SDIS_10": {
+      "name": "Wachter van de Leegte",
+      "desc": "10 Super Dislikes verzonden. Behoud van de standaarden van de Citadel."
+    },
+    "BADGE_SDIS_50": {
+      "name": "Harde Realist",
+      "desc": "50 Super Dislikes verzonden. Je standaarden zijn uitzonderlijk hoog."
+    },
+    "BADGE_SDIS_100": {
+      "name": "Inquisitieleider",
+      "desc": "100 Super Dislikes verzonden. Bewaker tegen de middelmaat."
+    },
+    "BADGE_SDIS_1000": {
+      "name": "De Zuiveraar",
+      "desc": "1.000 Super Dislikes verzonden. Je bent de leegte die de zwakken verteert."
+    },
+    "BADGE_SLIKED_1": {
+      "name": "Elite-resonantie",
+      "desc": "Je uitzending heeft een Super Like met hoge energie ontvangen."
+    },
+    "BADGE_SLIKED_5": {
+      "name": "Hyper-signaal",
+      "desc": "5 Super Likes ontvangen. Je transmissies zijn van elite-niveau."
+    },
+    "BADGE_SLIKED_10": {
+      "name": "Neurale Piek",
+      "desc": "10 Super Likes ontvangen. Je staat aan de top van de Citadel-feed."
+    },
+    "BADGE_SLIKED_50": {
+      "name": "Super Nova",
+      "desc": "50 Super Likes ontvangen. Een stralende bron van perfecte data."
+    },
+    "BADGE_SLIKED_100": {
+      "name": "De Uitverkorene",
+      "desc": "100 Super Likes ontvangen. Je uitzendingen zijn legendarisch."
+    },
+    "BADGE_SLIKED_1000": {
+      "name": "Transcendente Burger",
+      "desc": "1.000 Super Likes. Je hebt het hoogtepunt van validatie bereikt."
+    },
+    "BADGE_SDISD_1": {
+      "name": "Ruis Gedetecteerd",
+      "desc": "Een burger heeft een Super Dislike afgegeven tegen je signaal."
+    },
+    "BADGE_SDISD_5": {
+      "name": "Void-aantrekking",
+      "desc": "5 Super Dislikes ontvangen. Je content polariseert het netwerk."
+    },
+    "BADGE_SDISD_10": {
+      "name": "Beruchtheidsniveau 1",
+      "desc": "10 Super Dislikes ontvangen. Je wordt een bekende verstoorder."
+    },
+    "BADGE_SDISD_50": {
+      "name": "Systeemverstoteling",
+      "desc": "50 Super Dislikes ontvangen. De Citadel verwerpt je uitzendingen."
+    },
+    "BADGE_SDISD_100": {
+      "name": "Staatsvijand",
+      "desc": "100 Super Dislikes. Je aanwezigheid is zeer controversieel."
+    },
+    "BADGE_SDISD_1000": {
+      "name": "De Grote Antagonist",
+      "desc": "1.000 Super Dislikes. Je bent de schaduw in het licht van de Citadel."
+    },
+    "BADGE_PROF_AVATAR": {
+      "name": "Visuele Identiteit",
+      "desc": "Neurale gelijkenis geüpload naar het Citadel-dossier."
+    },
+    "BADGE_PROF_BANNER": {
+      "name": "Domein-esthetiek",
+      "desc": "Aangepaste profielbanner ingesteld."
+    },
+    "BADGE_PROF_BIO": {
+      "name": "Burgernarratief",
+      "desc": "Persoonlijke geschiedenis en bio-archieven afgerond."
+    },
+    "BADGE_PROF_SOCIALS": {
+      "name": "Neurale Expansie",
+      "desc": "Externe sociale links geïntegreerd in je dossier."
+    },
+    "BADGE_PROF_EDUCATION": {
+      "name": "Intellectueel Archief",
+      "desc": "Academische en educatieve gegevens geverifieerd."
+    },
+    "BADGE_PROF_JOB": {
+      "name": "Professioneel Niveau",
+      "desc": "Werk- en beroepsgegevens vastgelegd."
+    },
+    "BADGE_PROF_SECURITY": {
+      "name": "Versterkte Link",
+      "desc": "Alle identiteits- en beveiligingsprotocollen volledig operationeel."
+    },
+    "BADGE_COMM_PM_1": {
+      "name": "Directe Link",
+      "desc": "Eerste privé neurale transmissie tot stand gebracht."
+    },
+    "BADGE_COMM_PM_5": {
+      "name": "Privé-channeler",
+      "desc": "5 privécommunicaties geregistreerd."
+    },
+    "BADGE_COMM_PM_10": {
+      "name": "Schaduwfluisteraar",
+      "desc": "10 privékanalen actief. Je beweegt je in de stille lagen."
+    },
+    "BADGE_COMM_GRP_1": {
+      "name": "Groepsknooppunt",
+      "desc": "Deelnemen aan of initiëren van de eerste multi-burger transmissie."
+    },
+    "BADGE_COMM_GRP_5": {
+      "name": "Clustercoördinator",
+      "desc": "5 groepsknooppunten tot stand gebracht. Je bent een centrum van activiteit."
+    },
+    "BADGE_COMM_GRP_10": {
+      "name": "Het Collectieve Bewustzijn",
+      "desc": "10 groepstransmissies. Je beheert hele clusters van Burgers."
+    }
+  },
+  "dash": {
+    "rep_h": "Reputatiestatus",
+    "inf_h": "Invloedskracht",
+    "elite": "ELITE BURGER",
+    "esit": "ESID",
+    "est": "GEVESTIGD",
+    "na": "Geen identiteitsnarratief uitgezonden. Gegevensfragment ontbreekt.",
+    "ntw_avg": "Netwerkgemiddelde",
+    "nai": "Neurale Activiteitsindex",
+    "badge_title": "Uw Prestaties",
+    "connection": "Verbindingstelemetrie",
+    "direct": "Directe Berichten",
+    "group": "Groepsberichten",
+    "comments": "Reacties"
   }
 }

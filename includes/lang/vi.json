@@ -10,7 +10,13 @@
     "vdp": "VDP",
     "about": "Giới thiệu",
     "howto": "Hướng dẫn",
-    "policies": "Chính sách"
+    "policies": "Chính sách",
+    "dash_h": "Bảng điều khiển",
+    "feed_h": "Luồng Nơ-ron",
+    "comms_h": "Liên lạc",
+    "cits_h": "Cư dân",
+    "notif_h": "Thông báo",
+    "logout_h": "Đăng xuất"
   },
   "footer": {
     "ci": "CITADEL_INTEL",
@@ -214,5 +220,314 @@
     "no_account": "Chưa là cư dân? Thiết lập danh tính.",
     "error_auth": "LỖI_NGHIÊM_TRỌNG: Xác minh danh tính thất bại.",
     "error_locked": "LỖI_NGHIÊM_TRỌNG: Tài khoản bị khóa do giao thức bóng ma."
+  },
+    "badges": {
+    "BADGE_BUG_1": {
+      "name": "Lỗ hổng Sơ khởi",
+      "desc": "Báo cáo lỗi đầu tiên đã được xác thực và xác minh gửi đến kho lưu trữ."
+    },
+    "BADGE_BUG_5": {
+      "name": "Chuyên gia Thử nghiệm Áp lực",
+      "desc": "Xác định thành công 5 khiếm khuyết cơ sở hạ tầng quan trọng."
+    },
+    "BADGE_BUG_10": {
+      "name": "Giám sát viên Citadel",
+      "desc": "10 báo cáo đã được xác minh. Bạn là trụ cột trong mạng lưới phòng thủ của chúng tôi."
+    },
+    "BADGE_GIT_1": {
+      "name": "Lần Commit Đầu tiên",
+      "desc": "Liên kết nơ-ron ban đầu tới kho lưu trữ đã được thiết lập."
+    },
+    "BADGE_GIT_5": {
+      "name": "Kiến trúc sư Hệ thống",
+      "desc": "5 lần đẩy mã (Git push) thành công. Cơ sở mã phát triển thông qua bạn."
+    },
+    "BADGE_GIT_10": {
+      "name": "Nhà phát triển Cốt lõi",
+      "desc": "10 lần đẩy mã thành công. Làm chủ hoàn toàn logic của Citadel."
+    },
+    "BADGE_POST_1": {
+      "name": "Bản tin Đầu tiên",
+      "desc": "Tín hiệu ban đầu được truyền tới luồng dữ liệu toàn cầu."
+    },
+    "BADGE_POST_5": {
+      "name": "Người truyền tin Thường xuyên",
+      "desc": "5 lần truyền tin nơ-ron được ghi lại trong kho lưu trữ công cộng."
+    },
+    "BADGE_POST_10": {
+      "name": "Người phát Dữ liệu",
+      "desc": "10 tín hiệu đã được xuất bản. Giọng nói của bạn đang dần bắt được tần số."
+    },
+    "BADGE_POST_50": {
+      "name": "Người ảnh hưởng Mạng lưới",
+      "desc": "50 bản tin được thiết lập. Bạn là một nguồn thông tin có uy tín."
+    },
+    "BADGE_POST_100": {
+      "name": "Giọng nói Citadel",
+      "desc": "100 lần truyền tin. Sự hiện diện của bạn đã hòa quyện vào mạng lưới."
+    },
+    "BADGE_POST_1000": {
+      "name": "Huyền thoại Truyền tin",
+      "desc": "1.000 lần truyền tin. Bạn là nhịp đập của Citadel."
+    },
+    "BADGE_COMMENT_1": {
+      "name": "Phản hồi Sơ khởi",
+      "desc": "Phản hồi đầu tiên được truyền tới một Cư dân khác."
+    },
+    "BADGE_COMMENT_5": {
+      "name": "Người Đàm thoại",
+      "desc": "5 phản hồi được ghi lại. Đang tham gia vào đối thoại nơ-ron."
+    },
+    "BADGE_COMMENT_10": {
+      "name": "Người tham gia Mạng lưới",
+      "desc": "10 bình luận đã được gửi. Đóng góp vào dữ liệu tập thể."
+    },
+    "BADGE_COMMENT_50": {
+      "name": "Người Tranh luận Tích cực",
+      "desc": "50 bình luận. Quan điểm của bạn được ghi nhận thường xuyên."
+    },
+    "BADGE_COMMENT_100": {
+      "name": "Chuyên gia Đối thoại",
+      "desc": "100 bình luận. Bậc thầy trong việc giao tiếp giữa các cư dân."
+    },
+    "BADGE_COMMENT_1000": {
+      "name": "Người thì thầm Tập thể",
+      "desc": "1.000 bình luận. Phản hồi của bạn thúc đẩy cuộc hội thoại tại Citadel."
+    },
+    "BADGE_COMMENTED_1": {
+      "name": "Đã nhận Tín hiệu",
+      "desc": "Một Cư dân khác đã phản hồi bản tin của bạn."
+    },
+    "BADGE_COMMENTED_5": {
+      "name": "Tác nhân Thảo luận",
+      "desc": "Các bản tin của bạn đã khởi xướng 5 cuộc đối thoại nơ-ron."
+    },
+    "BADGE_COMMENTED_10": {
+      "name": "Thủ lĩnh Tư tưởng",
+      "desc": "Nhận được 10 phản hồi. Tín hiệu của bạn khơi gợi sự quan tâm của cộng đồng."
+    },
+    "BADGE_COMMENTED_50": {
+      "name": "Sự quan tâm Công chúng",
+      "desc": "50 cư dân đã phản hồi các lần truyền tin của bạn."
+    },
+    "BADGE_COMMENTED_100": {
+      "name": "Trung tâm Xã hội",
+      "desc": "Nhận được 100 bình luận. Bạn là tiêu điểm của mạng lưới."
+    },
+    "BADGE_COMMENTED_1000": {
+      "name": "Nhà tiên tri Citadel",
+      "desc": "Nhận được 1.000 phản hồi. Tín hiệu của bạn chiếm trọn sự chú ý."
+    },
+    "BADGE_LIKE_1": {
+      "name": "Cộng hưởng Nơ-ron",
+      "desc": "Xác nhận đầu tiên được gửi tới bản tin của cư dân khác."
+    },
+    "BADGE_LIKE_5": {
+      "name": "Người Xác thực Thường xuyên",
+      "desc": "Đã gửi 5 lượt thích. Hỗ trợ chất lượng của mạng lưới."
+    },
+    "BADGE_LIKE_10": {
+      "name": "Người Quản lý Dữ liệu",
+      "desc": "Đã gửi 10 lượt thích. Xác định các tín hiệu giá trị cao."
+    },
+    "BADGE_LIKE_50": {
+      "name": "Người ủng hộ Tín hiệu",
+      "desc": "Đã gửi 50 lượt thích. Bạn tích cực định hình bầu không khí của Citadel."
+    },
+    "BADGE_LIKE_100": {
+      "name": "Người bảo trợ Cốt lõi",
+      "desc": "Đã gửi 100 lượt thích. Một người xác thực tận tâm cho nội dung Cư dân."
+    },
+    "BADGE_LIKE_1000": {
+      "name": "Người Xác thực Vĩ đại",
+      "desc": "Đã gửi 1.000 lượt thích. Bạn định nghĩa sự đồng thuận của mạng lưới."
+    },
+    "BADGE_LIKED_1": {
+      "name": "Tiếng vang Tích cực",
+      "desc": "Bản tin của bạn đã nhận được xác nhận đầu tiên."
+    },
+    "BADGE_LIKED_5": {
+      "name": "Tín hiệu được Xác thực",
+      "desc": "5 cư dân đã bày tỏ sự cộng hưởng với dữ liệu của bạn."
+    },
+    "BADGE_LIKED_10": {
+      "name": "Độ trung thực Cao",
+      "desc": "Nhận được 10 lượt thích. Bản tin của bạn được coi là có giá trị cao."
+    },
+    "BADGE_LIKED_50": {
+      "name": "Nguồn tin Đáng kính",
+      "desc": "Nhận được 50 lượt thích. Citadel trân trọng các lần truyền tin của bạn."
+    },
+    "BADGE_LIKED_100": {
+      "name": "Ngôi sao Mạng lưới",
+      "desc": "Nhận được 100 lượt thích. Nội dung của bạn liên tục tạo được tiếng vang."
+    },
+    "BADGE_LIKED_1000": {
+      "name": "Thần tượng Citadel",
+      "desc": "Nhận được 1.000 lượt thích. Bạn là ngọn hải đăng chất lượng trong hư vô."
+    },
+    "BADGE_SLIKE_1": {
+      "name": "Siêu Liên kết",
+      "desc": "Đã gửi Super Like đầu tiên. Đạt được sự cộng hưởng đặc biệt."
+    },
+    "BADGE_SLIKE_5": {
+      "name": "Người Siêu xác thực",
+      "desc": "Đã gửi 5 Super Like. Xác định các tín hiệu ưu tú."
+    },
+    "BADGE_SLIKE_10": {
+      "name": "Người truyền tin Bùng nổ",
+      "desc": "Đã gửi 10 Super Like. Ghi nhận xác thực năng lượng cao."
+    },
+    "BADGE_SLIKE_50": {
+      "name": "Người Siêu quản lý",
+      "desc": "Đã gửi 50 Super Like. Bạn chỉ xác thực những gì tuyệt vời nhất."
+    },
+    "BADGE_SLIKE_100": {
+      "name": "Người bảo trợ Plasma",
+      "desc": "Đã gửi 100 Super Like. Một nguồn năng lượng của các phản hồi tích cực."
+    },
+    "BADGE_SLIKE_1000": {
+      "name": "Kiến trúc sư của lời Khen",
+      "desc": "Đã gửi 1.000 Super Like. Bạn định nghĩa nội dung đỉnh cao của mạng lưới."
+    },
+    "BADGE_SDIS_1": {
+      "name": "Nhà phê bình Hệ thống",
+      "desc": "Đã gửi Super Dislike đầu tiên. Sự bất đồng được ghi lại trên luồng tin."
+    },
+    "BADGE_SDIS_5": {
+      "name": "Bộ lọc Tín hiệu",
+      "desc": "Đã gửi 5 Super Dislike. Bạn tích cực thanh lọc các tạp âm giá trị thấp."
+    },
+    "BADGE_SDIS_10": {
+      "name": "Người canh gác Hư vô",
+      "desc": "Đã gửi 10 Super Dislike. Duy trì các tiêu chuẩn của Citadel."
+    },
+    "BADGE_SDIS_50": {
+      "name": "Người Thực tế Khắc nghiệt",
+      "desc": "Đã gửi 50 Super Dislike. Tiêu chuẩn của bạn cực kỳ cao."
+    },
+    "BADGE_SDIS_100": {
+      "name": "Người đứng đầu Tòa thẩm tra",
+      "desc": "Đã gửi 100 Super Dislike. Người bảo vệ chống lại sự tầm thường."
+    },
+    "BADGE_SDIS_1000": {
+      "name": "Kẻ Thanh trừng",
+      "desc": "Đã gửi 1.000 Super Dislike. Bạn là hư vô nuốt chửng những kẻ yếu thế."
+    },
+    "BADGE_SLIKED_1": {
+      "name": "Cộng hưởng Ưu tú",
+      "desc": "Bản tin của bạn đã nhận được một Super Like năng lượng cao."
+    },
+    "BADGE_SLIKED_5": {
+      "name": "Siêu Tín hiệu",
+      "desc": "Nhận được 5 Super Like. Các lượt truyền tin của bạn thuộc đẳng cấp ưu tú."
+    },
+    "BADGE_SLIKED_10": {
+      "name": "Đỉnh cao Nơ-ron",
+      "desc": "Nhận được 10 Super Like. Bạn đang ở đỉnh cao của luồng tin Citadel."
+    },
+    "BADGE_SLIKED_50": {
+      "name": "Siêu Tân tinh",
+      "desc": "Nhận được 50 Super Like. Một nguồn phát dữ liệu hoàn hảo rạng rỡ."
+    },
+    "BADGE_SLIKED_100": {
+      "name": "Người được Chọn",
+      "desc": "Nhận được 100 Super Like. Các bản tin của bạn đã trở thành huyền thoại."
+    },
+    "BADGE_SLIKED_1000": {
+      "name": "Cư dân Siêu việt",
+      "desc": "1.000 Super Like. Bạn đã đạt đến đỉnh cao của sự xác thực."
+    },
+    "BADGE_SDISD_1": {
+      "name": "Phát hiện Nhiễu",
+      "desc": "Một cư dân đã phát Super Dislike đối với tín hiệu của bạn."
+    },
+    "BADGE_SDISD_5": {
+      "name": "Sức hút Hư vô",
+      "desc": "Nhận được 5 Super Dislike. Nội dung của bạn đang gây phân cực mạng lưới."
+    },
+    "BADGE_SDISD_10": {
+      "name": "Cấp độ Tai tiếng 1",
+      "desc": "Nhận được 10 Super Dislike. Bạn đang trở thành một kẻ gây rối có tiếng."
+    },
+    "BADGE_SDISD_50": {
+      "name": "Kẻ bị Hệ thống Ruồng bỏ",
+      "desc": "Nhận được 50 Super Dislike. Citadel từ chối các bản tin của bạn."
+    },
+    "BADGE_SDISD_100": {
+      "name": "Kẻ thù của Quốc gia",
+      "desc": "100 Super Dislike. Sự hiện diện của bạn gây tranh cãi gay gắt."
+    },
+    "BADGE_SDISD_1000": {
+      "name": "Kẻ phản diện Vĩ đại",
+      "desc": "1.000 Super Dislike. Bạn là bóng tối trong ánh sáng của Citadel."
+    },
+    "BADGE_PROF_AVATAR": {
+      "name": "Danh tính Thị giác",
+      "desc": "Hình ảnh nơ-ron đã được tải lên hồ sơ Citadel."
+    },
+    "BADGE_PROF_BANNER": {
+      "name": "Thẩm mỹ Miền",
+      "desc": "Ảnh bìa hồ sơ tùy chỉnh đã được thiết lập."
+    },
+    "BADGE_PROF_BIO": {
+      "name": "Bản kể Cư dân",
+      "desc": "Lịch sử cá nhân và lưu trữ tiểu sử đã hoàn tất."
+    },
+    "BADGE_PROF_SOCIALS": {
+      "name": "Mở rộng Nơ-ron",
+      "desc": "Các liên kết mạng xã hội bên ngoài đã được tích hợp vào hồ sơ."
+    },
+    "BADGE_PROF_EDUCATION": {
+      "name": "Lưu trữ Trí tuệ",
+      "desc": "Hồ sơ học vấn và giáo dục đã được xác minh."
+    },
+    "BADGE_PROF_JOB": {
+      "name": "Tầng lớp Chuyên nghiệp",
+      "desc": "Dữ liệu việc làm và nghề nghiệp đã được thiết lập."
+    },
+    "BADGE_PROF_SECURITY": {
+      "name": "Liên kết Kiên cố",
+      "desc": "Mọi giao thức danh tính và bảo mật đã đi vào hoạt động hoàn toàn."
+    },
+    "BADGE_COMM_PM_1": {
+      "name": "Liên kết Trực tiếp",
+      "desc": "Lần truyền tin nơ-ron riêng tư đầu tiên đã được thiết lập."
+    },
+    "BADGE_COMM_PM_5": {
+      "name": "Người truyền tin Riêng tư",
+      "desc": "5 cuộc liên lạc riêng tư đã được ghi lại."
+    },
+    "BADGE_COMM_PM_10": {
+      "name": "Người thì thầm trong Bóng tối",
+      "desc": "10 kênh riêng tư đang hoạt động. Bạn di chuyển trong các tầng lớp tĩnh lặng."
+    },
+    "BADGE_COMM_GRP_1": {
+      "name": "Nút Nhóm",
+      "desc": "Đã tham gia hoặc khởi xướng lần truyền tin đa cư dân đầu tiên."
+    },
+    "BADGE_COMM_GRP_5": {
+      "name": "Điều phối viên Cụm",
+      "desc": "5 nút nhóm đã được thiết lập. Bạn là một trung tâm hoạt động."
+    },
+    "BADGE_COMM_GRP_10": {
+      "name": "Trí tuệ Tập thể",
+      "desc": "10 lần truyền tin nhóm. Bạn quản lý toàn bộ các cụm Cư dân."
+    }
+  },
+  "dash": {
+    "rep_h": "Vị thế Danh tiếng",
+    "inf_h": "Quyền năng Ảnh hưởng",
+    "elite": "CƯ DÂN ƯU TÚ",
+    "esit": "ESID",
+    "est": "ĐÃ THIẾT LẬP",
+    "na": "Không có mô tả danh tính được phát đi. Thiếu phân đoạn dữ liệu.",
+    "ntw_avg": "Trung bình Mạng lưới",
+    "nai": "Chỉ số Hoạt động Nơ-ron",
+    "badge_title": "Thành tựu của Bạn",
+    "connection": "Đo lường Kết nối",
+    "direct": "Tin nhắn Trực tiếp",
+    "group": "Tin nhắn Nhóm",
+    "comments": "Bình luận"
   }
 }

@@ -10,7 +10,13 @@
     "vdp": "VDP",
     "about": "O nas",
     "howto": "Instrukcja",
-    "policies": "Zasady"
+    "policies": "Zasady",
+    "dash_h": "Dashboard",
+    "feed_h": "Kanał Neuronowy",
+    "comms_h": "Komunikacja",
+    "cits_h": "Obywatele",
+    "notif_h": "Powiadomienia",
+    "logout_h": "Wyloguj"
   },
   "footer": {
     "ci": "INTEL_CYTADELI",
@@ -214,5 +220,314 @@
     "no_account": "Nie jesteś jeszcze Obywatelem? Ustal tożsamość.",
     "error_auth": "BŁĄD_KRYTYCZNY: Weryfikacja tożsamości nie powiodła się.",
     "error_locked": "BŁĄD_KRYTYCZNY: Konto zablokowane z powodu protokołu ducha."
+  },
+    "badges": {
+    "BADGE_BUG_1": {
+      "name": "Pierwotna Podatność",
+      "desc": "Pierwszy uwierzytelniony i zweryfikowany raport o błędzie przesłany do archiwum."
+    },
+    "BADGE_BUG_5": {
+      "name": "Zaawansowany Tester Obciążeniowy",
+      "desc": "Pomyślnie zidentyfikowano 5 krytycznych wad infrastruktury."
+    },
+    "BADGE_BUG_10": {
+      "name": "Nadzorca Cytadeli",
+      "desc": "10 zweryfikowanych raportów. Jesteś filarem naszej sieci obronnej."
+    },
+    "BADGE_GIT_1": {
+      "name": "Pierwszy Commit",
+      "desc": "Ustanowiono wstępne łącze neuronowe z repozytorium."
+    },
+    "BADGE_GIT_5": {
+      "name": "Architekt Systemu",
+      "desc": "5 udanych operacji push w systemie Git. Kod ewoluuje dzięki Tobie."
+    },
+    "BADGE_GIT_10": {
+      "name": "Główny Programista",
+      "desc": "10 udanych operacji push w systemie Git. Absolutne opanowanie logiki Cytadeli."
+    },
+    "BADGE_POST_1": {
+      "name": "Pierwsza Transmisja",
+      "desc": "Wstępny sygnał przesłany do globalnego kanału."
+    },
+    "BADGE_POST_5": {
+      "name": "Częsty Nadawca",
+      "desc": "5 neuronowych transmisji zarejestrowanych w publicznych archiwach."
+    },
+    "BADGE_POST_10": {
+      "name": "Streamer Danych",
+      "desc": "Opublikowano 10 sygnałów. Twój głos zyskuje na częstotliwości."
+    },
+    "BADGE_POST_50": {
+      "name": "Influencer Sieciowy",
+      "desc": "Ustanowiono 50 transmisji. Jesteś znanym źródłem informacji."
+    },
+    "BADGE_POST_100": {
+      "name": "Głos Cytadeli",
+      "desc": "100 transmisji. Twoja obecność jest wpleciona w sieć."
+    },
+    "BADGE_POST_1000": {
+      "name": "Legenda Transmisji",
+      "desc": "1000 transmisji. Jesteś bicie serca Cytadeli."
+    },
+    "BADGE_COMMENT_1": {
+      "name": "Pierwsza Odpowiedź",
+      "desc": "Pierwsza reakcja przesłana do innego Obywatela."
+    },
+    "BADGE_COMMENT_5": {
+      "name": "Rozmówca",
+      "desc": "Zarejestrowano 5 odpowiedzi. Angażowanie się w dialog neuronowy."
+    },
+    "BADGE_COMMENT_10": {
+      "name": "Uczestnik Sieci",
+      "desc": "Przesłano 10 komentarzy. Wkład w zbiorcze dane."
+    },
+    "BADGE_COMMENT_50": {
+      "name": "Aktywny Debatujący",
+      "desc": "50 komentarzy. Twoje perspektywy są często rejestrowane."
+    },
+    "BADGE_COMMENT_100": {
+      "name": "Specjalista ds. Dialogu",
+      "desc": "100 komentarzy. Mistrz komunikacji międzyobywatelskiej."
+    },
+    "BADGE_COMMENT_1000": {
+      "name": "Szeptacz Zbiorowości",
+      "desc": "1000 komentarzy. Twoje opinie napędzają rozmowy w Cytadeli."
+    },
+    "BADGE_COMMENTED_1": {
+      "name": "Sygnał Odebrany",
+      "desc": "Inny Obywatel odpowiedział na Twoją transmisję."
+    },
+    "BADGE_COMMENTED_5": {
+      "name": "Zapalnik Dyskusji",
+      "desc": "Twoje transmisje zainicjowały 5 neuronowych dialogów."
+    },
+    "BADGE_COMMENTED_10": {
+      "name": "Lider Opinii",
+      "desc": "Otrzymano 10 odpowiedzi. Twoje sygnały budzą zainteresowanie społeczności."
+    },
+    "BADGE_COMMENTED_50": {
+      "name": "Zainteresowanie Publiczne",
+      "desc": "50 obywateli odpowiedziało na Twoje transmisje."
+    },
+    "BADGE_COMMENTED_100": {
+      "name": "Węzeł Społeczny",
+      "desc": "Otrzymano 100 komentarzy. Jesteś punktem centralnym sieci."
+    },
+    "BADGE_COMMENTED_1000": {
+      "name": "Wyrocznia Cytadeli",
+      "desc": "Otrzymano 1000 odpowiedzi. Twoje sygnały przyciągają całkowitą uwagę."
+    },
+    "BADGE_LIKE_1": {
+      "name": "Rezonans Neuronowy",
+      "desc": "Pierwsza walidacja wysłana do transmisji innego Obywatela."
+    },
+    "BADGE_LIKE_5": {
+      "name": "Częsty Walidator",
+      "desc": "Wysłano 5 polubień. Wspieranie jakości sieci."
+    },
+    "BADGE_LIKE_10": {
+      "name": "Kurator Danych",
+      "desc": "Wysłano 10 polubień. Identyfikacja sygnałów o wysokiej wartości."
+    },
+    "BADGE_LIKE_50": {
+      "name": "Wsparcie Sygnału",
+      "desc": "Wysłano 50 polubień. Aktywnie kształtujesz nastrój Cytadeli."
+    },
+    "BADGE_LIKE_100": {
+      "name": "Patron Rdzenia",
+      "desc": "Wysłano 100 polubień. Dedykowany walidator treści Obywateli."
+    },
+    "BADGE_LIKE_1000": {
+      "name": "Wielki Walidator",
+      "desc": "Wysłano 1000 polubień. Ty definiujesz konsensus sieci."
+    },
+    "BADGE_LIKED_1": {
+      "name": "Pozytywne Echo",
+      "desc": "Twoja transmisja otrzymała pierwszą walidację."
+    },
+    "BADGE_LIKED_5": {
+      "name": "Zweryfikowany Sygnał",
+      "desc": "5 obywateli wyraziło rezonans z Twoimi danymi."
+    },
+    "BADGE_LIKED_10": {
+      "name": "Wysoka Wierność",
+      "desc": "Otrzymano 10 polubień. Twoje transmisje są uważane za wysokowartościowe."
+    },
+    "BADGE_LIKED_50": {
+      "name": "Szanowane Źródło",
+      "desc": "Otrzymano 50 polubień. Cytadela ceni Twoje transmisje."
+    },
+    "BADGE_LIKED_100": {
+      "name": "Gwiazda Sieci",
+      "desc": "Otrzymano 100 polubień. Twoje treści stale rezonują."
+    },
+    "BADGE_LIKED_1000": {
+      "name": "Idol Cytadeli",
+      "desc": "Otrzymano 1000 polubień. Jesteś latarnią jakości w próżni."
+    },
+    "BADGE_SLIKE_1": {
+      "name": "Hiper-Łącze",
+      "desc": "Wysłano pierwsze Super-Polubienie. Osiągnięto wyjątkowy rezonans."
+    },
+    "BADGE_SLIKE_5": {
+      "name": "Hiper-Walidator",
+      "desc": "Wysłano 5 Super-Polubień. Identyfikacja elitarnych sygnałów."
+    },
+    "BADGE_SLIKE_10": {
+      "name": "Komunikator Impulsowy",
+      "desc": "Wysłano 10 Super-Polubień. Zarejestrowano wysoką energię walidacji."
+    },
+    "BADGE_SLIKE_50": {
+      "name": "Super Kurator",
+      "desc": "Wysłano 50 Super-Polubień. Zatwierdzasz tylko to, co absolutnie najlepsze."
+    },
+    "BADGE_SLIKE_100": {
+      "name": "Plazmowy Patron",
+      "desc": "Wysłano 100 Super-Polubień. Potężne źródło pozytywnego feedbacku."
+    },
+    "BADGE_SLIKE_1000": {
+      "name": "Architekt Pochwał",
+      "desc": "Wysłano 1000 Super-Polubień. Definiujesz szczytowe treści sieci."
+    },
+    "BADGE_SDIS_1": {
+      "name": "Krytyk Systemu",
+      "desc": "Wysłano pierwsze Super-Niepolecenie. Zarejestrowano sprzeciw w strumieniu."
+    },
+    "BADGE_SDIS_5": {
+      "name": "Filtr Sygnału",
+      "desc": "Wysłano 5 Super-Niepoleceń. Aktywnie oczyszczasz sieć z szumów o niskiej wartości."
+    },
+    "BADGE_SDIS_10": {
+      "name": "Strażnik Pustki",
+      "desc": "Wysłano 10 Super-Niepoleceń. Utrzymywanie standardów Cytadeli."
+    },
+    "BADGE_SDIS_50": {
+      "name": "Surowy Realista",
+      "desc": "Wysłano 50 Super-Niepoleceń. Twoje standardy są wyjątkowo wysokie."
+    },
+    "BADGE_SDIS_100": {
+      "name": "Lider Inkwizycji",
+      "desc": "Wysłano 100 Super-Niepoleceń. Strażnik przeciwko przeciętności."
+    },
+    "BADGE_SDIS_1000": {
+      "name": "Czystka Totalna",
+      "desc": "Wysłano 1000 Super-Niepoleceń. Jesteś pustką, która pochłania słabych."
+    },
+    "BADGE_SLIKED_1": {
+      "name": "Elitarny Rezonans",
+      "desc": "Twoja transmisja otrzymała wysokoenergetyczne Super-Polubienie."
+    },
+    "BADGE_SLIKED_5": {
+      "name": "Hiper-Sygnał",
+      "desc": "Otrzymano 5 Super-Polubień. Twoje transmisje są klasy elitarnych."
+    },
+    "BADGE_SLIKED_10": {
+      "name": "Szczyt Neuronowy",
+      "desc": "Otrzymano 10 Super-Polubień. Jesteś na szczycie kanału Cytadeli."
+    },
+    "BADGE_SLIKED_50": {
+      "name": "Supernowa",
+      "desc": "Otrzymano 50 Super-Polubień. Promienne źródło doskonałych danych."
+    },
+    "BADGE_SLIKED_100": {
+      "name": "Wybraniec",
+      "desc": "Otrzymano 100 Super-Polubień. Twoje transmisje są legendarne."
+    },
+    "BADGE_SLIKED_1000": {
+      "name": "Transcendentalny Obywatel",
+      "desc": "1000 Super-Polubień. Osiągnąłeś szczyt walidacji."
+    },
+    "BADGE_SDISD_1": {
+      "name": "Wykryto Szumy",
+      "desc": "Obywatel wydał Super-Niepolecenie przeciwko Twojemu sygnałowi."
+    },
+    "BADGE_SDISD_5": {
+      "name": "Przyciąganie Pustki",
+      "desc": "Otrzymano 5 Super-Niepoleceń. Twoje treści polaryzują sieć."
+    },
+    "BADGE_SDISD_10": {
+      "name": "Poziom Rozgłosu 1",
+      "desc": "Otrzymano 10 Super-Niepoleceń. Stajesz się znanym zakłócaczem."
+    },
+    "BADGE_SDISD_50": {
+      "name": "Wyrzutek Systemu",
+      "desc": "Otrzymano 50 Super-Niepoleceń. Cytadela odrzuca Twoje transmisje."
+    },
+    "BADGE_SDISD_100": {
+      "name": "Wróg Państwa",
+      "desc": "100 Super-Niepoleceń. Twoja obecność jest wysoce kontrowersyjna."
+    },
+    "BADGE_SDISD_1000": {
+      "name": "Wielki Antagonista",
+      "desc": "1000 Super-Niepoleceń. Jesteś cieniem w świetle Cytadeli."
+    },
+    "BADGE_PROF_AVATAR": {
+      "name": "Tożsamość Wizualna",
+      "desc": "Wizerunek neuronowy przesłany do akt Cytadeli."
+    },
+    "BADGE_PROF_BANNER": {
+      "name": "Estetyka Domeny",
+      "desc": "Ustanowiono spersonalizowany baner profilu."
+    },
+    "BADGE_PROF_BIO": {
+      "name": "Narracja Obywatela",
+      "desc": "Sfinalizowano historię osobistą i archiwa biograficzne."
+    },
+    "BADGE_PROF_SOCIALS": {
+      "name": "Ekspansja Neuronowa",
+      "desc": "Zewnętrzne linki społecznościowe zintegrowane z Twoimi aktami."
+    },
+    "BADGE_PROF_EDUCATION": {
+      "name": "Archiwum Intelektualne",
+      "desc": "Zweryfikowano zapisy akademickie i edukacyjne."
+    },
+    "BADGE_PROF_JOB": {
+      "name": "Poziom Profesjonalny",
+      "desc": "Ustanowiono dane o zatrudnieniu i zawodzie."
+    },
+    "BADGE_PROF_SECURITY": {
+      "name": "Fortyfikowane Łącze",
+      "desc": "Wszystkie protokoły tożsamości i bezpieczeństwa w pełni operacyjne."
+    },
+    "BADGE_COMM_PM_1": {
+      "name": "Bezpośrednie Łącze",
+      "desc": "Ustanowiono pierwszą prywatną transmisję neuronową."
+    },
+    "BADGE_COMM_PM_5": {
+      "name": "Prywatny Kanałujący",
+      "desc": "Zarejestrowano 5 prywatnych komunikatów."
+    },
+    "BADGE_COMM_PM_10": {
+      "name": "Cień Szeptu",
+      "desc": "10 aktywnych kanałów prywatnych. Poruszasz się w cichych warstwach."
+    },
+    "BADGE_COMM_GRP_1": {
+      "name": "Węzeł Grupowy",
+      "desc": "Dołączono lub zainicjowano pierwszą transmisję wieloobywatelską."
+    },
+    "BADGE_COMM_GRP_5": {
+      "name": "Koordynator Klastra",
+      "desc": "Ustanowiono 5 węzłów grupowych. Jesteś centrum aktywności."
+    },
+    "BADGE_COMM_GRP_10": {
+      "name": "Umysł Zbiorowy",
+      "desc": "10 transmisji grupowych. Zarządzasz całymi klastrami Obywateli."
+    }
+  },
+  "dash": {
+    "rep_h": "Status Reputacji",
+    "inf_h": "Siła Wpływu",
+    "elite": "OBYWATEL ELITARNY",
+    "esit": "ESID",
+    "est": "USTANOWIONO",
+    "na": "Brak nadawanej narracji tożsamości. Brak fragmentu danych.",
+    "ntw_avg": "Średnia Sieciowa",
+    "nai": "Indeks Aktywności Neuronowej",
+    "badge_title": "Twoje Osiągnięcia",
+    "connection": "Telemetria Połączenia",
+    "direct": "Wiadomości Bezpośrednie",
+    "group": "Wiadomości Grupowe",
+    "comments": "Komentarze"
   }
 }

@@ -10,7 +10,13 @@
     "vdp": "VDP",
     "about": "About",
     "howto": "How To",
-    "policies": "Policies"
+    "policies": "Policies",
+    "dash_h": "Dashboard",
+    "feed_h": "Neural Feed",
+    "comms_h": "Communications",
+    "cits_h": "Citizens",
+    "notif_h": "Notifications",
+    "logout_h": "Log Out"
   },
   "footer": {
     "ci": "CITADEL_INTEL",
@@ -510,19 +516,18 @@
     }
   },  
   "dash": {
-    "welcome": "WELCOME_CITIZEN",
-    "rep_h": "REPUTATION_STANDING",
-    "rep_desc": "Long-term credibility within the network",
-    "inf_h": "INFLUENCE_POWER",
-    "inf_desc": "Current capacity to affect neural streams",
-    "feed_h": "NEURAL_STREAM",
-    "quick_actions": "CORE_COMMANDS",
-    "error_session": "ERROR: Session integrity check failed.",
-    "status": "STATUS: ONLINE",
-    "lgt": "DISCONNECT",
-    "neural": "Neural Binding",
-    "ip": "IP",
-    "offline": "Streams Offline for Maintenance",
-    "p2p": "Awaiting P2P Handshake"
+    "rep_h": "Reputational Standing",
+    "inf_h": "Influence Power",
+    "elite": "ELITE CITIZEN",
+    "esit": "ESID",
+    "est": "ESTABLISHED",
+    "na": "No identity narrative broadcasted. Data fragment missing.",
+    "ntw_avg": "Network Average",
+    "nai": "Neural Activity Index",
+    "badge_title": "Your Achievements",
+    "connection": "Connection Telemetry",
+    "direct": "Direct Messages",
+    "group": "Group Messages",
+    "comments": "Comments"
   }
 }

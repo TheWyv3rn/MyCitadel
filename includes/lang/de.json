@@ -10,7 +10,13 @@
     "vdp": "VDP",
     "about": "Über uns",
     "howto": "Anleitung",
-    "policies": "Richtlinien"
+    "policies": "Richtlinien",
+    "dash_h": "Dashboard",
+    "feed_h": "Neuraler Feed",
+    "comms_h": "Kommunikation",
+    "cits_h": "Bürger",
+    "notif_h": "Benachrichtigungen",
+    "logout_h": "Abmelden"
   },
   "footer": {
     "ci": "CITADEL_INTEL",
@@ -508,5 +514,20 @@
       "name": "Das kollektive Bewusstsein",
       "desc": "10 Gruppenübertragungen. Sie verwalten ganze Cluster von Bürgern."
     }
-  }
+  },
+  "dash": {
+  "rep_h": "Reputationsstatus",
+  "inf_h": "Einflusskraft",
+  "elite": "ELITE-BÜRGER",
+  "esit": "ESID",
+  "est": "ETABLIERT",
+  "na": "Keine Identitätsbeschreibung gesendet. Datenfragment fehlt.",
+  "ntw_avg": "Netzwerkdurchschnitt",
+  "nai": "Neuraler Aktivitätsindex",
+  "badge_title": "Ihre Erfolge",
+  "connection": "Verbindungstelemetrie",
+  "direct": "Direktnachrichten",
+  "group": "Gruppennachrichten",
+  "comments": "Kommentare"
+}
 }
