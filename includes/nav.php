@@ -92,9 +92,14 @@ $alias = $is_logged_in ? htmlspecialchars($_SESSION['citizen_alias']) : '';
                                     <span class="badge bg-danger rounded-pill x-small">0</span>
                                 </a>
                             </li>
+                            <li>
+                                <a class="dropdown-item" href="<?php echo SITE_URL; ?>/citizen/edit_profile.php">
+                                    <i class="fas fa-pen mr-2 text-neon-blue"></i> <?php echo __t('nav', 'edit'); ?>
+                                </a>
+                            </li>
                             <li><hr class="dropdown-divider border-secondary"></li>
                             <li>
-                                <a class="dropdown-item text-danger" href="<?php echo SITE_URL; ?>/includes/auth/logout.php">
+                                <a class="dropdown-item text-danger" href="<?php echo SITE_URL; ?>/logout.php">
                                     <i class="fas fa-sign-out-alt mr-2"></i> <?php echo __t('nav', 'logout_h'); ?>
                                 </a>
                             </li>

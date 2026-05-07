@@ -16,7 +16,8 @@
     "comms_h": "Communications",
     "cits_h": "Citizens",
     "notif_h": "Notifications",
-    "logout_h": "Log Out"
+    "logout_h": "Log Out",
+    "edit": "Edit Profile"
   },
   "footer": {
     "ci": "CITADEL_INTEL",
