@@ -16,7 +16,8 @@
     "comms_h": "Communicatie",
     "cits_h": "Burgers",
     "notif_h": "Meldingen",
-    "logout_h": "Uitloggen"
+    "logout_h": "Uitloggen",
+    "edit": "Profiel bewerken"
   },
   "footer": {
     "ci": "CITADEL_INTEL",

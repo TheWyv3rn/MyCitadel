@@ -16,7 +16,8 @@
     "comms_h": "Comunicações",
     "cits_h": "Cidadãos",
     "notif_h": "Notificações",
-    "logout_h": "Sair"
+    "logout_h": "Sair",
+    "edit": "Editar perfil"
   },
   "footer": {
     "ci": "INTEL_CIDADELA",

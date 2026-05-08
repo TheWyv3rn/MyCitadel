@@ -16,7 +16,8 @@
     "comms_h": "Komunikasi",
     "cits_h": "Warga",
     "notif_h": "Notifikasi",
-    "logout_h": "Keluar"
+    "logout_h": "Keluar",
+    "edit": "Edit Profil"
   },
   "footer": {
     "ci": "CITADEL_INTEL",

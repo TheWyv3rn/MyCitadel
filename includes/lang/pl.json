@@ -16,7 +16,8 @@
     "comms_h": "Komunikacja",
     "cits_h": "Obywatele",
     "notif_h": "Powiadomienia",
-    "logout_h": "Wyloguj"
+    "logout_h": "Wyloguj",
+    "edit": "Edytuj profil"
   },
   "footer": {
     "ci": "INTEL_CYTADELI",

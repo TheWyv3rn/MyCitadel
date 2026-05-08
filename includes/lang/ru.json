@@ -16,7 +16,8 @@
     "comms_h": "Связь",
     "cits_h": "Граждане",
     "notif_h": "Уведомления",
-    "logout_h": "Выйти"
+    "logout_h": "Выйти",
+    "edit": "Редактировать профиль"
   },
   "footer": {
     "ci": "CITADEL_INTEL",

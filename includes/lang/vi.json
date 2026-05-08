@@ -16,7 +16,8 @@
     "comms_h": "Liên lạc",
     "cits_h": "Cư dân",
     "notif_h": "Thông báo",
-    "logout_h": "Đăng xuất"
+    "logout_h": "Đăng xuất",
+    "edit": "Chỉnh sửa hồ sơ"
   },
   "footer": {
     "ci": "CITADEL_INTEL",

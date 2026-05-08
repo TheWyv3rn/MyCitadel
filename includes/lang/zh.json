@@ -16,7 +16,8 @@
     "comms_h": "通信",
     "cits_h": "公民",
     "notif_h": "通知",
-    "logout_h": "退出登录"
+    "logout_h": "退出登录",
+    "edit": "编辑个人资料"
   },
   "footer": {
     "ci": "堡垒情报",

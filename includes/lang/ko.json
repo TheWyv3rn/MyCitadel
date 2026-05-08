@@ -16,7 +16,8 @@
     "comms_h": "통신",
     "cits_h": "시민",
     "notif_h": "알림",
-    "logout_h": "로그아웃"
+    "logout_h": "로그아웃",
+    "edit": "프로필 수정"
   },
   "footer": {
     "ci": "시타델_인텔",

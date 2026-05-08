@@ -16,7 +16,8 @@
     "comms_h": "Kommunikation",
     "cits_h": "Bürger",
     "notif_h": "Benachrichtigungen",
-    "logout_h": "Abmelden"
+    "logout_h": "Abmelden",
+    "edit": "Profil bearbeiten"
   },
   "footer": {
     "ci": "CITADEL_INTEL",

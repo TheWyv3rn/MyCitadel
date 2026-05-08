@@ -16,7 +16,8 @@
     "comms_h": "İletişim",
     "cits_h": "Vatandaşlar",
     "notif_h": "Bildirimler",
-    "logout_h": "Çıkış Yap"
+    "logout_h": "Çıkış Yap",
+    "edit": "Profili Düzenle"
   },
   "footer": {
     "ci": "CITADEL_INTEL",

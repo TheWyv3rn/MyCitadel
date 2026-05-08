@@ -16,7 +16,8 @@
     "comms_h": "Comunicaciones",
     "cits_h": "Ciudadanos",
     "notif_h": "Notificaciones",
-    "logout_h": "Cerrar Sesión"
+    "logout_h": "Cerrar Sesión",
+    "edit": "Editar perfil"
   },
   "footer": {
     "ci": "INTEL_CIUDADELA",
