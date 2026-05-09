@@ -213,7 +213,7 @@ global $citadel_strings;
                             "<?php 
                                 // We use the $dec array which now holds the decrypted text
                                 $bio_text = $dec['short_bio']; 
-                                echo htmlspecialchars((string)($bio_text ?: __t('dash.na', 'No narrative established.'))); 
+                                echo htmlspecialchars((string)($bio_text ?: __t('dash', 'na'))); 
                             ?>"
                         </p>
                     </div>
