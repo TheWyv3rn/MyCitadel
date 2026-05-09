@@ -1,9 +1,8 @@
 <?php
 /**
  * PROJECT: MY CITADEL
- * MODULE: DOSSIER BACKEND PROCESSOR (PEAK LOGIC)
- * VERSION: 1.1.0
- * DESCRIPTION: Secure encryption, per-field Rep logic (+20), and Sectional Badge awarding.
+ * MODULE: DOSSIER BACKEND PROCESSOR
+ * VERSION: 1.0.3 (Fixed Education Badge Logic)
  */
 declare(strict_types=1);
 require_once __DIR__ . '/../config.php';
@@ -16,7 +15,7 @@ $db = citadel_db();
 $cit_id = (int)$_SESSION['citizen_id'];
 $sov_key = $_SESSION['sovereign_key'] ?? hash('sha256', 'Mustang_Sprint_2024_' . $cit_id, true);
 
-// --- 1. FIELD REGISTRY & CATEGORIZATION ---
+// TARGET REGISTRY - Ensure these match your DB column names exactly
 $enc_targets = [
     'full_name', 'bio', 'short_bio', 'address_1', 'address_2', 'city', 'state', 'zip', 'country', 'phone',
     'fb_handle', 'x_handle', 'ig_handle', 'li_handle', 'gh_handle', 'h1_handle', 'bc_handle', 'it_handle', 
@@ -28,18 +27,12 @@ $enc_targets = [
     'cert_1', 'cert_2', 'cert_3', 'cert_4', 'public_key'
 ];
 
-// Mapping for Sectional Badges
-$sectors = [
+// CATEGORY BADGE GROUPS
+$groups = [
     'BADGE_PROF_BIO'       => ['bio', 'short_bio'],
-    'BADGE_PROF_SOCIALS'   => ['fb_handle', 'x_handle', 'ig_handle', 'li_handle', 'gh_handle', 'TikTok', 'medium_handle', 'yt_handle', 'twitch_handle', 'kick_handle'],
-    'BADGE_PROF_HACKER_INTEL' => ['h1_handle', 'bc_handle', 'it_handle', 'ywh_handle', 'so_handle'],
-    'BADGE_PROF_GAMER'     => ['xbox_handle', 'ps_handle', 'steam_handle', 'blizzard_handle', 'nintendo_handle'],
-    'BADGE_PROF_JOB'       => ['job_company', 'job_title', 'job_description'],
-    'BADGE_PROF_HIGHSCHOOL'=> ['highschool'],
-    'BADGE_PROF_COLLEGE'   => ['college_1', 'college_2', 'college_3'],
-    'BADGE_PROF_CERTS'     => ['cert_1', 'cert_2', 'cert_3', 'cert_4'],
-    'BADGE_PROF_LOCATION'  => ['address_1', 'city', 'state', 'country'],
-    'BADGE_PROF_FAVORITES' => ['fav_books', 'fav_shows', 'fav_movies', 'fav_songs', 'fav_activities']
+    'BADGE_PROF_SOCIALS'   => ['fb_handle', 'x_handle', 'ig_handle', 'li_handle', 'gh_handle', 'h1_handle', 'bc_handle', 'it_handle', 'ywh_handle', 'so_handle', 'TikTok'],
+    'BADGE_PROF_EDUCATION' => ['highschool', 'college_1', 'college_2', 'college_3', 'diploma_1', 'diploma_2', 'diploma_3', 'cert_1', 'cert_2', 'cert_3', 'cert_4'],
+    'BADGE_PROF_JOB'       => ['job_company', 'job_title', 'job_description']
 ];
 
 function shield($data, $key) {
@@ -52,11 +45,11 @@ function reveal($data, $key) {
     if (empty($data) || !$key) return '';
     try {
         $decoded = base64_decode((string)$data);
-        if (!$decoded || strlen($decoded) < 32) return $data;
+        if (!$decoded || strlen($decoded) < 32) return (string)$data;
         $nonce = substr($decoded, 0, 24);
         $ciphertext = substr($decoded, 24);
         $p = sodium_crypto_secretbox_open($ciphertext, $nonce, $key);
-        return ($p === false) ? $data : $p;
+        return ($p === false) ? (string)$data : $p;
     } catch (Exception $e) { return ''; }
 }
 
@@ -80,26 +73,25 @@ try {
     $stmt->execute([$cit_id]);
     $old = $stmt->fetch();
 
-    $rep_gain = 0;
-    $updates = [];
-    $params = [];
-    $active_sectors = [];
+    $rep_gain = 0; $updates = []; $params = []; $active_badges = [];
 
-    // --- 2. MAIN LOOP: ENCRYPTION & PER-FIELD POINTS ---
     foreach ($enc_targets as $f) {
+        // IMPORTANT: If your HTML form uses 'high' instead of 'highschool', 
+        // you must check for both or change the HTML 'name' attribute.
         if (!isset($_POST[$f])) continue;
-        $new_val = (string)$_POST[$f];
-        $old_dec = reveal($old[$f], $sov_key);
+        
+        $new_val = trim((string)$_POST[$f]);
+        $old_dec = reveal($old[$f] ?? '', $sov_key);
 
-        // Reputation Logic: +20 for newly established fragments
+        // Rep gain for NEWLY filled fields
         if (empty($old_dec) && !empty($new_val)) { 
             $rep_gain += 20; 
         }
 
-        // Track which sectors are being touched for badge awarding
-        if (!empty($new_val)) {
-            foreach ($sectors as $badge_id => $field_list) {
-                if (in_array($f, $field_list)) $active_sectors[] = $badge_id;
+        // Check which badges should fire
+        foreach ($groups as $badge_id => $fields) {
+            if (in_array($f, $fields) && !empty($new_val)) {
+                $active_badges[] = $badge_id;
             }
         }
 
@@ -107,38 +99,29 @@ try {
         $params[] = shield($new_val, $sov_key);
     }
 
-    // --- 3. META & STATUS ---
-    foreach (['relationship_status', 'has_kids'] as $f) {
-        if (isset($_POST[$f])) {
-            if ($old[$f] !== $_POST[$f]) {
-                award_badge($db, $cit_id, 'BADGE_PROF_STATUS');
-            }
-            $updates[] = "$f = ?"; $params[] = $_POST[$f];
-        }
+    // Process Badges (using unique to avoid multiple calls)
+    foreach (array_unique($active_badges) as $b_id) {
+        award_badge($db, $cit_id, $b_id);
     }
 
-    // --- 4. SENSITIVE AUTH UPDATES ---
-    if (!empty($_POST['scrambled_email'])) {
-        $updates[] = "email_hash = ?";
-        $params[] = citadel_encrypt($_POST['scrambled_email']);
-    }
+    // META & SECURITY
+    if (isset($_POST['relationship_status'])) { $updates[] = "relationship_status = ?"; $params[] = $_POST['relationship_status']; }
+    if (isset($_POST['has_kids'])) { $updates[] = "has_kids = ?"; $params[] = $_POST['has_kids']; }
+    
     if (!empty($_POST['scrambled_pass'])) {
         $updates[] = "password_hash = ?";
         $params[] = password_hash($_POST['scrambled_pass'], PASSWORD_ARGON2ID);
         award_badge($db, $cit_id, 'BADGE_PROF_SECURITY');
     }
 
-    // --- 5. MEDIA PROCESSING ---
-    $safe_alias = preg_replace('/[^a-zA-Z0-9]/', '', $old['alias']);
-    $media = [
-        'avatar' => ['col'=>'avatar_path','sfx'=>'_avatar','dir'=>'../../citizen/media/avatars/','badge'=>'BADGE_PROF_AVATAR'],
-        'banner' => ['col'=>'banner_path','sfx'=>'_banner','dir'=>'../../citizen/media/banners/','badge'=>'BADGE_PROF_BANNER']
-    ];
+    // MEDIA
+    $media = ['avatar' => ['col'=>'avatar_path','sfx'=>'_avatar','badge'=>'BADGE_PROF_AVATAR'],
+              'banner' => ['col'=>'banner_path','sfx'=>'_banner','badge'=>'BADGE_PROF_BANNER']];
     foreach ($media as $k => $c) {
         if (isset($_FILES[$k]) && $_FILES[$k]['error'] === UPLOAD_ERR_OK) {
             $ext = strtolower(pathinfo($_FILES[$k]['name'], PATHINFO_EXTENSION));
-            $fname = $safe_alias . $c['sfx'] . '.' . $ext;
-            if (move_uploaded_file($_FILES[$k]['tmp_name'], $c['dir'] . $fname)) {
+            $fname = preg_replace('/[^a-zA-Z0-9]/', '', $old['alias']) . $c['sfx'] . '.' . $ext;
+            if (move_uploaded_file($_FILES[$k]['tmp_name'], "../../citizen/media/" . ($k === 'avatar' ? 'avatars/' : 'banners/') . $fname)) {
                 $updates[] = "{$c['col']} = ?"; 
                 $params[] = "citizen/media/" . ($k === 'avatar' ? 'avatars/' : 'banners/') . $fname;
                 award_badge($db, $cit_id, $c['badge']);
@@ -146,23 +129,15 @@ try {
         }
     }
 
-    // --- 6. FINAL BADGE PROCESSING ---
-    $active_sectors = array_unique($active_sectors);
-    foreach ($active_sectors as $target_badge) {
-        award_badge($db, $cit_id, $target_badge);
-    }
-
-    // --- 7. REPUTATION COMMIT ---
-    $updates[] = "reputation = reputation + ?"; 
-    $params[] = $rep_gain;
+    // FINAL UPDATE
+    $updates[] = "reputation = reputation + ?"; $params[] = $rep_gain;
     $params[] = $cit_id;
-
     $sql = "UPDATE citizens SET " . implode(', ', $updates) . " WHERE id = ?";
     $db->prepare($sql)->execute($params);
 
     $db->commit();
     header("Location: ../../citizen/edit_profile.php?success=1");
 } catch (Exception $e) {
-    $db->rollBack();
+    if ($db->inTransaction()) $db->rollBack();
     header("Location: ../../citizen/edit_profile.php?error=" . urlencode($e->getMessage()));
 }
