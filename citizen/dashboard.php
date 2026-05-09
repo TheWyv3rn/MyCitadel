@@ -2,35 +2,61 @@
 /**
  * PROJECT: MY CITADEL
  * MODULE: SOVEREIGN DASHBOARD (INTELLIGENCE CORE)
- * VERSION: 2.1.1
- * DESCRIPTION: Heavy-duty stat driven interface with full dossier integration.
- * FIX: Resolved TypeError in badge translation by accessing global strings directly.
+ * VERSION: 2.2.0
  */
 
 declare(strict_types=1);
 
-// 1. Core Handshake
 require_once __DIR__ . '/../includes/config.php';
-require_once __DIR__ . '/../includes/auth/gatekeeper.php'; // Ensures initial session check
+require_once __DIR__ . '/../includes/auth/gatekeeper.php'; 
 require_once __DIR__ . '/../includes/header.php';
 
 $db = citadel_db();
 $my_id = (int)$_SESSION['citizen_id'];
 
-/**
- * 2. DEEP DATA FETCH
- * We re-fetch the full citizen record to ensure all 70+ new columns are available.
- * (The Gatekeeper only fetches a partial record for speed).
- */
+// 1. DATA FETCH
 $stmt_me = $db->prepare("SELECT * FROM citizens WHERE id = ? LIMIT 1");
 $stmt_me->execute([$my_id]);
 $me = $stmt_me->fetch();
 
-if (!$me) {
-    // Session exists but record is missing? Emergency disconnect.
-    header("Location: ../logout.php");
-    exit;
+if (!$me) { header("Location: ../logout.php"); exit; }
+
+// 2. THE REVEAL PROTOCOL (Define this first)
+function reveal($data, $key) {
+    if (empty($data) || !$key) return '';
+    try {
+        $decoded = base64_decode((string)$data);
+        if (!$decoded || strlen($decoded) < 32) return $data; 
+        $nonce = substr($decoded, 0, 24);
+        $ciphertext = substr($decoded, 24);
+        $p = sodium_crypto_secretbox_open($ciphertext, $nonce, $key);
+        return ($p === false) ? $data : $p;
+    } catch (Exception $e) { return '[CORRUPTED]'; }
 }
+
+// 3. TARGETS & KEYS (Define these next)
+$enc_targets = [
+    'full_name', 'bio', 'short_bio', 'address_1', 'address_2', 'city', 'state', 'zip', 'country', 'phone',
+    'fb_handle', 'x_handle', 'ig_handle', 'li_handle', 'gh_handle', 'h1_handle', 'bc_handle', 'it_handle', 
+    'ywh_handle', 'so_handle', 'medium_handle', 'yt_handle', 'twitch_handle', 'kick_handle', 'TikTok',
+    'xbox_handle', 'ps_handle', 'steam_handle', 'blizzard_handle', 'nintendo_handle',
+    'fav_books', 'fav_shows', 'fav_movies', 'fav_songs', 'fav_activities',
+    'job_company', 'job_title', 'job_description', 'highschool', 
+    'college_1', 'college_2', 'college_3', 'diploma_1', 'diploma_2', 'diploma_3',
+    'cert_1', 'cert_2', 'cert_3', 'cert_4', 'public_key'
+];
+
+// FIXED: Using $my_id to match your variable above
+$sov_key = $_SESSION['sovereign_key'] ?? hash('sha256', 'Mustang_Sprint_2024_' . $my_id, true);
+
+// 4. DECRYPT EVERYTHING (Run loop last)
+$dec = $me;
+foreach ($enc_targets as $f) { 
+    $dec[$f] = reveal($me[$f], $sov_key); 
+}
+
+// --- Rest of your Analytics/Media logic below ---
+$global_stats = $db->query("SELECT AVG(reputation) as avg_rep, AVG(influence) as avg_inf, COUNT(id) as total_citizens FROM citizens")->fetch();
 
 /**
  * 3. NETWORK ANALYTICS
@@ -83,6 +109,7 @@ else $rank_title = "NEWBORN";
 
 // Access global strings for nested badge data
 global $citadel_strings;
+
 ?>
 <!-- [PARTICLES BACKGROUND CONTAINER] -->
 <div id="particles-js" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1; pointer-events: none;"></div>
@@ -180,13 +207,14 @@ global $citadel_strings;
                     <div class="d-flex flex-wrap gap-3 mb-4 font-mono small text-secondary">
                         <span><i class="fas fa-fingerprint text-neon-blue"></i> <?php echo __t('dash', 'esit'); ?>: <?php echo str_pad((string)$me['id'], 6, '0', STR_PAD_LEFT); ?></span>
                         <span><i class="fas fa-calendar-alt"></i> <?php echo __t('dash', 'est'); ?>: <?php echo date('M Y', strtotime((string)$me['created_at'])); ?></span>
-                        <?php if(!empty($me['city'])): ?>
-                            <span><i class="fas fa-map-marker-alt"></i> <?php echo htmlspecialchars($me['city']); ?>, <?php echo htmlspecialchars($me['country'] ?? ''); ?></span>
-                        <?php endif; ?>
                     </div>
                     <div class="citadel-card stat-card border-0 p-4">
                         <p class="lead text-light opacity-75 mb-0">
-                            "<?php echo htmlspecialchars((string)($me['short_bio'] ?: __t('dash', 'na'))); ?>"
+                            "<?php 
+                                // We use the $dec array which now holds the decrypted text
+                                $bio_text = $dec['short_bio']; 
+                                echo htmlspecialchars((string)($bio_text ?: __t('dash.na', 'No narrative established.'))); 
+                            ?>"
                         </p>
                     </div>
                 </div>

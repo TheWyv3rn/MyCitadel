@@ -14,7 +14,7 @@ $cit_id = (int)$_SESSION['citizen_id'];
 $enc_targets = [
     'full_name', 'bio', 'short_bio', 'address_1', 'address_2', 'city', 'state', 'zip', 'country', 'phone',
     'fb_handle', 'x_handle', 'ig_handle', 'li_handle', 'gh_handle', 'h1_handle', 'bc_handle', 'it_handle', 
-    'ywh_handle', 'so_handle', 'medium_handle', 'yt_handle', 'twitch_handle', 'kick_handle',
+    'ywh_handle', 'so_handle', 'medium_handle', 'yt_handle', 'twitch_handle', 'kick_handle', 'TikTok',
     'xbox_handle', 'ps_handle', 'steam_handle', 'blizzard_handle', 'nintendo_handle',
     'fav_books', 'fav_shows', 'fav_movies', 'fav_songs', 'fav_activities',
     'job_company', 'job_title', 'job_description', 'highschool', 
@@ -132,36 +132,25 @@ foreach ($enc_targets as $f) { $dec[$f] = reveal($me[$f], $sov_key); }
                             </div>
 
                             <div class="tab-pane fade" id="t4">
+                                <!-- Header Fix -->
                                 <h5 class="text-neon-blue stencil-text small mb-4"><?php echo __t('edit', 'social_title'); ?></h5>
+                                
                                 <div class="row">
                                     <?php 
                                     $socs = [
-                                        'fb_handle'     => 'Facebook',
-                                        'x_handle'      => 'X (Twitter)',
-                                        'ig_handle'     => 'Instagram',
-                                        'li_handle'     => 'LinkedIn',
-                                        'gh_handle'     => 'GitHub',
-                                        'h1_handle'     => 'HackerOne',
-                                        'bc_handle'     => 'BugCrowd',
-                                        'it_handle'     => 'Intigriti',
-                                        'ywh_handle'    => 'YesWeHack',
-                                        'so_handle'     => 'StackOverflow',
-                                        'medium_handle' => 'Medium',
-                                        'yt_handle'     => 'YouTube',
-                                        'twitch_handle' => 'Twitch',
-                                        'kick_handle'   => 'Kick',
-                                        'TikTok'        => 'TikTok' // Matched casing for the label
+                                        'fb_handle'=>'Facebook','x_handle'=>'X (Twitter)','ig_handle'=>'Instagram',
+                                        'li_handle'=>'LinkedIn','gh_handle'=>'GitHub','h1_handle'=>'HackerOne',
+                                        'bc_handle'=>'BugCrowd', 'it_handle'=>'Intigriti','ywh_handle'=>'YesWeHack',
+                                        'so_handle'=>'StackOverflow','medium_handle'=>'Medium','yt_handle'=>'YouTube',
+                                        'twitch_handle'=>'Twitch','kick_handle'=>'Kick','TikTok'=>'TikTok'
                                     ]; 
-
                                     foreach($socs as $k => $l): ?>
                                         <div class="col-md-4 mb-3">
                                             <label class="label-cyber">
-                                                <?php echo __t($k, $l); ?>
+                                                <!-- Hits "edit" -> "$k" in your JSON -->
+                                                <?php echo __t('edit', $k); ?>
                                             </label>
-                                            <input type="text" 
-                                                name="<?php echo $k; ?>" 
-                                                class="form-control bg-black text-light border-secondary form-control-sm" 
-                                                value="<?php echo htmlspecialchars($dec[$k] ?? ''); ?>">
+                                            <input type="text" name="<?php echo $k; ?>" class="form-control bg-black text-light border-secondary form-control-sm" value="<?php echo htmlspecialchars($dec[$k] ?? ''); ?>">
                                         </div>
                                     <?php endforeach; ?>
                                 </div>
@@ -170,9 +159,19 @@ foreach ($enc_targets as $f) { $dec[$f] = reveal($me[$f], $sov_key); }
                             <div class="tab-pane fade" id="t5">
                                 <h5 class="text-neon-blue stencil-text small mb-4"><?php echo __t('edit', 'gamer_title'); ?></h5>
                                 <div class="row">
-                                    <?php $games = ['xbox_handle'=>'Xbox','ps_handle'=>'PSN','steam_handle'=>'Steam','blizzard_handle'=>'BattleNet','nintendo_handle'=>'Nintendo']; 
+                                    <?php $games = [
+                                        'xbox_handle'=>'Xbox',
+                                        'ps_handle'=>'PSN',
+                                        'steam_handle'=>'Steam',
+                                        'blizzard_handle'=>'BattleNet',
+                                        'nintendo_handle'=>'Nintendo']; 
                                     foreach($games as $k => $l): ?>
-                                        <div class="col-md-4 mb-3"><label class="label-cyber"><?php echo $l; ?></label><input type="text" name="<?php echo $k; ?>" class="form-control bg-black text-light border-secondary" value="<?php echo htmlspecialchars($dec[$k] ?? ''); ?>"></div>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="label-cyber">
+                                                <?php echo __t('edit', $k); ?>
+                                            </label>
+                                            <input type="text" name="<?php echo $k; ?>" class="form-control bg-black text-light border-secondary" value="<?php echo htmlspecialchars($dec[$k] ?? ''); ?>">
+                                        </div>
                                     <?php endforeach; ?>
                                 </div>
                             </div>
@@ -204,30 +203,26 @@ foreach ($enc_targets as $f) { $dec[$f] = reveal($me[$f], $sov_key); }
                                 <h5 class="text-neon-blue mb-4 stencil-text small"><?php echo __t('edit', 'bio_title'); ?></h5>
                                 <div class="mb-3"><label class="label-cyber"><?php echo __t('edit', 'sb'); ?></label><input type="text" name="short_bio" class="form-control bg-black text-light border-neon-blue" value="<?php echo htmlspecialchars($dec['short_bio'] ?? ''); ?>"></div>
                                 <div class="mb-3"><label class="label-cyber"><?php echo __t('edit', 'lb'); ?></label><textarea name="bio" class="form-control bg-black text-light border-neon-blue font-monospace" rows="10"><?php echo htmlspecialchars($dec['bio'] ?? ''); ?></textarea></div>
-                            <div class="row">
-                                <?php 
-                                // Define the map: 'database_column' => 'Default English Display'
-                                $ints = [
-                                    'fav_books'      => 'Grimoires',
-                                    'fav_shows'      => 'Sims',
-                                    'fav_movies'     => 'Holovids',
-                                    'fav_songs'      => 'Waves',
-                                    'fav_activities' => 'Ops'
-                                ]; 
-
-                                foreach($ints as $k => $l): ?>
-                                    <div class="col-md-4 mb-3">
-                                        <label class="label-cyber">
-                                            <?php echo __t($k, $l); ?>
-                                        </label>
-                                        <input type="text" 
-                                            name="<?php echo $k; ?>" 
-                                            class="form-control bg-black text-light border-secondary" 
-                                            value="<?php echo htmlspecialchars($dec[$k] ?? ''); ?>">
+                                    <div class="row">
+                                        <?php 
+                                        $ints = [
+                                            'fav_books'      => 'Grimoires',
+                                            'fav_shows'      => 'Sims',
+                                            'fav_movies'     => 'Holovids',
+                                            'fav_songs'      => 'Waves',
+                                            'fav_activities' => 'Ops'
+                                        ]; 
+                                        foreach($ints as $k => $l): ?>
+                                            <div class="col-md-4 mb-3">
+                                                <label class="label-cyber">
+                                                    <!-- ADD "edit." BEFORE THE KEY $k -->
+                                                    <?php echo __t('edit', $k); ?>
+                                                </label>
+                                                <input type="text" name="<?php echo $k; ?>" class="form-control bg-black text-light border-secondary" value="<?php echo htmlspecialchars($dec[$k] ?? ''); ?>">
+                                            </div>
+                                        <?php endforeach; ?>
                                     </div>
-                                <?php endforeach; ?>
-                            </div>
-                            </div>
+                                </div>
 
                         </div>
                     </div>
