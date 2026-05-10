@@ -602,5 +602,24 @@
     "steam_handle": "Steam",
     "blizzard_handle": "Blizzard",
     "nintendo_handle": "Nintendo"
+  },
+  "notif": {
+    "site_search": "城堡公民",
+    "search_placeholder": "输入别名进行解析",
+    "btn_view": "查看档案",
+    "btn_sever": "切断连接",
+    "btn_pending": "上行链路待定",
+    "btn_establish": "建立上行链路",
+    "js_transmitting": "传输中...",
+    "toast_severed": "链路断开：连接已清除。",
+    "toast_request_sent": "握手完成：请求已传输。",
+    "type_request": "上行链路请求：需要进行连接验证。",
+    "type_accepted": "握手确认：安全隧道已建立。",
+    "type_declined": "上行链路被拒：目标已终止请求。",
+    "type_severed": "上行链路终止：合作伙伴节点已切断连接。",
+    "subtitle": "查看你错过了什么！",
+    "empty": "目前没有通知",
+    "mark_read": "标记为全部已读",
+    "btn_accept": "接受连接"
   }
 }

@@ -602,5 +602,24 @@
     "steam_handle": "Steam",
     "blizzard_handle": "Blizzard",
     "nintendo_handle": "Nintendo"
+  },
+  "notif": {
+    "site_search": "Công dân của Citadel",
+    "search_placeholder": "NHẬP BÍ DANH ĐỂ GIẢI MÃ",
+    "btn_view": "XEM_HỒ_SƠ",
+    "btn_sever": "NGẮT_KẾT_NỐI",
+    "btn_pending": "UPLINK_ĐANG_CHỜ",
+    "btn_establish": "THIẾT_LẬP_UPLINK",
+    "js_transmitting": "ĐANG TRUYỀN...",
+    "toast_severed": "LIÊN_KẾT_BỊ_NGẮT: Kết nối đã được xóa.",
+    "toast_request_sent": "BẮT_TAY_HOÀN_TẤT: Yêu cầu đã được truyền.",
+    "type_request": "YÊU_CẦU_UPLINK: Cần xác minh kết nối.",
+    "type_accepted": "BẮT_TAY_XÁC_NHẬN: Đường truyền bảo mật đã thiết lập.",
+    "type_declined": "UPLINK_BỊ_TỪ_CHỐI: Yêu cầu bị chấm dứt bởi mục tiêu.",
+    "type_severed": "UPLINK_BỊ_CHẤM_DỨT: Kết nối bị ngắt bởi nút đối tác.",
+    "subtitle": "Tìm hiểu những gì bạn đã bỏ lỡ!",
+    "empty": "Không có thông báo nào vào lúc này",
+    "mark_read": "Đánh dấu tất cả là đã đọc",
+    "btn_accept": "Chấp nhận kết nối"
   }
 }

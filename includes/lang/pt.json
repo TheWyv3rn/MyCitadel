@@ -602,5 +602,24 @@
     "steam_handle": "Steam",
     "blizzard_handle": "Blizzard",
     "nintendo_handle": "Nintendo"
+  },
+  "notif": {
+    "site_search": "Os Cidadãos da Cidadela",
+    "search_placeholder": "INSERIR ALIAS PARA RESOLVER",
+    "btn_view": "VER_DOSSIER",
+    "btn_sever": "CORTAR_CONEXÃO",
+    "btn_pending": "UPLINK_PENDENTE",
+    "btn_establish": "ESTABELECER_UPLINK",
+    "js_transmitting": "TRANSMITINDO...",
+    "toast_severed": "LINK_ROMPIDO: Conexão purgada.",
+    "toast_request_sent": "HANDSHAKE_CONCLUÍDO: Solicitação transmitida.",
+    "type_request": "SOLICITAÇÃO_DE_UPLINK: Verificação de conexão necessária.",
+    "type_accepted": "HANDSHAKE_CONFIRMADO: Túnel seguro estabelecido.",
+    "type_declined": "UPLINK_RECUSADO: Solicitação terminada pelo alvo.",
+    "type_severed": "UPLINK_TERMINADO: Conexão cortada pelo nó parceiro.",
+    "subtitle": "Descubra o que você perdeu!",
+    "empty": "Sem notificações no momento",
+    "mark_read": "Marcar tudo como lido",
+    "btn_accept": "Aceitar conexão"
   }
 }

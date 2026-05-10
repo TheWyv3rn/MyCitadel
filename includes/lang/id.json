@@ -602,5 +602,24 @@
     "steam_handle": "Steam",
     "blizzard_handle": "Blizzard",
     "nintendo_handle": "Nintendo"
+  },
+  "notif": {
+    "site_search": "Warga Citadel",
+    "search_placeholder": "MASUKKAN ALIAS UNTUK RESOLUSI",
+    "btn_view": "LIHAT_DOSIR",
+    "btn_sever": "PUTUS_KONEKSI",
+    "btn_pending": "UPLINK_PENDING",
+    "btn_establish": "BANGUN_UPLINK",
+    "js_transmitting": "TRANSMISI...",
+    "toast_severed": "LINK_TERPUTUS: Koneksi dibersihkan.",
+    "toast_request_sent": "HANDSHAKE_SELESAI: Permintaan terkirim.",
+    "type_request": "PERMINTAAN_UPLINK: Verifikasi koneksi diperlukan.",
+    "type_accepted": "HANDSHAKE_TERKONFIRMASI: Terowongan aman dibangun.",
+    "type_declined": "UPLINK_DITOLAK: Permintaan dihentikan oleh target.",
+    "type_severed": "UPLINK_TERHENTI: Koneksi diputus oleh node mitra.",
+    "subtitle": "Cari tahu apa yang Anda lewatkan!",
+    "empty": "Tidak Ada Notifikasi Saat Ini",
+    "mark_read": "Tandai Semua Telah Dibaca",
+    "btn_accept": "Terima Koneksi"
   }
 }

@@ -602,5 +602,24 @@
     "steam_handle": "Steam",
     "blizzard_handle": "Blizzard",
     "nintendo_handle": "Nintendo"
+  },
+  "notif": {
+    "site_search": "I Cittadini della Cittadella",
+    "search_placeholder": "INSERIRE ALIAS PER RISOLUZIONE",
+    "btn_view": "VEDI_DOSSIER",
+    "btn_sever": "RECIDERE_CONNESSIONE",
+    "btn_pending": "UPLINK_IN_ATTESA",
+    "btn_establish": "STABILIRE_UPLINK",
+    "js_transmitting": "TRASMISSIONE...",
+    "toast_severed": "LINK_RECISO: Connessione epurata.",
+    "toast_request_sent": "HANDSHAKE_COMPLETATO: Richiesta trasmessa.",
+    "type_request": "RICHIESTA_UPLINK: Verifica connessione richiesta.",
+    "type_accepted": "HANDSHAKE_CONFERMATO: Tunnel sicuro stabilito.",
+    "type_declined": "UPLINK_RIFIUTATO: Richiesta terminata dal bersaglio.",
+    "type_severed": "UPLINK_TERMINATO: Connessione recisa dal nodo partner.",
+    "subtitle": "Scopri cosa ti sei perso!",
+    "empty": "Nessuna notifica al momento",
+    "mark_read": "Segna tutti come letti",
+    "btn_accept": "Accetta connessione"
   }
 }

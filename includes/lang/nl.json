@@ -602,5 +602,24 @@
     "steam_handle": "Steam",
     "blizzard_handle": "Blizzard",
     "nintendo_handle": "Nintendo"
+  },
+  "notif": {
+    "site_search": "De Burgers van de Citadel",
+    "search_placeholder": "VOER ALIAS IN OM OP TE LOSSEN",
+    "btn_view": "DOSSIER_BEKIJKEN",
+    "btn_sever": "VERBINDING_VERBREKEN",
+    "btn_pending": "UPLINK_IN_AFWACHTING",
+    "btn_establish": "UPLINK_ESTABLISH",
+    "js_transmitting": "VERZENDEN...",
+    "toast_severed": "LINK_VERBROKEN: Verbinding gewist.",
+    "toast_request_sent": "HANDSHAKE_VOLTOOID: Verzoek verzonden.",
+    "type_request": "UPLINK_VERZOEK: Verbindingsverificatie vereist.",
+    "type_accepted": "HANDSHAKE_BEVESTIGD: Beveiligde tunnel opgezet.",
+    "type_declined": "UPLINK_GEWEIGERD: Verzoek beëindigd door doelwit.",
+    "type_severed": "UPLINK_BEEINDIGD: Verbinding verbroken door partner-node.",
+    "subtitle": "Ontdek wat je hebt gemist!",
+    "empty": "Geen meldingen op dit moment",
+    "mark_read": "Alles als gelezen markeren",
+    "btn_accept": "Verbinding accepteren"
   }
 }

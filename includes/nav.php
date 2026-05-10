@@ -82,7 +82,7 @@ $alias = $is_logged_in ? htmlspecialchars($_SESSION['citizen_alias']) : '';
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="<?php echo SITE_URL; ?>/citizen/directory.php">
+                                <a class="dropdown-item" href="<?php echo SITE_URL; ?>/citizen/citizens.php">
                                     <i class="fas fa-users mr-2 text-neon-blue"></i> <?php echo __t('nav', 'cits_h'); ?>
                                 </a>
                             </li>

@@ -602,5 +602,24 @@
     "steam_handle": "Steam",
     "blizzard_handle": "Blizzard",
     "nintendo_handle": "Nintendo"
+  },
+  "notif": {
+    "site_search": "Obywatele Cytadeli",
+    "search_placeholder": "WPROWADŹ ALIAS DO ROZPOZNANIA",
+    "btn_view": "ZOBACZ_DOSSIER",
+    "btn_sever": "ZERWIJ_POŁĄCZENIE",
+    "btn_pending": "UPLINK_OCZEKUJĄCY",
+    "btn_establish": "NAWIĄŻ_UPLINK",
+    "js_transmitting": "TRANSMISJA...",
+    "toast_severed": "ŁĄCZE_ZERWANE: Połączenie wyczyszczone.",
+    "toast_request_sent": "HANDSHAKE_ZAKOŃCZONY: Żądanie przesłane.",
+    "type_request": "ŻĄDANIE_UPLINK: Wymagana weryfikacja połączenia.",
+    "type_accepted": "HANDSHAKE_POTWIERDZONY: Bezpieczny tunel ustanowiony.",
+    "type_declined": "UPLINK_ODRZUCONY: Żądanie przerwane przez cel.",
+    "type_severed": "UPLINK_ZAKOŃCZONY: Połączenie zerwane przez węzeł partnerski.",
+    "subtitle": "Sprawdź, co Cię ominęło!",
+    "empty": "Brak powiadomień w tej chwili",
+    "mark_read": "Oznacz wszystkie jako przeczytane",
+    "btn_accept": "Zaakceptuj połączenie"
   }
 }

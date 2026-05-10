@@ -602,5 +602,24 @@
     "steam_handle": "Steam",
     "blizzard_handle": "Blizzard",
     "nintendo_handle": "Nintendo"
-  }  
+  },
+    "notif": {
+    "site_search": "Les Citoyens de la Citadelle",
+    "search_placeholder": "ENTRER ALIAS POUR RÉSOLUTION",
+    "btn_view": "VOIR_DOSSIER",
+    "btn_sever": "ROMPRE_CONNEXION",
+    "btn_pending": "UPLINK_EN_ATTENTE",
+    "btn_establish": "ÉTABLIR_UPLINK",
+    "js_transmitting": "TRANSMISSION...",
+    "toast_severed": "LIEN_ROMPU : Connexion purgée.",
+    "toast_request_sent": "HANDSHAKE_TERMINÉ : Requête transmise.",
+    "type_request": "REQUÊTE_UPLINK : Vérification de connexion requise.",
+    "type_accepted": "HANDSHAKE_CONFIRMÉ : Tunnel sécurisé établi.",
+    "type_declined": "UPLINK_REFUSÉ : Requête terminée par la cible.",
+    "type_severed": "UPLINK_TERMINÉ : Connexion rompue par le nœud partenaire.",
+    "subtitle": "Découvrez ce que vous avez manqué !",
+    "empty": "Aucune notification pour le moment",
+    "mark_read": "Tout marquer comme lu",
+    "btn_accept": "Accepter la connexion"
+  }
 }

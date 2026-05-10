@@ -602,5 +602,24 @@
     "steam_handle": "Steam",
     "blizzard_handle": "Blizzard",
     "nintendo_handle": "Nintendo"
+  },
+  "notif": {
+    "site_search": "시타델의 시민들",
+    "search_placeholder": "해결할 별칭 입력",
+    "btn_view": "도시에_보기",
+    "btn_sever": "연결_끊기",
+    "btn_pending": "업링크_대기중",
+    "btn_establish": "업링크_설정",
+    "js_transmitting": "전송 중...",
+    "toast_severed": "링크_절단: 연결이 제거되었습니다.",
+    "toast_request_sent": "핸드셰이크_완료: 요청이 전송되었습니다.",
+    "type_request": "업링크_요청: 연결 확인이 필요합니다.",
+    "type_accepted": "핸드셰이크_확인: 보안 터널이 구축되었습니다.",
+    "type_declined": "업링크_거부: 대상에 의해 요청이 종료되었습니다.",
+    "type_severed": "업링크_종료: 파트너 노드에 의해 연결이 끊겼습니다.",
+    "subtitle": "놓친 소식을 확인하세요!",
+    "empty": "현재 알림이 없습니다",
+    "mark_read": "모두 읽음으로 표시",
+    "btn_accept": "연결 수락"
   }
 }

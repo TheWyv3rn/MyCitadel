@@ -602,5 +602,24 @@
     "steam_handle": "Steam",
     "blizzard_handle": "Blizzard",
     "nintendo_handle": "Nintendo"
+  },
+  "notif": {
+    "site_search": "The Citizens of the Citadel",
+    "search_placeholder": "ENTER ALIAS TO RESOLVE",
+    "btn_view": "VIEW_DOSSIER",
+    "btn_sever": "SEVER_LINK",
+    "btn_pending": "UPLINK_PENDING",
+    "btn_establish": "ESTABLISH_UPLINK",
+    "js_transmitting": "TRANSMITTING...",
+    "toast_severed": "LINK_SEVERED: Connection Purged.",
+    "toast_request_sent": "HANDSHAKE_COMPLETE: Request Transmitted.",
+    "type_request": "UPLINK_REQUEST: Connection verification required.",
+    "type_accepted": "HANDSHAKE_CONFIRMED: Secure tunnel established.",
+    "type_declined": "UPLINK_REFUSED: Request terminated by target.",
+    "type_severed": "UPLINK_TERMINATED: Connection severed by partner node.",
+    "subtitle": "Find out what you missed!",
+    "empty": "No Notifications At This Time",
+    "mark_read": "Mark All As Read",
+    "btn_accept": "Accept Connection"
   }
 }

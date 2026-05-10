@@ -602,5 +602,24 @@
     "steam_handle": "Steam",
     "blizzard_handle": "Blizzard",
     "nintendo_handle": "Nintendo"
+  },
+  "notif": {
+    "site_search": "シタデルの市民",
+    "search_placeholder": "エイリアスを入力して解析",
+    "btn_view": "ドシエを表示",
+    "btn_sever": "接続を遮断",
+    "btn_pending": "アップリンク保留中",
+    "btn_establish": "アップリンクを確立",
+    "js_transmitting": "送信中...",
+    "toast_severed": "リンク遮断：接続をパージしました。",
+    "toast_request_sent": "ハンドシェイク完了：リクエストを送信しました。",
+    "type_request": "アップリンク要求：接続の検証が必要です。",
+    "type_accepted": "ハンドシェイク確認：セキュアトンネルを確立しました。",
+    "type_declined": "アップリンク拒否：ターゲットにより要求が終了されました。",
+    "type_severed": "アップリンク終了：パートナーノードにより接続が切断されました。",
+    "subtitle": "未確認の情報をチェック！",
+    "empty": "現在、通知はありません",
+    "mark_read": "すべて既読にする",
+    "btn_accept": "接続を承認"
   }
 }

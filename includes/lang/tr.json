@@ -602,5 +602,24 @@
     "steam_handle": "Steam",
     "blizzard_handle": "Blizzard",
     "nintendo_handle": "Nintendo"
+  },
+  "notif": {
+    "site_search": "Citadel Vatandaşları",
+    "search_placeholder": "ÇÖZÜMLEME İÇİN ALİAS GİRİN",
+    "btn_view": "DOSYAYI_GÖR",
+    "btn_sever": "BAĞLANTIYI_KES",
+    "btn_pending": "UPLINK_BEKLEMEDE",
+    "btn_establish": "UPLINK_KUR",
+    "js_transmitting": "İLETİLİYOR...",
+    "toast_severed": "BAĞLANTI_KESİLDİ: Bağlantı temizlendi.",
+    "toast_request_sent": "EL_SIKIŞMA_TAMAM: İstek iletildi.",
+    "type_request": "UPLINK_İSTEĞİ: Bağlantı doğrulaması gerekiyor.",
+    "type_accepted": "EL_SIKIŞMA_ONAYLANDI: Güvenli tünel kuruldu.",
+    "type_declined": "UPLINK_REDDEDİLDİ: İstek hedef tarafından sonlandırıldı.",
+    "type_severed": "UPLINK_SONLANDIRILDI: Bağlantı partner düğüm tarafından kesildi.",
+    "subtitle": "Neleri kaçırdığınızı öğrenin!",
+    "empty": "Şu an bildirim yok",
+    "mark_read": "Tümünü okundu işaretle",
+    "btn_accept": "Bağlantıyı Kabul Et"
   }
 }

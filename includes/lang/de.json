@@ -602,5 +602,24 @@
     "steam_handle": "Steam",
     "blizzard_handle": "Blizzard",
     "nintendo_handle": "Nintendo"
+  },
+  "notif": {
+    "site_search": "Die Bürger der Zitadelle",
+    "search_placeholder": "ALIAS ZUR AUFLÖSUNG EINGEBEN",
+    "btn_view": "DOSSIER_ANSEHEN",
+    "btn_sever": "VERBINDUNG_TRENNEN",
+    "btn_pending": "UPLINK_AUSSTEHEND",
+    "btn_establish": "UPLINK_HERSTELLEN",
+    "js_transmitting": "ÜBERTRAGUNG...",
+    "toast_severed": "VERBINDUNG_GETRENNT: Verbindung gelöscht.",
+    "toast_request_sent": "HANDSHAKE_ERFOLGREICH: Anfrage übertragen.",
+    "type_request": "UPLINK_ANFRAGE: Verbindungsprüfung erforderlich.",
+    "type_accepted": "HANDSHAKE_BESTÄTIGT: Sicherer Tunnel aufgebaut.",
+    "type_declined": "UPLINK_ABGELEHNT: Anfrage durch Ziel beendet.",
+    "type_severed": "UPLINK_TERMINIERT: Verbindung durch Partner-Node getrennt.",
+    "subtitle": "Finde heraus, was du verpasst hast!",
+    "empty": "Aktuell keine Benachrichtigungen",
+    "mark_read": "Alle als gelesen markieren",
+    "btn_accept": "Verbindung akzeptieren"
   }
 }
