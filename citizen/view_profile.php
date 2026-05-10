@@ -122,7 +122,7 @@ global $citadel_strings; // Needed for the safe badge lookup
     <!-- IDENTITY HEADER -->
     <div class="text-center mb-5">
         <h1 class="stencil-text text-white display-4"><?php echo htmlspecialchars($target['alias']); ?></h1>
-        <div class="font-mono text-neon-blue">REP_STANDING: <?php echo number_format((int)$target['reputation']); ?></div>
+        <div class="font-mono text-neon-blue"><?php echo __t('profile', 'rep'); ?>: <?php echo number_format((int)$target['reputation']); ?></div>
     </div>
 
     <div class="position-relative">
@@ -130,9 +130,9 @@ global $citadel_strings; // Needed for the safe badge lookup
             <!-- THE WALL -->
             <div class="lock-notice shadow-lg animate__animated animate__zoomIn">
                 <i class="fas fa-user-lock fa-4x mb-4"></i>
-                <h2 class="orbitron mb-2">ACCESS_RESTRICTED</h2>
-                <p class="mb-4">Establish a mutual trust handshake to decrypt this citizen's neural fragments.</p>
-                <button class="btn btn-cyber px-5" onclick="initiateUplink(<?php echo $target['id']; ?>, 'establish', this)">ESTABLISH UPLINK</button>
+                <h2 class="orbitron mb-2"><?php echo __t('profile', 'access_denied'); ?></h2>
+                <p class="mb-4"><?php echo __t('profile', 'access_denied_description'); ?></p>
+                <button class="btn btn-cyber px-5" onclick="initiateUplink(<?php echo $target['id']; ?>, 'establish', this)"><?php echo __t('profile', 'connect'); ?></button>
             </div>
         <?php endif; ?>
 
@@ -141,21 +141,29 @@ global $citadel_strings; // Needed for the safe badge lookup
             <!-- 1. VITAL SIGNS -->
             <div class="col-lg-4">
                 <div class="data-section-card border-neon-blue">
-                    <h5 class="stencil-text text-neon-blue mb-4 small"><i class="fas fa-id-card me-2"></i> BIOMETRIC_INTEL</h5>
-                    <div class="data-label">Legal Name</div>
+                    <h5 class="stencil-text text-neon-blue mb-4 small"><i class="fas fa-id-card me-2"></i> <?php echo __t('profile', 'intel_title'); ?></h5>
+                    <div style="color: #0F0" class="data-label"><?php echo __t('profile', 'legal_name'); ?></div>
                     <div class="data-value"><?php echo reveal_intel($target['full_name'], $target_key); ?></div>
-                    <div class="data-label">Origin / Residence</div>
+                    <div style="color: #0F0" class="data-label"><?php echo __t('profile', 'location'); ?></div>
                     <div class="data-value"><?php echo reveal_intel($target['city'], $target_key); ?>, <?php echo reveal_intel($target['state'], $target_key); ?></div>
-                    <div class="data-label">Current Status</div>
+                    <div style="color: #0F0" class="data-label"><?php echo __t('profile', 'rel_status'); ?></div>
                     <div class="data-value text-alien-green"><?php echo strtoupper((string)$target['relationship_status']); ?></div>
+                    <div style="color: #0F0"class="data-label"><?php echo __t('profile', 'kid_status'); ?></div>
+                    <div class="data-value text-alien-green"><?php echo strtoupper((string)$target['has_kids']); ?></div>
                 </div>
             </div>
 
             <!-- 2. NARRATIVE -->
             <div class="col-lg-8">
                 <div class="data-section-card">
-                    <h5 class="stencil-text text-neon-blue mb-4 small"><i class="fas fa-brain me-2"></i> NEURAL_NARRATIVE</h5>
+                    <h5 class="stencil-text text-neon-blue mb-4 small"><i class="fas fa-brain me-2"></i> <?php echo __t('profile', 'narrative'); ?></h5>
+                    <h5  style="color: #0F0"class="stencil-text text-neon-blue mb-4 small">
+                        <?php echo __t('profile', 'short_bio'); ?><br/>
+                    </h5>
                     <p class="lead text-white mb-4">"<?php echo reveal_intel($target['short_bio'], $target_key); ?>"</p>
+                    <h5 style="color: #0F0" class="stencil-text text-neon-blue mb-4 small">
+                        <?php echo __t('profile', 'long_bio'); ?>
+                    </h5>
                     <div class="text-secondary small" style="line-height: 1.8; white-space: pre-wrap;">
                         <?php echo reveal_intel($target['bio'], $target_key); ?>
                     </div>
@@ -165,7 +173,7 @@ global $citadel_strings; // Needed for the safe badge lookup
             <!-- 3. SOCIAL GRID -->
             <div class="col-12">
                 <div class="data-section-card">
-                    <h5 class="stencil-text text-neon-blue mb-4 small"><i class="fas fa-network-wired me-2"></i> UPLINK_CHANNELS</h5>
+                    <h5 class="stencil-text text-neon-blue mb-4 small"><i class="fas fa-network-wired me-2"></i> <?php echo __t('profile', 'socials'); ?></h5>
                     <div class="row">
                         <?php 
                             $socs = [
@@ -181,7 +189,7 @@ global $citadel_strings; // Needed for the safe badge lookup
                                 <div class="d-flex align-items-center">
                                     <div class="social-link-icon me-2"><i class="fas fa-link"></i></div>
                                     <div>
-                                        <div class="data-label"><?php echo $label; ?></div>
+                                        <div class="data-label" style="color: #0F0"><?php echo __t('profile', $label);?></div>
                                         <div class="data-value" style="font-size: 0.8rem;"><?php echo $val; ?></div>
                                     </div>
                                 </div>
@@ -194,21 +202,38 @@ global $citadel_strings; // Needed for the safe badge lookup
             <!-- 4. CAREER & ACADEMIC -->
             <div class="col-md-6">
                 <div class="data-section-card border-space-purple">
-                    <h5 class="stencil-text text-space-purple mb-4 small"><i class="fas fa-briefcase me-2"></i> CAREER_OPERATIONS</h5>
+                    <h5 class="stencil-text text-space-purple mb-4 small"><i class="fas fa-briefcase me-2"></i> <?php echo __t('profile', 'career'); ?></h5>
+                    <h5 style="color: #0F0">
+                        <?php echo __t('profile', 'career_title'); ?>
+                    </h5>
                     <div class="data-value mb-1"><?php echo reveal_intel($target['job_title'], $target_key); ?></div>
+                    <h5 style="color: #0F0">
+                        <?php echo __t('profile', 'career_comp'); ?>
+                    </h5>
                     <div class="text-alien-green font-mono x-small mb-3">@ <?php echo reveal_intel($target['job_company'], $target_key); ?></div>
+                    <h5 style="color: #0F0">
+                        <?php echo __t('profile', 'career_desc'); ?>
+                    </h5>
                     <p class="text-muted x-small"><?php echo reveal_intel($target['job_description'], $target_key); ?></p>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="data-section-card border-space-purple">
-                    <h5 class="stencil-text text-space-purple mb-4 small"><i class="fas fa-graduation-cap me-2"></i> ACADEMIC_DEVELOPMENT</h5>
-                    <div class="data-value small"><?php echo reveal_intel($target['college_1'], $target_key); ?></div>
-                    <div class="data-label mb-3"><?php echo reveal_intel($target['diploma_1'], $target_key); ?></div>
-                    <div class="data-label">Verified Certs:</div>
+                    <h5 class="stencil-text text-space-purple mb-4 small"><i class="fas fa-graduation-cap me-2"></i> <?php echo __t('profile', 'edu_title'); ?></h5>
+                    <h4 style="color: #0F0">
+                        <?php echo __t('profile', 'college'); ?>
+                    </h4>
+                    <?php echo reveal_intel($target['college_1'], $target_key); ?>, <?php echo reveal_intel($target['college_2'], $target_key); ?>, <?php echo reveal_intel($target['college_3'], $target_key); ?><br/><br/>
+                    <h4 style="color: #0F0">
+                        <?php echo __t('profile', 'degree'); ?>
+                    </h4>
+                    <?php echo reveal_intel($target['diploma_1'], $target_key); ?>, <?php echo reveal_intel($target['diploma_2'], $target_key); ?>, <?php echo reveal_intel($target['diploma_3'], $target_key); ?><br/><br/>
+                    <h4 style="color: #0F0">
+                        <?php echo __t('profile', 'certs'); ?>
+                    </h4>
                     <div class="text-white x-small font-mono">
-                        <?php echo reveal_intel($target['cert_1'], $target_key); ?>, <?php echo reveal_intel($target['cert_2'], $target_key); ?>
+                        <?php echo reveal_intel($target['cert_1'], $target_key); ?>, <?php echo reveal_intel($target['cert_2'], $target_key); ?>, <?php echo reveal_intel($target['cert_3'], $target_key); ?>, <?php echo reveal_intel($target['cert_4'], $target_key); ?><br/>
                     </div>
                 </div>
             </div>
@@ -216,7 +241,7 @@ global $citadel_strings; // Needed for the safe badge lookup
             <!-- 5. BADGE VAULT (FIXED CRASH LOGIC) -->
             <div class="col-12">
                 <div class="data-section-card">
-                    <h5 class="stencil-text text-white mb-4 small">EARNED_ACHIEVEMENTS</h5>
+                    <h5 class="stencil-text text-white mb-4 small"><?php echo __t('profile', 'badges'); ?></h5>
                     <div class="d-flex flex-wrap gap-3">
                         <?php foreach($badges as $b): 
                             $b_id = $b['badge_id'];
