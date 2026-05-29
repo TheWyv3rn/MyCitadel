@@ -1,0 +1,676 @@
+/* * PROJECT: MY CITADEL (NEAR-ZERO-KNOWLEDGE SOCIAL ECOSYSTEM)
+ * VERSION: 1.0.0
+ * AUTHOR: THE WYVERN & GEMINI
+ * DESCRIPTION: HIGH-POWERED, SCY-FI FUTURISTIC RESPONSIVE FRAMEWORK
+ * * TABLE OF CONTENTS:
+ * 1. DESIGN TOKENS (VARIABLES)
+ * 2. FONT-FACE DEFINITIONS
+ * 3. GLOBAL RESETS & BASE STYLES
+ * 4. ANIMATION KEYFRAMES
+ * 5. LAYOUT SYSTEM (GRID & FLEX)
+ * 6. NAVIGATION COMPONENT
+ * 7. CORE UI COMPONENTS (CARDS, BUTTONS, GLITCHES)
+ * 8. TYPOGRAPHY (GLOWING EFFECTS)
+ * 9. FOOTER
+ * 10. RESPONSIVE BREAKPOINTS
+ */
+
+/* ==========================================
+   1. DESIGN TOKENS (VARIABLES)
+   ========================================== */
+:root {
+    /* Primary Color Palette */
+    --neon-blue: #00f2ff;
+    --alien-green: #39ff14;
+    --space-purple: #7b2ff7;
+    --deep-void: #050505;
+    --void-surface: rgba(15, 15, 25, 0.85);
+    --void-border: rgba(0, 242, 255, 0.2);
+    
+    /* Functional Colors */
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+    --glitch-red: #ff003c;
+    
+    /* Typography */
+    --font-main: 'Orbitron', sans-serif;
+    --font-mono: 'Source Code Pro', monospace;
+    --font-stencil: 'Saira Stencil One', cursive;
+    --font-title: 'Cinzel', serif;
+    
+    /* Spacing & Borders */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --glow-strength: 0 0 10px rgba(0, 242, 255, 0.5);
+    --glass-blur: blur(12px);
+    
+    /* Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================
+   2. FONT-FACE DEFINITIONS
+   ========================================== */
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Saira Stencil';
+    src: url('../fonts/SairaStencil-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/SourceCodePro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel-Bold.ttf') format('truetype');
+}
+
+/* ==========================================
+   3. GLOBAL RESETS & BASE STYLES
+   ========================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px; /* Base size for rem units */
+}
+
+body {
+    background-color: var(--deep-void);
+    background-image: 
+        radial-gradient(circle at 50% 50%, rgba(123, 47, 247, 0.05) 0%, transparent 80%),
+        linear-gradient(rgba(0, 242, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 242, 255, 0.02) 1px, transparent 1px);
+    background-size: 100% 100%, 50px 50px, 50px 50px;
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Custom Scrollbar for the Void */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--deep-void);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--space-purple);
+    border-radius: var(--radius-md);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--neon-blue);
+    box-shadow: var(--glow-strength);
+}
+
+/* ==========================================
+   4. ANIMATION KEYFRAMES
+   ========================================== */
+
+/* Neon Pulsing */
+@keyframes pulse-neon {
+    0%, 100% { opacity: 1; text-shadow: 0 0 10px var(--neon-blue); }
+    50% { opacity: 0.8; text-shadow: 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue); }
+}
+
+/* Floating Animation for Icons/Images */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+/* ==========================================
+   5. LAYOUT SYSTEM
+   ========================================== */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================
+   6. NAVIGATION COMPONENT (GLASSMORPHISM)
+   ========================================== */
+.citadel-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--void-surface);
+    backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--void-border);
+    padding: 1rem 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    color: var(--neon-blue);
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: var(--transition-fast);
+}
+
+.nav-brand:hover {
+    text-shadow: 0 0 15px var(--neon-blue);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition-fast);
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--alien-green);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--alien-green);
+    transition: var(--transition-smooth);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    box-shadow: 0 0 10px var(--alien-green);
+}
+
+/* ==========================================
+   7. CORE UI COMPONENTS
+   ========================================== */
+
+/* Futuristic Data Cards */
+.citadel-card {
+    background: var(--void-surface);
+    border: 1px solid var(--void-border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.citadel-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--space-purple);
+}
+
+.citadel-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-blue);
+    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.1);
+}
+
+/* Glitch Hyperlinks */
+.glitch-link {
+    color: var(--neon-blue);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.glitch-link:hover {
+    animation: glitch 0.3s cubic-bezier(.25,.46,.45,.94) both infinite;
+    color: var(--alien-green);
+}
+
+/* Floating Action Buttons */
+.btn-cyber {
+    background: transparent;
+    border: 1px solid var(--alien-green);
+    color: var(--alien-green);
+    padding: 0.8rem 1.5rem;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition-smooth);
+    overflow: hidden;
+}
+
+.btn-cyber:hover {
+    background: var(--alien-green);
+    color: var(--deep-void);
+    box-shadow: 0 0 20px var(--alien-green);
+}
+
+/* Floating Images/Icons Class */
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* ==========================================
+   8. TYPOGRAPHY
+   ========================================== */
+h1, h2, h3 {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.glowing-title {
+    color: var(--neon-blue);
+    animation: pulse-neon 3s infinite;
+}
+
+.stencil-text {
+    font-family: var(--font-stencil);
+    letter-spacing: 3px;
+}
+
+.data-stream {
+    font-family: var(--font-mono);
+    color: var(--alien-green);
+    background: rgba(57, 255, 20, 0.05);
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm);
+}
+
+/* ==========================================
+   9. FOOTER
+   ========================================== */
+.citadel-footer {
+    margin-top: 5rem;
+    padding: 3rem 0;
+    border-top: 1px solid var(--void-border);
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.footer-status {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.status-online {
+    color: var(--alien-green);
+}
+
+/* ==========================================
+   10. RESPONSIVE BREAKPOINTS
+   ========================================== */
+
+/* Tablets & Smaller Laptops */
+@media (max-width: 992px) {
+    .nav-links {
+        gap: 1rem;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .nav-links {
+        display: none; /* In a real scenario, implement a hamburger menu here */
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .citadel-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Ultra Wide / TV */
+@media (min-width: 1800px) {
+    .container {
+        max-width: 1600px;
+    }
+    html {
+        font-size: 18px;
+    }
+}
+
+/* ==========================================
+   6. NAVIGATION COMPONENT EXTENSIONS
+   ========================================== */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-flank {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    justify-content: flex-start;
+}
+
+.nav-right {
+    justify-content: flex-end;
+}
+
+.nav-core {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.nav-menu-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-accent-icon {
+    font-size: 0.75rem;
+    color: var(--space-purple);
+    transition: var(--transition-fast);
+}
+
+/* --- CYBER DROPDOWN MECHANICS --- */
+.cyber-dropdown {
+    position: relative;
+}
+
+.dropdown-trigger {
+    cursor: pointer;
+}
+
+.dropdown-terminal-panel {
+    position: absolute;
+    top: calc(100% + 1rem);
+    left: 0;
+    background: var(--deep-void);
+    border: 1px solid var(--void-border);
+    border-top: 2px solid var(--neon-blue);
+    border-radius: var(--radius-sm);
+    list-style: none;
+    padding: 0.5rem 0;
+    min-width: 240px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.75), 0 0 15px rgba(0, 242, 255, 0.05);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: var(--transition-fast);
+    backdrop-filter: var(--glass-blur);
+}
+
+/* Show Submenu on Hover */
+.cyber-dropdown:hover .dropdown-terminal-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.cyber-dropdown:hover .nav-accent-icon {
+    color: var(--neon-blue);
+    transform: rotate(180deg);
+}
+
+.dropdown-terminal-panel li a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.2rem;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition-fast);
+}
+
+.dropdown-terminal-panel li a i {
+    color: var(--space-purple);
+    font-size: 0.9rem;
+    transition: var(--transition-fast);
+}
+
+.dropdown-terminal-panel li a:hover {
+    background: rgba(0, 242, 255, 0.03);
+    color: var(--neon-blue);
+    text-shadow: 0 0 8px rgba(0, 242, 255, 0.5);
+    padding-left: 1.5rem; /* Animated terminal indent shift */
+}
+
+.dropdown-terminal-panel li a:hover i {
+    color: var(--alien-green);
+}
+
+/* --- GUEST HUB SPECIFICS --- */
+.auth-guest-cluster {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.matrix-divider {
+    color: var(--void-border);
+    font-family: var(--font-mono);
+    user-select: none;
+}
+
+.login-trigger:hover {
+    color: var(--neon-blue);
+    text-shadow: var(--glow-strength);
+}
+
+.btn-cyber.register-trigger {
+    font-size: 0.85rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: var(--radius-sm);
+}
+
+/* ==========================================
+   9. FOOTER & DIAGNOSTICS CONSOLE STYLING
+   ========================================== */
+.footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+}
+
+.footer-links {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.footer-links li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-links li a {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    transition: var(--transition-fast);
+}
+
+.footer-links li a:hover {
+    color: var(--neon-blue);
+    text-shadow: var(--glow-strength);
+    padding-left: 5px;
+}
+
+/* --- INTERACTIVE HUD FOOTER CONSOLE --- */
+.footer-terminal-block {
+    background: rgba(5, 5, 5, 0.6);
+    border: 1px solid var(--void-border);
+    padding: 1.2rem;
+    border-radius: var(--radius-md);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.9);
+}
+
+.terminal-display-box {
+    height: 110px;
+    overflow-y: auto;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    margin: 0.8rem 0;
+    padding-right: 5px;
+    border-bottom: 1px dashed var(--void-border);
+}
+
+/* Scrollbar tuning for terminal dashboard elements */
+.terminal-display-box::-webkit-scrollbar { width: 3px; }
+.terminal-display-box::-webkit-scrollbar-thumb { background: var(--void-border); }
+
+.terminal-line {
+    line-height: 1.4;
+    margin-bottom: 4px;
+    word-break: break-all;
+}
+
+/* Matrix Interface Utility Variations */
+.text-green { color: var(--alien-green); text-shadow: 0 0 4px rgba(57, 255, 20, 0.3); }
+.text-blue { color: var(--neon-blue); text-shadow: 0 0 4px rgba(0, 242, 255, 0.3); }
+.text-purple { color: #b19ffb; }
+.text-red { color: var(--glitch-red); text-shadow: 0 0 4px rgba(255, 0, 60, 0.4); }
+
+.terminal-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+}
+
+.terminal-prompt {
+    color: var(--space-purple);
+    user-select: none;
+}
+
+#footerTerminalConsole {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+}
+
+/* Status Interface Base Bar Alignment */
+.footer-status-bar {
+    margin-top: 2.5rem;
+}
+
+.void-divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--void-border), transparent);
+    margin-bottom: 1.5rem;
+}
+
+.status-flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-status {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.animate-pulse {
+    animation: pulse-neon 1.5s infinite alternate;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #040406; /* Shifted slightly darker for higher contrast */
+    pointer-events: all;
+    
+    /* Cyber Matrix Ambient Overlay */
+    animation: matrixGlitchGlow 12s infinite alternate ease-in-out;
+}
+
+/* Subtle background chromatic drift to simulate hardware stress */
+@keyframes matrixGlitchGlow {
+    0% {
+        box-shadow: inset 0 0 50px rgba(0, 242, 255, 0.02);
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        box-shadow: inset 0 0 80px rgba(123, 47, 247, 0.04);
+    }
+    100% {
+        box-shadow: inset 0 0 60px rgba(57, 255, 20, 0.02);
+        filter: hue-rotate(15deg); /* Micro shift alters line colors contextually over time */
+    }
+}

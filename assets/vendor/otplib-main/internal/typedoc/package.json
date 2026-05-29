@@ -1,0 +1,15 @@
+{
+  "name": "@repo/typedoc",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:api": "typedoc && node move-docs.js"
+  },
+  "devDependencies": {
+    "typedoc": "^0.28.17",
+    "typedoc-plugin-markdown": "^4.11.0",
+    "typedoc-vitepress-theme": "^1.1.2",
+    "typescript": "^5.9.3"
+  }
+}
