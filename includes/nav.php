@@ -45,17 +45,17 @@ $current_flag = $flag_map[$active_lang] ?? '🌐';
                     </span>
                     <ul class="dropdown-terminal-panel">
                         <li>
-                            <a href="legal/terms.php">
+                            <a href="terms.php">
                                 <i class="fas fa-file-contract"></i> <?php echo __t('nav', 'terms_conditions'); ?>
                             </a>
                         </li>
                         <li>
-                            <a href="legal/privacy.php">
+                            <a href="privacy.php">
                                 <i class="fas fa-shield-alt"></i> <?php echo __t('nav', 'security_act'); ?>
                             </a>
                         </li>
                         <li>
-                            <a href="operations/nzk.php">
+                            <a href="nzk.php">
                                 <i class="fas fa-user-secret"></i> <?php echo __t('nav', 'nzk_ops'); ?>
                             </a>
                         </li>
