@@ -24,7 +24,17 @@ if (isset($_GET['set_lang'])) {
     }
     
     // Utilize the pre-computed absolute SITE_ROOT_URL from header.php if available
-    $redirect_target = defined('SITE_ROOT_URL') ? SITE_ROOT_URL : './';
+    // Get the previous page URL if available, otherwise default to site root
+    $redirect_target = $_SERVER['HTTP_REFERER'] ?? (defined('SITE_ROOT_URL') ? SITE_ROOT_URL : './');
+
+    // Ensure we don't accidentally redirect to an external site or a malicious URL
+    // This basic check ensures we stay within the same domain
+    $parsed_referer = parse_url($redirect_target);
+    $current_host = $_SERVER['HTTP_HOST'];
+    
+    if (!isset($parsed_referer['host']) || $parsed_referer['host'] !== $current_host) {
+        $redirect_target = defined('SITE_ROOT_URL') ? SITE_ROOT_URL : './';
+    }
     
     // FAIL-SAFE REDIRECTION MATRIX
     if (!headers_sent()) {
